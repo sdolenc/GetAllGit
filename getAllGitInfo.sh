@@ -9,13 +9,13 @@ delim=","
 
 # Generated first and becomes primary "input"
     dir="directory"
-    gitDirFile="${dir}${fileSuffix}"
+    gitDirFile="gitInfo_${dir}_${HOSTNAME}${fileSuffix}"
 # Partial output (csv table columns)
     url="remoteUrl"
     gitUrlFile="${url}${fileSuffix}"
     branch="currentBranch"
     gitBranchFile="${branch}${fileSuffix}"
-    tag="tags"
+    tag="currentTags"
     gitTagFile="${tag}${fileSuffix}"
     time="syncTime"
     gitTimeFile="${time}${fileSuffix}"
@@ -40,17 +40,24 @@ fi
 
 # Generate list of all local git enlistments.
 # This searches an entire machine's directory tree so we only do this once.
-gitDirFilePath="$basePath/$gitDirFile"
+# todo4: add optional param that forces the creation of a new "git directory list" file.
+gitDirFilePath="$HOME/$gitDirFile"
 if [ ! -f $gitDirFilePath ]; then
-    # Don't exit on error. A few directories can't be searched
+    # Don't exit on error. A few directories can't be searched.
     set +e
-    #todo2: Pick one
-    find / -name \.git -type d > $gitDirFilePath
-    sudo find / -name \.git -type d > "${gitDirFilePath}2.txt"
+        #todo2: Pick one
+        find / -name \.git -type d > $gitDirFilePath
+        sudo find / -name \.git -type d > "${gitDirFilePath}.sudo${fileSuffix}"
     set -e
+
+    # We temporarily disabled "exit on error" so let's test for success before continuing.
+    if [ ! -f $gitDirFilePath ]; then
+        echo "failed to create file listing local git repository paths"
+        exit 1
+    fi
 fi
 
-workingDir="${basePath}/gitInfo_${HOSTNAME}"
+workingDir="${basePath}/gitInfo_${HOSTNAME}b"
 gitDetailedFilePath="$workingDir/$gitDetailedFile"
 
 # Cleanup from previous run. Doesn't remove $gitDirFile
@@ -84,7 +91,8 @@ get_branch()
 
     # Ensure branch information is useful.
     if [ -z "$branchInfo" ] || [[ $branchInfo == *"no branch"* ]] || [[ $branchInfo == *"detached"* ]]; then
-        # Get list of branches that share the current commit (and remove redundant "origin/HEAD -> origin/master")
+        # Get list of branches that share the current commit and
+        # remove redundant (like  "origin/HEAD -> origin/master")
         branchesWithThisCommit="`git branch --remote --contains | grep -v '>'`"
 
         # Fromat string.
@@ -93,7 +101,11 @@ get_branch()
             multipleBranchExplanation=""
             branchCount=`echo "$branchesWithThisCommit" | wc -l`
             if (( $branchCount > "1" )); then
+                # Prefix message for more than one branches.
                 multipleBranchExplanation="$branchCount branches contain current commit:\n"
+            else
+                # Remove indentation for single branch.
+                branchesWithThisCommit=`echo $branchesWithThisCommit | sed 's/  //g'`
             fi
 
             branchInfo="${multipleBranchExplanation}${branchesWithThisCommit}"
@@ -112,21 +124,29 @@ get_tag()
     if [ -z "$tagInfo" ]; then
         # Don't exit on error. There won't always be implicit tag information.
         set +e
-        # implicit tag created by commit
-        autoTag=`git describe --tags`
-        # next tag and ~ number of commits until we reach it.
-        nextTag=`git describe --contains`
+            # Implicit tag created by a commit after a tag
+            # Format: <prevTag>-<commitHash>
+            autoTag=`git describe --tags`
 
-        # For old versions of git (like 1.7.9.5)
-        if [ -z $nextTag ]; then
-            # Uses commit hash to get label then parse tag.
-            nextTag=`git rev-parse HEAD | git name-rev --stdin | grep -o 'tags/.*^)' | sed 's/tags\///g' | tr ')' ' '`
-        fi
+            # Implicit tag created by a commit that happens before a tag.
+            # Format: <nextTag>~<numberOfCommitsUntilNextTag>
+            nextTag=`git describe --contains`
+
+            # For old versions of git (like 1.7.9.5)
+            if [ -z $nextTag ]; then
+                # Uses commit hash to get label then parse tag.
+                nextTag=`git rev-parse HEAD | git name-rev --stdin | grep -o 'tags/.*^)' | sed 's/tags\///g' | tr ')' ' '`
+            fi
         set -e
 
+        # We temporarily disabled "exit on error" so let's test the results before using them.
         # Format string.
         if [ ! -z $autoTag ]; then
-            tagInfo="tag: $autoTag \n (note: $1 is current commit's short hash) \n"
+            tagInfo="tag: $autoTag \n (note: $1 is current commit's short hash)"
+        fi
+        if [ ! -z $autoTag ] && [ ! -z $nextTag ]; then
+            # Separate with newline if both automatic tags are available.
+            tagInfo="${tagInfo}\n"
         fi
         if [ ! -z $nextTag ]; then
             commitCount=`echo $nextTag | grep -o '~.*' | tr '~' ' '`
@@ -139,9 +159,16 @@ get_tag()
 }
 
 
-# Write CSV header. These each have corresponding files in $workingDir
+# Write CSV header.
+# The first four columns are:
+#   - somewhat static for a given machine so they're set outside of the loop.
+#   - more helpful when results from more than one machine are merged. see #todo4
+# The remaining columns are:
+#   - also represented in corresponding files in $workingDir .
 write_separated_values  "machine" \
                         "ipAdresses" \
+                        "osVer" \
+                        "gitVer" \
                         "$dir" \
                         "$url" \
                         "$branch" \
@@ -153,6 +180,8 @@ write_separated_values  "machine" \
 
 # Put all machine ip addresses on their own line.
 ip=`hostname -I | tr ' ' '\n'`
+osVer=`lsb_release -rs`
+gitVer=`git --version | grep -o '[0-9].*'`
 
 # Iterate over list of local git enlistments.
 while read entry; do
@@ -187,6 +216,8 @@ while read entry; do
     # Write CSV values.
     write_separated_values  "$HOSTNAME" \
                             "$ip" \
+                            "$osVer" \
+                            "$gitVer" \
                             "`pwd`" \
                             "$remote" \
                             "$currentBranch" \
@@ -199,12 +230,14 @@ while read entry; do
     popd
 done < $gitDirFilePath
 
-#todo3: verify all line counts are equal (except for git tags final csv file because those can each have "in-cell" newlines)
+#todo3: verify all line counts are equal (except for branches, tags, and final csv file. Those can each have "in-cell" newlines)
 
 # This statement only makes sense with set -e
 echo
 echo "Finished with no errors!"
 echo "See $gitDetailedFilePath"
+echo
+wc ${gitDirFilePath}* #todo2
 echo
 
 #todo1: make wrapper file for parallel execution
