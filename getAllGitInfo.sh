@@ -208,7 +208,7 @@ while read entry; do
     fi
     echo "$syncTime" >> $workingDir/$gitTimeFile
 
-    latestCommitDate=`git log --pretty=format:"%ad" -1`
+    latestCommitDate=`git log --pretty=format:"%ai" -1`
     echo "$latestCommitDate" >> $workingDir/$gitCommitDateFile
 
     latestCommitDesc=`git log --pretty=format:"%s" -1`
