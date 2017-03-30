@@ -44,11 +44,13 @@ gitDirFilePath="$basePath/$gitDirFile"
 if [ ! -f $gitDirFilePath ]; then
     # Don't exit on error. A few directories can't be searched
     set +e
-    sudo find / -name \.git -type d > $gitDirFilePath
+    # Pick one
+    find / -name \.git -type d > $gitDirFilePath
+    sudo find / -name \.git -type d > "${gitDirFilePath}2.txt"
     set -e
 fi
 
-workingDir="${basePath}/${HOSTNAME}_gitInfo"
+workingDir="${basePath}/gitInfo_${HOSTNAME}"
 gitDetailedFilePath="$workingDir/$gitDetailedFile"
 
 # Cleanup from previous run. Doesn't remove $gitDirFile
