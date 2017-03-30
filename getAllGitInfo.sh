@@ -40,7 +40,7 @@ fi
 
 # Generate list of all local git enlistments.
 # This searches an entire machine's directory tree so we only do this once.
-# todo4: add optional param that forces the creation of a new "git directory list" file.
+# todo4: optional param that forces the creation of a new "git directory list" file.
 gitDirFilePath="$HOME/$gitDirFile"
 if [ ! -f $gitDirFilePath ]; then
     # Don't exit on error. A few directories can't be searched.
@@ -117,6 +117,7 @@ get_branch()
 
 get_tag()
 {
+    prefix="tag:" #todo5: use, add a count, show header similar to branches
     # Get information, split into multiple lines, only keep values prefixed with 'tag:'
     tagInfo=`git log -g --decorate -1 | tr ',' '\n' | tr ')' '\n' | grep -o -i 'tag:.*'`
 
@@ -135,7 +136,7 @@ get_tag()
             # For old versions of git (like 1.7.9.5)
             if [ -z $nextTag ]; then
                 # Uses commit hash to get label then parse tag.
-                nextTag=`git rev-parse HEAD | git name-rev --stdin | grep -o 'tags/.*^)' | sed 's/tags\///g' | tr ')' ' '`
+                nextTag=`git rev-parse HEAD | git name-rev --stdin | grep -o 'tags/.*)' | sed 's/tags\///g' | tr ')' ' '`
             fi
         set -e
 
