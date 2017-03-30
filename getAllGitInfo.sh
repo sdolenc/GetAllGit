@@ -57,7 +57,7 @@ if [ ! -f $gitDirFilePath ]; then
     fi
 fi
 
-workingDir="${basePath}/gitInfo_${HOSTNAME}b"
+workingDir="${basePath}/gitInfo_${HOSTNAME}"
 gitDetailedFilePath="$workingDir/$gitDetailedFile"
 
 # Cleanup from previous run. Doesn't remove $gitDirFile
