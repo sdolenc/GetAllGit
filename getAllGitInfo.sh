@@ -44,7 +44,7 @@ gitDirFilePath="$basePath/$gitDirFile"
 if [ ! -f $gitDirFilePath ]; then
     # Don't exit on error. A few directories can't be searched
     set +e
-    # Pick one
+    #todo2: Pick one
     find / -name \.git -type d > $gitDirFilePath
     sudo find / -name \.git -type d > "${gitDirFilePath}2.txt"
     set -e
@@ -199,7 +199,7 @@ while read entry; do
     popd
 done < $gitDirFilePath
 
-#todo: verify all line counts are equal (except for git tags final csv file because those can each have "in-cell" newlines)
+#todo3: verify all line counts are equal (except for git tags final csv file because those can each have "in-cell" newlines)
 
 # This statement only makes sense with set -e
 echo
@@ -207,6 +207,6 @@ echo "Finished with no errors!"
 echo "See $gitDetailedFilePath"
 echo
 
-#todo: make wrapper file for parallel execution
+#todo1: make wrapper file for parallel execution
 #   input: list of scp and ssh hosts/arguments OR sibling nodes.
 #   output: merged csv document -> error line of 3 fails
