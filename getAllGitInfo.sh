@@ -116,10 +116,11 @@ get_tag()
         autoTag=`git describe --tags`
         # next tag and ~ number of commits until we reach it.
         nextTag=`git describe --contains`
+
+        # For old versions of git (like 1.7.9.5)
         if [ -z $nextTag ]; then
-            # For old versions of git. Uses commit hash to get label, then parse it.
-            #todo: remove tags/ and ).
-            nextTag=`git rev-parse HEAD | git name-rev --stdin | grep -o 'tags/.*)'`
+            # Uses commit hash to get label then parse tag.
+            nextTag=`git rev-parse HEAD | git name-rev --stdin | grep -o 'tags/.*^)' | sed 's/tags\///g' | tr ')' ' '`
         fi
         set -e
 
