@@ -26,7 +26,7 @@ delim=","
     commitHash="currentCommitHash"
     gitHashFile="${commitHash}${fileSuffix}"
 # Total output.
-    gitDetailedFile="AllGitDetails${outputSuffix}"
+    gitDetailedFile="AllGitDetails_${HOSTNAME}${outputSuffix}"
 
 set -xe
 
@@ -91,11 +91,12 @@ get_branch()
         if [[ ! -z "$branchesWithThisCommit" ]]; then
             # Add explanation if there are more than one branches.
             multipleBranchExplanation=""
-            if (( `echo "$branchesWithThisCommit" | wc -l` > "1" )); then
-                multipleBranchExplanation="\n Branches that contain current commit:"
+            branchCount=`echo "$branchesWithThisCommit" | wc -l`
+            if (( $branchCount > "1" )); then
+                multipleBranchExplanation="$branchCount branches contain current commit:\n"
             fi
 
-            branchInfo="${branchInfo}${multipleBranchExplanation}\n${branchesWithThisCommit}"
+            branchInfo="${multipleBranchExplanation}${branchesWithThisCommit}"
         fi
     fi
 
@@ -104,8 +105,8 @@ get_branch()
 
 get_tag()
 {
-    # Parse git tags, remove ), split multiple tags on their own line.
-    tagInfo=`git log -g --decorate -1 | grep -o 'tag:.*' | tr ')' ' ' | sed -e $'s/ tag:/\\\ntag:/g'`
+    # Get information, split into multiple lines, only keep values prefixed with 'tag:'
+    tagInfo=`git log -g --decorate -1 | tr ',' '\n' | grep -o -i 'tag:.*'`
 
     #If no explicitly created tags, then look for implicit tagging information.
     if [ -z "$tagInfo" ]; then
