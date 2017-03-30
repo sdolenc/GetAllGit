@@ -150,7 +150,7 @@ while read entry; do
     pushd ${entry}/..
 
     # Sanitize token from URL before writing to file.
-    remote=`git remote get-url --all origin | sed 's/\/\/.*@/\/\//g'`
+    remote=`git config --get remote.origin.url | sed 's/\/\/.*@/\/\//g'`
     echo "$remote" >> $workingDir/$gitUrlFile
 
     currentBranch=`get_branch`
