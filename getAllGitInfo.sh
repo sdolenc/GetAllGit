@@ -118,7 +118,8 @@ get_tag()
         nextTag=`git describe --contains`
         if [ -z $nextTag ]; then
             # For old versions of git. Uses commit hash to get label, then parse it.
-            nextTag=`git rev-parse HEAD | git name-rev --stdin | grep -o '/.*)' | tr '/' ' ' | tr ')' ' '`
+            #todo: remove tags/ and ).
+            nextTag=`git rev-parse HEAD | git name-rev --stdin | grep -o 'tags/.*)'`
         fi
         set -e
 
