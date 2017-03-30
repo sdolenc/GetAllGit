@@ -106,7 +106,7 @@ get_branch()
 get_tag()
 {
     # Get information, split into multiple lines, only keep values prefixed with 'tag:'
-    tagInfo=`git log -g --decorate -1 | tr ',' '\n' | grep -o -i 'tag:.*'`
+    tagInfo=`git log -g --decorate -1 | tr ',' '\n' | tr ')' '\n' | grep -o -i 'tag:.*'`
 
     #If no explicitly created tags, then look for implicit tagging information.
     if [ -z "$tagInfo" ]; then
@@ -116,14 +116,20 @@ get_tag()
         autoTag=`git describe --tags`
         # next tag and ~ number of commits until we reach it.
         nextTag=`git describe --contains`
+        if [ -z $nextTag ]; then
+            # For old versions of git. Uses commit hash to get label, then parse it.
+            nextTag=`git rev-parse HEAD | git name-rev --stdin | grep -o '/.*)' | tr '/' ' ' | tr ')' ' '`
+        fi
         set -e
 
         # Format string.
         if [ ! -z $autoTag ]; then
-            tagInfo="auto tag: $autoTag \n (note: hex suffix is current commit's short hash) \n\n"
+            tagInfo="tag: $autoTag \n (note: $1 is current commit's short hash) \n"
         fi
         if [ ! -z $nextTag ]; then
-            tagInfo="${tagInfo}next tag: $nextTag \n (note: value after ~ is number of commits before the tag)"
+            commitCount=`echo $nextTag | grep -o '~.*' | tr '~' ' '`
+            shortNextTag=`echo $nextTag | grep -o '.*~' | tr '~' ' '`
+            tagInfo="${tagInfo}tag: $nextTag \n (note:$commitCount commits after current state until tag $shortNextTag)"
         fi
     fi
 
@@ -157,7 +163,10 @@ while read entry; do
     currentBranch=`get_branch`
     echo "$currentBranch" >> $workingDir/$gitBranchFile
 
-    currentTags=`get_tag`
+    latestCommitHash=`git log --pretty=format:"%h" -1`
+    echo "$latestCommitHash" >> $workingDir/$gitHashFile
+
+    currentTags=`get_tag $latestCommitHash`
     echo "$currentTags" >> $workingDir/$gitTagFile
 
     # FETCH_HEAD file's modified timestamp is changed everytime git pulls from remote server.
@@ -172,9 +181,6 @@ while read entry; do
 
     latestCommitDesc=`git log --pretty=format:"%s" -1`
     echo "$latestCommitDesc" >> $workingDir/$gitCommitDescFile
-
-    latestCommitHash=`git log --pretty=format:"%h" -1`
-    echo "$latestCommitHash" >> $workingDir/$gitHashFile
 
     # Write CSV values.
     write_separated_values  "$HOSTNAME" \
