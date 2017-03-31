@@ -2,18 +2,17 @@
 # Copyright (c) Microsoft Corporation. All Rights Reserved.
 # Licensed under the MIT license. See LICENSE file on the project webpage for details.
 
-
 #todo: is this the best way of invoking bash in python?
 # Grabs first ipv4 occurence.
 # Consider: expanding for ipv6 and more than one address
-s = subprocess.Popen(["get ip prefix hostname -I | grep -oE '([0-9]{1,3}\.){3}'"], shell=True, stdout=subprocess.PIPE).stdout
-ipAddress = s.read()
+#s = subprocess.Popen(["get ip prefix hostname -I | grep -oE '([0-9]{1,3}\.){3}'"], shell=True, stdout=subprocess.PIPE).stdout
+#ipAddress = s.read()
 
 #todo: consider switching to python library with similar nmap functionality.
 #No harm in attempting to install nmap even if it's already available. It's a fast no-op.
 #todo: sudo apt-get install nmap
-s = subprocess.Popen(["nmap -sP ${prefix}1-255 | grep -oE '${prefix}([0-9]{1,3})'"], shell=True, stdout=subprocess.PIPE).stdout
-ipAddresses = s.read().splitlines()
+#s = subprocess.Popen(["nmap -sP ${prefix}1-255 | grep -oE '${prefix}([0-9]{1,3})'"], shell=True, stdout=subprocess.PIPE).stdout
+#hosts = s.read().splitlines()
 
 #todo: https://github.com/ParallelSSH/parallel-ssh
 
