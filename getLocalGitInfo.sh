@@ -2,14 +2,16 @@
 # Copyright (c) Microsoft Corporation. All Rights Reserved.
 # Licensed under the MIT license. See LICENSE file on the project webpage for details.
 
+#todo1: move file and path naming conventions to shared file.
 fileSuffix=".txt"
 outputSuffix=".csv"
+outputPrefix="gitInfo"
  # Shouldn't be ' ' (space) character.
 delim=","
 
 # Generated first and becomes primary "input"
     dir="directory"
-    gitDirFile="gitInfo_${dir}_${HOSTNAME}${fileSuffix}"
+    gitDirFile="${outputPrefix}_${dir}${fileSuffix}"
 # Partial output (csv table columns)
     url="remoteUrl"
     gitUrlFile="${url}${fileSuffix}"
@@ -26,7 +28,7 @@ delim=","
     commitHash="currentCommitHash"
     gitHashFile="${commitHash}${fileSuffix}"
 # Total output.
-    gitDetailedFile="AllGitDetails_${HOSTNAME}${outputSuffix}"
+    gitDetailedFile="${outputPrefix}_all${outputSuffix}"
 
 set -xe
 
@@ -57,7 +59,7 @@ if [ ! -f $gitDirFilePath ]; then
     fi
 fi
 
-workingDir="${basePath}/gitInfo_${HOSTNAME}"
+workingDir="${basePath}/${outputPrefix}"
 gitDetailedFilePath="$workingDir/$gitDetailedFile"
 
 # Cleanup from previous run. Doesn't remove $gitDirFile
@@ -163,7 +165,7 @@ get_tag()
 # Write CSV header.
 # The first four columns are:
 #   - somewhat static for a given machine so they're set outside of the loop.
-#   - more helpful when results from more than one machine are merged. see #todo4
+#   - more helpful when results from more than one machine are merged
 # The remaining columns are:
 #   - also represented in corresponding files in $workingDir .
 write_separated_values  "machine" \
@@ -240,7 +242,3 @@ echo "See $gitDetailedFilePath"
 echo
 wc ${gitDirFilePath}* #todo2
 echo
-
-#todo1: make wrapper file for parallel execution
-#   input: list of scp and ssh hosts/arguments OR sibling nodes.
-#   output: merged csv document -> error line of 3 fails
