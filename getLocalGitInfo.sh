@@ -149,10 +149,10 @@ write_separated_values  "machine" \
                         "$url" \
                         "$branch" \
                         "$tag" \
-                        "$time" \
                         "$commitDate" \
                         "$commitDesc" \
-                        "$commitHash"
+                        "$commitHash" \
+                        "$time (accuracy not guarenteed)"
 
 # Put all machine ip addresses on their own line.
 ip=`hostname -I | tr ' ' '\n'`
@@ -162,6 +162,14 @@ gitVer=`git --version | grep -o '[0-9].*'`
 # Iterate over list of local git enlistments.
 while read entry; do
     pushd ${entry}/..
+
+    # FETCH_HEAD file's modified timestamp is changed everytime git pulls from remote server.
+    # We do this first in case one of the operation below happen to modify the timestamp.
+    syncTime=""
+    if [ -f .git/FETCH_HEAD ]; then
+        syncTime=`stat -c %y .git/FETCH_HEAD`
+    fi
+    echo "$syncTime" >> $workingDir/$gitTimeFile
 
     # Sanitize token from URL before writing to file.
     remote=`git config --get remote.origin.url | sed 's/\/\/.*@/\/\//g'`
@@ -175,13 +183,6 @@ while read entry; do
 
     currentTags=`get_tag $latestCommitHash`
     echo "$currentTags" >> $workingDir/$gitTagFile
-
-    # FETCH_HEAD file's modified timestamp is changed everytime git pulls from remote server.
-    syncTime=""
-    if [ -f .git/FETCH_HEAD ]; then
-        syncTime=`stat -c %y .git/FETCH_HEAD`
-    fi
-    echo "$syncTime" >> $workingDir/$gitTimeFile
 
     latestCommitDate=`git log --pretty=format:"%ai" -1`
     echo "$latestCommitDate" >> $workingDir/$gitCommitDateFile
@@ -198,10 +199,10 @@ while read entry; do
                             "$remote" \
                             "$currentBranch" \
                             "$currentTags" \
-                            "${syncTime}" \
                             "$latestCommitDate" \
                             "$latestCommitDesc" \
-                            "$latestCommitHash"
+                            "$latestCommitHash" \
+                            "${syncTime}"
 
     popd
 done < $gitDirFilePath
