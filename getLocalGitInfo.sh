@@ -2,47 +2,27 @@
 # Copyright (c) Microsoft Corporation. All Rights Reserved.
 # Licensed under the MIT license. See LICENSE file on the project webpage for details.
 
-#todo1: move file and path naming conventions to shared file.
-fileSuffix=".txt"
-outputSuffix=".csv"
-outputPrefix="gitInfo"
- # Shouldn't be ' ' (space) character.
-delim=","
+set -e
 
-# Generated first and becomes primary "input"
-    dir="directory"
-    gitDirFile="${outputPrefix}_${dir}${fileSuffix}"
-# Partial output (csv table columns)
-    url="remoteUrl"
-    gitUrlFile="${url}${fileSuffix}"
-    branch="currentBranch"
-    gitBranchFile="${branch}${fileSuffix}"
-    tag="currentTags"
-    gitTagFile="${tag}${fileSuffix}"
-    time="syncTime"
-    gitTimeFile="${time}${fileSuffix}"
-    commitDate="currentCommitDate"
-    gitCommitDateFile="${commitDate}${fileSuffix}"
-    commitDesc="currentCommitDescription"
-    gitCommitDescFile="${commitDesc}${fileSuffix}"
-    commitHash="currentCommitHash"
-    gitHashFile="${commitHash}${fileSuffix}"
-# Total output.
-    gitDetailedFile="${outputPrefix}_all${outputSuffix}"
+# Load Settings.
+scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source $scriptDir/settings.sh
 
-set -xe
+echo $gitHashFile
+echo $commitHash
+echo $gitUrlFile
+echo $gitDetailedFile
+exit 1
 
-# Directory to write files to.
-basePath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-if [ -d "/tmp" ]; then
-    basePath="/tmp"
-elif [ -d "/var/tmp" ]; then
-    basePath="/var/tmp"
-fi
+set -x
+
+# Cleanup from previous run.
+rm -rf "$workingDir"
+mkdir -p -v "$workingDir"
 
 # Generate list of all local git enlistments.
 # This searches an entire machine's directory tree so we only do this once.
-# todo4: optional param that forces the creation of a new "git directory list" file.
+# todo4: perf optimization param that persists this file.
 gitDirFilePath="$HOME/$gitDirFile"
 if [ ! -f $gitDirFilePath ]; then
     # Don't exit on error. A few directories can't be searched.
@@ -59,13 +39,6 @@ if [ ! -f $gitDirFilePath ]; then
     fi
 fi
 
-workingDir="${basePath}/${outputPrefix}"
-gitDetailedFilePath="$workingDir/$gitDetailedFile"
-
-# Cleanup from previous run. Doesn't remove $gitDirFile
-rm -rf "$workingDir"
-mkdir -p -v "$workingDir"
-
 append_delim()
 {
     # Remove any existing delimeters.
@@ -79,11 +52,11 @@ write_separated_values()
 {
     for val in "$@"; do
         withDelim=`append_delim "$val"`
-        printf "$withDelim" >> $gitDetailedFilePath
+        printf "$withDelim" >> $workingDir/$gitDetailedFile
     done
 
     # newline
-    echo >> $gitDetailedFilePath
+    echo >> $workingDir/$gitDetailedFile
 }
 
 get_branch()
@@ -238,7 +211,7 @@ done < $gitDirFilePath
 # This statement only makes sense with set -e
 echo
 echo "Finished with no errors!"
-echo "See $gitDetailedFilePath"
+echo "See $workingDir/$gitDetailedFile"
 echo
 wc ${gitDirFilePath}* #todo2
 echo
