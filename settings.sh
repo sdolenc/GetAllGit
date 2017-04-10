@@ -49,3 +49,4 @@ get_full_file_path()
     gitHashFile=`       get_full_file_path "${commitHash}"          "${fileSuffix}"`
 # Total output.
     gitDetailedFile=`   get_full_file_path "${outputPrefix}_all"    "${outputSuffix}"`
+    

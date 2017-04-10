@@ -8,36 +8,32 @@ set -e
 scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $scriptDir/settings.sh
 
-echo $gitHashFile
-echo $commitHash
-echo $gitUrlFile
-echo $gitDetailedFile
-exit 1
-
 set -x
 
-# Cleanup from previous run.
-rm -rf "$workingDir"
-mkdir -p -v "$workingDir"
+initialize()
+{
+    # Cleanup from previous run.
+    rm -rf "$workingDir"
+    mkdir -p -v "$workingDir"
 
-# Generate list of all local git enlistments.
-# This searches an entire machine's directory tree so we only do this once.
-# todo4: perf optimization param that persists this file.
-gitDirFilePath="$HOME/$gitDirFile"
-if [ ! -f $gitDirFilePath ]; then
-    # Don't exit on error. A few directories can't be searched.
-    set +e
-        #todo2: Pick one
-        find / -name \.git -type d > $gitDirFilePath
-        sudo find / -name \.git -type d > "${gitDirFilePath}.sudo${fileSuffix}"
-    set -e
+    # Generate list of all local git enlistments.
+    # This searches an machine's entire directory tree.
+    # todo: perf optimization param that persists this file.
+    if [ ! -f $gitDirFile ]; then
+        # Don't exit on error. A few directories can't be searched.
+        set +e
+            #todo:NOW Pick one
+            find / -name \.git -type d > $gitDirFile
+            sudo find / -name \.git -type d > "${gitDirFile}.sudo${fileSuffix}"
+        set -e
 
-    # We temporarily disabled "exit on error" so let's test for success before continuing.
-    if [ ! -f $gitDirFilePath ]; then
-        echo "failed to create file listing local git repository paths"
-        exit 1
+        # We temporarily disabled "exit on error" so let's test for success before continuing.
+        if [ ! -f $gitDirFile ]; then
+            echo "failed to create file listing local git repository paths"
+            exit 1
+        fi
     fi
-fi
+}
 
 append_delim()
 {
@@ -52,11 +48,11 @@ write_separated_values()
 {
     for val in "$@"; do
         withDelim=`append_delim "$val"`
-        printf "$withDelim" >> $workingDir/$gitDetailedFile
+        printf "$withDelim" >> $gitDetailedFile
     done
 
     # newline
-    echo >> $workingDir/$gitDetailedFile
+    echo >> $gitDetailedFile
 }
 
 get_branch()
@@ -92,7 +88,7 @@ get_branch()
 
 get_tag()
 {
-    prefix="tag:" #todo5: use, add a count, show header similar to branches
+    prefix="tag:" #todo: use, add a count, show header similar to branches
     # Get information, split into multiple lines, only keep values prefixed with 'tag:'
     tagInfo=`git log -g --decorate -1 | tr ',' '\n' | tr ')' '\n' | grep -o -i 'tag:.*'`
 
@@ -134,6 +130,7 @@ get_tag()
     echo "$tagInfo"
 }
 
+initialize
 
 # Write CSV header.
 # The first four columns are:
@@ -169,26 +166,26 @@ while read entry; do
     if [ -f .git/FETCH_HEAD ]; then
         syncTime=`stat -c %y .git/FETCH_HEAD`
     fi
-    echo "$syncTime" >> $workingDir/$gitTimeFile
+    echo "$syncTime" >> $gitTimeFile
 
     # Sanitize token from URL before writing to file.
     remote=`git config --get remote.origin.url | sed 's/\/\/.*@/\/\//g'`
-    echo "$remote" >> $workingDir/$gitUrlFile
+    echo "$remote" >> $gitUrlFile
 
     currentBranch=`get_branch`
-    echo "$currentBranch" >> $workingDir/$gitBranchFile
+    echo "$currentBranch" >> $gitBranchFile
 
     latestCommitHash=`git log --pretty=format:"%h" -1`
-    echo "$latestCommitHash" >> $workingDir/$gitHashFile
+    echo "$latestCommitHash" >> $gitHashFile
 
     currentTags=`get_tag $latestCommitHash`
-    echo "$currentTags" >> $workingDir/$gitTagFile
+    echo "$currentTags" >> $gitTagFile
 
     latestCommitDate=`git log --pretty=format:"%ai" -1`
-    echo "$latestCommitDate" >> $workingDir/$gitCommitDateFile
+    echo "$latestCommitDate" >> $gitCommitDateFile
 
     latestCommitDesc=`git log --pretty=format:"%s" -1`
-    echo "$latestCommitDesc" >> $workingDir/$gitCommitDescFile
+    echo "$latestCommitDesc" >> $gitCommitDescFile
 
     # Write CSV values.
     write_separated_values  "$HOSTNAME" \
@@ -205,14 +202,14 @@ while read entry; do
                             "${syncTime}"
 
     popd
-done < $gitDirFilePath
+done < $gitDirFile
 
-#todo3: verify all line counts are equal (except for branches, tags, and final csv file. Those can each have "in-cell" newlines)
+#todo: verify all line counts are equal (except for branches, tags, and final csv file. Those can each have "in-cell" newlines)
 
 # This statement only makes sense with set -e
 echo
 echo "Finished with no errors!"
-echo "See $workingDir/$gitDetailedFile"
+echo "See $gitDetailedFile"
 echo
-wc ${gitDirFilePath}* #todo2
+wc ${gitDirFile}* #todo:NOW
 echo
