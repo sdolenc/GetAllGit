@@ -21,33 +21,42 @@ import datetime
 import subprocess
 from pssh import ParallelSSHClient
 
-bashFileName = "getLocalGitInfo.sh" # todo1
-
-#todo:later move to script paramters
-isVerbose = True    # more console messages
-#todo:
-isDebug = True      # worse perf, but better for debugging.
-
-startTimes = dict() # key=uniqueStr, value=start.
-
-# Finds values between 0 and 999.
-threeNumbersRegex = "[0-9]{1,3}"
-scriptDir = os.path.dirname(os.path.realpath(__file__))
-destinationDir = "/tmp"
+#todo: move to script paramters
+isVerbose = False   # more console messages
+isDebug = True     # worse perf, but better for debugging.
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
+
+def log(header, message):
+    print
+    print(header)
+    print(message)
+    print
 
 # Less important messages.
 def verbose(header, message):
     if isVerbose:
         log(header, message)
 
-# Always log
-def log(header, message):
-    print
-    print(header)
-    print(message)
-    print
+def local_shell_wrapper(command):
+    verbose("local bash command:", command)
+
+    p = subprocess.Popen([command], stdout=subprocess.PIPE, shell=True)
+    out, err = p.communicate()
+
+    verbose("local bash results:", out)
+
+    # trim leading/trailing whitespace
+    return out.strip()
+
+def remote_shell_wrapper(sshClientObj, command):
+    output = sshClientObj.run_command(command, stop_on_errors=False, user=getpass.getuser())
+    debug_mode(sshClientObj)
+    return output
+
+# ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
+
+startTimes = dict() # key=uniqueStr, value=start.
 
 def start_clock(message):
     verbose("running \"{}\" operation".format(message), "...")
@@ -57,6 +66,11 @@ def stop_clock(message):
     totalSeconds = datetime.datetime.now() - startTimes.pop(message)
     log("operation \"{}\" took".format(message),
         "{} total seconds".format(totalSeconds))
+
+# ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
+
+# Finds values between 0 and 999.
+threeNumbersRegex = "[0-9]{1,3}"
 
 # Grabs first 3 octets (24 bits) of the current machine's ipv4 address.
 # Example result: 10.0.0.
@@ -76,33 +90,47 @@ def get_host_list(ipPrefix):
     # Make list object.
     return strHosts.splitlines()
 
-def local_shell_wrapper(command):
-    verbose("local bash command:", command)
-
-    p = subprocess.Popen([command], stdout=subprocess.PIPE, shell=True)
-    out, err = p.communicate()
-
-    verbose("local bash results:", out)
-
-    #todo:later error handling
-
-    # trim leading/trailing whitespace
-    return out.strip()
-
-def remote_shell_wrapper(sshClientObj, command):
-    # todo:later error handling
-    output = sshClientObj.run_command(command, stop_on_errors=False, user=getpass.getuser())
-    debug_mode(sshClientObj)
-    return output
-
-#todo: should take output and write to console if verbose.
-def debug_mode(sshClientObj):
-    if isDebug:
-        join_wrapper(sshClientObj)
+# ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
 # Blocks execution until all parallel operations complete (worse perf).
 def join_wrapper(sshClientObj):
     sshClientObj.pool.join(raise_error=True)
+
+def debug_mode(sshClientObj):
+    if isDebug:
+        join_wrapper(sshClientObj)
+        #todo: if verbose then write output to console.
+
+# ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
+
+timingNotification="parsing shared settings"
+
+start_clock(timingNotification)
+
+# Directory of this python file.
+scriptDir = os.path.dirname(os.path.realpath(__file__))
+
+# Ensure required bash files are also in this directory.
+bashFileName = "getLocalGitInfo.sh"
+settingsFileName = "settings.sh"
+localBashPath =     os.path.join(scriptDir, bashFileName)
+localSettingsPath = os.path.join(scriptDir, settingsFileName)
+if ((not os.path.isfile(localBashPath)) or (not os.path.isfile(localSettingsPath))):
+    log("ERROR: missing file(s)", "can't find {} and/or {}".format(localBashPath, localSettingsPath))
+    exit(1)
+
+# Source shared settings.
+settings = local_shell_wrapper("bash -c \"source {} && env | grep '=' | grep -v ';\|:'\"".format(localSettingsPath))
+for line in settings.splitlines():
+    (key, _, value) = line.partition("=")
+    os.environ[key] = value
+    verbose("key   " + key, "value " + value)
+
+# Set vairables
+remoteBashPath =     os.path.join(os.environ["parentPath"], bashFileName)
+remoteSettingsPath = os.path.join(os.environ["parentPath"], settingsFileName)
+
+stop_clock(timingNotification)
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
@@ -125,12 +153,11 @@ start_clock(timingNotification)
 # Create parallel SSH
 client = ParallelSSHClient(hosts)
 
-#todo1
-remoteScriptPath = os.path.join(destinationDir, bashFileName)
+# Cleanup from previous run by removing existing script file.
+remote_shell_wrapper(client, "rm -f " + remoteBashPath)
+remote_shell_wrapper(client, "rm -f " + remoteSettingsPath)
 
-#todo: test everything below this.
-# Remove any existing script file
-remote_shell_wrapper(client, "rm -f " + remoteScriptPath)
+exit(3) #todo:
 
 # Copy bash file to all machiens.
 client.copy_file(os.path.join(scriptDir, bashFileName), remoteScriptPath)

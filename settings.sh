@@ -2,14 +2,7 @@
 # Copyright (c) Microsoft Corporation. All Rights Reserved.
 # Licensed under the MIT license. See LICENSE file on the project webpage for details.
 
-fileSuffix=".txt"
-outputSuffix=".csv"
-delim=","
-
-# All output pathnames will have this variable.
-outputPrefix="gitInfo"
-
-get_working_dir()
+get_dir()
 {
     basePath="$HOME"
     if [ -d "/tmp" ]; then
@@ -18,16 +11,26 @@ get_working_dir()
         basePath="/var/tmp"
     fi
 
-    echo "${basePath}/${outputPrefix}"
+    echo "${basePath}"
 }
-
-# Directory to write files to.
-workingDir=`get_working_dir`
 
 get_full_file_path()
 {
     echo "$workingDir/${1}${2}"
 }
+
+set -a
+
+fileSuffix=".txt"
+outputSuffix=".csv"
+delim=","
+
+# All output pathnames will have this variable.
+outputPrefix="gitInfo"
+
+# Directory to write files to.
+parentPath=`get_dir`
+workingDir=$parentPath/${outputPrefix}
 
 # Generated first and becomes primary "input"
     dir="directory"
@@ -50,3 +53,4 @@ get_full_file_path()
 # Total output.
     gitDetailedFile=`   get_full_file_path "${outputPrefix}_all"    "${outputSuffix}"`
     
+set +a
