@@ -29,8 +29,8 @@ delim=","
 outputPrefix="gitInfo"
 
 # Directory to write files to.
-parentPath=`get_dir`
-workingDir=$parentPath/${outputPrefix}
+destination=`get_dir`
+workingDir=$destination/${outputPrefix}
 
 # Generated first and becomes primary "input"
     dir="directory"

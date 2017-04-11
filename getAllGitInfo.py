@@ -127,8 +127,8 @@ for line in settings.splitlines():
     verbose("key   " + key, "value " + value)
 
 # Set vairables
-remoteBashPath =     os.path.join(os.environ["parentPath"], bashFileName)
-remoteSettingsPath = os.path.join(os.environ["parentPath"], settingsFileName)
+remoteBashPath =     os.path.join(os.environ["destination"], bashFileName)
+remoteSettingsPath = os.path.join(os.environ["destination"], settingsFileName)
 
 stop_clock(timingNotification)
 
@@ -160,7 +160,8 @@ remote_shell_wrapper(client, "rm -f " + remoteSettingsPath)
 exit(3) #todo:
 
 # Copy bash file to all machiens.
-client.copy_file(os.path.join(scriptDir, bashFileName), remoteScriptPath)
+client.copy_file(localBashPath, remoteBashPath)
+client.copy_file(localSettingsPath, remoteSettingsPath)
 debug_mode(client)
 
 # Run script.
