@@ -23,7 +23,7 @@ from pssh import ParallelSSHClient
 
 #todo: move to script paramters
 isVerbose = False   # more console messages
-isDebug = True     # worse perf, but better for debugging.
+isDebug = False     # worse perf, but better for debugging.
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
@@ -51,8 +51,14 @@ def local_shell_wrapper(command):
 
 def remote_shell_wrapper(sshClientObj, command):
     output = sshClientObj.run_command(command, stop_on_errors=False, user=getpass.getuser())
-    debug_mode(sshClientObj)
+    # If debugging then wait for all parellel operations to complete
+    debug_mode(sshClientObj, output)
     return output
+
+def copy_to_remote(sshClientObj, localFile, remoteFile):
+    sshClientObj.copy_file(localFile, remoteFile)
+    # If debugging then wait for all parellel operations to complete
+    debug_mode(sshClientObj)
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
@@ -64,8 +70,8 @@ def start_clock(message):
 
 def stop_clock(message):
     totalSeconds = datetime.datetime.now() - startTimes.pop(message)
-    log("operation \"{}\" took".format(message),
-        "{} total seconds".format(totalSeconds))
+    log("operation: {}".format(message),
+        "took:      {} total seconds".format(totalSeconds))
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
@@ -93,13 +99,21 @@ def get_host_list(ipPrefix):
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
 # Blocks execution until all parallel operations complete (worse perf).
-def join_wrapper(sshClientObj):
+def join_wrapper(sshClientObj, output=None):
     sshClientObj.pool.join(raise_error=True)
+    if isVerbose and output:
+        for host in sshClientObj.hosts:
+            verbose("command on",
+                    "host " + str(host))
+            #verbose("", "regular output:")
+            #for line in output[host].stdout:
+            #    print(line)
+            for line in output[host].stderr:
+                verbose("error:", line)
 
-def debug_mode(sshClientObj):
+def debug_mode(sshClientObj, output=None):
     if isDebug:
-        join_wrapper(sshClientObj)
-        #todo: if verbose then write output to console.
+        join_wrapper(sshClientObj, output)
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
@@ -157,15 +171,19 @@ client = ParallelSSHClient(hosts)
 remote_shell_wrapper(client, "rm -f " + remoteBashPath)
 remote_shell_wrapper(client, "rm -f " + remoteSettingsPath)
 
-exit(3) #todo:
+# Wait for removals to complete.
+join_wrapper(client)
 
-# Copy bash file to all machiens.
-client.copy_file(localBashPath, remoteBashPath)
-client.copy_file(localSettingsPath, remoteSettingsPath)
-debug_mode(client)
+# Copy bash file to all machines.
+copy_to_remote(client, localBashPath, remoteBashPath)
+copy_to_remote(client, localSettingsPath, remoteSettingsPath)
 
 # Run script.
-output = remote_shell_wrapper(client, "bash " + remoteScriptPath)
+output = remote_shell_wrapper(client, "bash " + remoteBashPath)
+
+join_wrapper(client, output)
+stop_clock(timingNotification)
+exit(3) #todo:
 
 # Copy output files to central location. #todo1
 try:
@@ -183,19 +201,5 @@ except:
 
 join_wrapper(client)
 
-#todo: collect all outputs and move to move to debug function
-#pprint.pprint(output)
-#def debugger():
-#for host in output:
-def debugger2(host):
-    print(host)
-    print(output[host].cmd)
-    for line in output[host].stderr:
-        print(line)
-    for line in output[host].stdout:
-        print(line)
-#debugger2("10.0.0.4")
-
-stop_clock(timingNotification)
 
 #todo: merge and remove all, but one header

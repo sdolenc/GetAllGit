@@ -2,18 +2,6 @@
 # Copyright (c) Microsoft Corporation. All Rights Reserved.
 # Licensed under the MIT license. See LICENSE file on the project webpage for details.
 
-get_dir()
-{
-    basePath="$HOME"
-    if [ -d "/tmp" ]; then
-        basePath="/tmp"
-    elif [ -d "/var/tmp" ]; then
-        basePath="/var/tmp"
-    fi
-
-    echo "${basePath}"
-}
-
 get_full_file_path()
 {
     echo "$workingDir/${1}${2}"
@@ -29,7 +17,7 @@ delim=","
 outputPrefix="gitInfo"
 
 # Directory to write files to.
-destination=`get_dir`
+destination="/tmp"
 workingDir=$destination/${outputPrefix}
 
 # Generated first and becomes primary "input"
