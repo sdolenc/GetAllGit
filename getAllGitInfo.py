@@ -40,6 +40,7 @@ def log_verbose(header, message):
 def indent(anyString):
     return local_shell_quiet("printf \'{}\' | sed -e 's/^/  /'".format(anyString))
 
+# No logging.
 def local_shell_quiet(command):
     p = subprocess.Popen([command], stdout=subprocess.PIPE, shell=True)
     out, err = p.communicate()
@@ -75,7 +76,7 @@ def copy_to_remote(sshClientObj, localFile, remoteFile):
 
 def copy_from_remote(sshClientObj, remoteFile, destinationFilePrefix):
     log_verbose("copy from remote: " + remoteFile,
-                "to local:         " + destinationFilePrefix)
+                "to local:         {}_<host>".format(destinationFilePrefix))
 
     sshClientObj.copy_remote_file(remoteFile, destinationFilePrefix)
 
@@ -137,6 +138,12 @@ def debug_mode(sshClientObj, output=None):
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
+globalClock="all tasks"
+
+start_clock(globalClock)
+
+# ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
+
 timingNotification="get shared settings"
 
 start_clock(timingNotification)
@@ -145,8 +152,8 @@ start_clock(timingNotification)
 scriptDir = os.path.dirname(os.path.realpath(__file__))
 
 # Ensure required bash files are also in this directory.
-bashFileName = "getLocalGitInfo.sh"
-settingsFileName = "settings.sh"
+bashFileName =      "getLocalGitInfo.sh"
+settingsFileName =  "settings.sh"
 localBashPath =     os.path.join(scriptDir, bashFileName)
 localSettingsPath = os.path.join(scriptDir, settingsFileName)
 if ((not os.path.isfile(localBashPath)) or (not os.path.isfile(localSettingsPath))):
@@ -155,7 +162,7 @@ if ((not os.path.isfile(localBashPath)) or (not os.path.isfile(localSettingsPath
     exit(1)
 
 # Source shared settings.
-settings = local_shell_wrapper("bash -c \"source {} && env | grep = | grep -v :\"".format(localSettingsPath))
+settings = local_shell_wrapper('bash -c \"source {} && env | grep = | grep -v :\"'.format(localSettingsPath))
 for line in settings.splitlines():
     (key, _, value) = line.partition("=")
     os.environ[key] = value
@@ -211,12 +218,9 @@ timingNotification="aggregate results"
 start_clock(timingNotification)
 
 # Cleanup from previous run
-local_shell_wrapper("rm -rfv " + localAggregatePath)
+local_shell_wrapper("rm -rf " + localAggregatePath)
 
-
-#local_shell_wrapper("mkdir -p -v " + localAggregatePath)
-
-# Copy output files to central location. #todo: extensions
+# Copy output files to central location. This creates directory.
 copy_from_remote(client,
                  os.environ["gitDetailedFile"],
                  os.path.join(localAggregatePath, os.environ["gitAll"]))
@@ -224,7 +228,39 @@ copy_from_remote(client,
                  os.environ["gitDirFile"],
                  os.path.join(localAggregatePath, os.environ["dir"]))
 
-#todo: merge and remove all, but one header
-
 join_wrapper(client)
+
+log_verbose("appending extensions and creating merged csv file...", "")
+
+mergedCsvPath = os.path.join(localAggregatePath, os.environ["gitAll"] + os.environ["outputSuffix"])
+mergedCsv = open(mergedCsvPath, "wb")
+mergedHasHeader = False
+
+for fileName in os.listdir(localAggregatePath):
+    if "_" in fileName:
+        if os.environ["gitAll"] in fileName:
+            # Merge CSVs
+            sourceCsv = os.path.join(localAggregatePath, fileName)
+            readFrom = open(sourceCsv)
+            header = next(readFrom)
+            if not mergedHasHeader:
+                mergedCsv.write(header)
+                mergedHasHeader = True
+            for line in readFrom:
+                mergedCsv.write(line)
+            readFrom.close()
+
+            # Add csv extension.
+            os.rename(sourceCsv,
+                      os.path.join(localAggregatePath, fileName + os.environ["outputSuffix"]))
+        elif os.environ["dir"] in fileName:
+            # Add text extension.
+            os.rename(os.path.join(localAggregatePath, fileName),
+                      os.path.join(localAggregatePath, fileName + os.environ["fileSuffix"]))
+
+mergedCsv.close()
 stop_clock(timingNotification)
+
+# ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
+
+stop_clock(globalClock)
