@@ -22,23 +22,24 @@ workingDir=$destination/${outputPrefix}
 
 # Generated first and becomes primary "input"
     dir="directory"
-    gitDirFile=`        get_full_file_path "${outputPrefix}_${dir}" "${fileSuffix}"`
+    gitDirFile=`        get_full_file_path  "${outputPrefix}_${dir}"    "${fileSuffix}"`
 # Partial output (csv table columns)
     url="remoteUrl"
-    gitUrlFile=`        get_full_file_path "${url}"                 "${fileSuffix}"`
+    gitUrlFile=`        get_full_file_path  "${url}"                    "${fileSuffix}"`
     branch="currentBranch"
-    gitBranchFile=`     get_full_file_path "${branch}"              "${fileSuffix}"`
+    gitBranchFile=`     get_full_file_path  "${branch}"                 "${fileSuffix}"`
     tag="currentTags"
-    gitTagFile=`        get_full_file_path "${tag}"                 "${fileSuffix}"`
+    gitTagFile=`        get_full_file_path  "${tag}"                    "${fileSuffix}"`
     time="syncTime"
-    gitTimeFile=`       get_full_file_path "${time}"                "${fileSuffix}"`
+    gitTimeFile=`       get_full_file_path  "${time}"                   "${fileSuffix}"`
     commitDate="currentCommitDate"
-    gitCommitDateFile=` get_full_file_path "${commitDate}"          "${fileSuffix}"`
+    gitCommitDateFile=` get_full_file_path  "${commitDate}"             "${fileSuffix}"`
     commitDesc="currentCommitDescription"
-    gitCommitDescFile=` get_full_file_path "${commitDesc}"          "${fileSuffix}"`
+    gitCommitDescFile=` get_full_file_path  "${commitDesc}"             "${fileSuffix}"`
     commitHash="currentCommitHash"
-    gitHashFile=`       get_full_file_path "${commitHash}"          "${fileSuffix}"`
+    gitHashFile=`       get_full_file_path  "${commitHash}"             "${fileSuffix}"`
 # Total output.
-    gitDetailedFile=`   get_full_file_path "${outputPrefix}_all"    "${outputSuffix}"`
+    gitAll="all"
+    gitDetailedFile=`   get_full_file_path  "${outputPrefix}_${gitAll}" "${outputSuffix}"`
     
 set +a

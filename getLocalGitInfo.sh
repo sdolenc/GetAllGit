@@ -13,7 +13,7 @@ set -x
 initialize()
 {
     # Cleanup from previous run.
-    rm -rf "$workingDir"
+    rm -rfv "$workingDir"
     mkdir -p -v "$workingDir"
 
     # Generate list of all local git enlistments.
@@ -22,9 +22,7 @@ initialize()
     if [ ! -f $gitDirFile ]; then
         # Don't exit on error. A few directories can't be searched.
         set +e
-            #todo:NOW Pick one
             find / -name \.git -type d > $gitDirFile
-            sudo find / -name \.git -type d > "${gitDirFile}.sudo${fileSuffix}"
         set -e
 
         # We temporarily disabled "exit on error" so let's test for success before continuing.

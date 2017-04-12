@@ -15,15 +15,13 @@
 #todo:later "Consider" comments below are low-priority feature ideas.
 
 import os
-import pprint
 import getpass
 import datetime
 import subprocess
 from pssh import ParallelSSHClient
 
-#todo: move to script paramters
-isVerbose = False   # more console messages
-isDebug = False     # worse perf, but better for debugging.
+isVerbose = True    # more console messages
+isDebug = True      # worse perf, but better for debugging.
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
@@ -34,29 +32,53 @@ def log(header, message):
     print
 
 # Less important messages.
-def verbose(header, message):
+def log_verbose(header, message):
     if isVerbose:
-        log(header, message)
+        log(indent(header), indent(message))
 
-def local_shell_wrapper(command):
-    verbose("local bash command:", command)
+# Indent each line of a string
+def indent(anyString):
+    return local_shell_quiet("printf \'{}\' | sed -e 's/^/  /'".format(anyString))
 
+def local_shell_quiet(command):
     p = subprocess.Popen([command], stdout=subprocess.PIPE, shell=True)
     out, err = p.communicate()
+    return out
 
-    verbose("local bash results:", out)
+def local_shell_wrapper(command):
+    log_verbose("local bash command:", command)
 
-    # trim leading/trailing whitespace
-    return out.strip()
+    # Trim leading/trailing whitespace
+    out = local_shell_quiet(command).strip()
+
+    log_verbose("local bash results:", out)
+
+    return out
 
 def remote_shell_wrapper(sshClientObj, command):
+    log_verbose("remote bash command:", command)
+
     output = sshClientObj.run_command(command, stop_on_errors=False, user=getpass.getuser())
+
     # If debugging then wait for all parellel operations to complete
     debug_mode(sshClientObj, output)
     return output
 
 def copy_to_remote(sshClientObj, localFile, remoteFile):
+    log_verbose("copy:      " + localFile,
+                "to remote: " + remoteFile)
+
     sshClientObj.copy_file(localFile, remoteFile)
+
+    # If debugging then wait for all parellel operations to complete
+    debug_mode(sshClientObj)
+
+def copy_from_remote(sshClientObj, remoteFile, destinationFilePrefix):
+    log_verbose("copy from remote: " + remoteFile,
+                "to local:         " + destinationFilePrefix)
+
+    sshClientObj.copy_remote_file(remoteFile, destinationFilePrefix)
+
     # If debugging then wait for all parellel operations to complete
     debug_mode(sshClientObj)
 
@@ -65,13 +87,15 @@ def copy_to_remote(sshClientObj, localFile, remoteFile):
 startTimes = dict() # key=uniqueStr, value=start.
 
 def start_clock(message):
-    verbose("running \"{}\" operation".format(message), "...")
+    log("running \"{}\" operation...".format(message), "")
+
     startTimes[message] = datetime.datetime.now()
 
 def stop_clock(message):
     totalSeconds = datetime.datetime.now() - startTimes.pop(message)
-    log("operation: {}".format(message),
-        "took:      {} total seconds".format(totalSeconds))
+
+    log("operation: \"{}\" complete".format(message),
+        "took:      \"{}\" seconds".format(totalSeconds))
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
@@ -82,7 +106,7 @@ threeNumbersRegex = "[0-9]{1,3}"
 # Example result: 10.0.0.
 # Note: trailing period is included
 def get_local_ipv4_prefix():
-    return local_shell_wrapper("hostname -I | grep -oE '({}\.){}'".format(threeNumbersRegex, "{3}"))
+    return local_shell_wrapper('hostname -I | grep -oE \"({}\.){}\"'.format(threeNumbersRegex, "{3}"))
     #Consider: supporting ipv6
     #Consider: returning list if machine has multiple ipv4 addresses.
 
@@ -91,7 +115,7 @@ def get_local_ipv4_prefix():
 def get_host_list(ipPrefix):
     # Get string of hosts separated by newlines
     range = "1-255"
-    strHosts = local_shell_wrapper("nmap -sP {}{} | grep -oE '{}({})'".format(ipPrefix, range, ipPrefix, threeNumbersRegex))
+    strHosts = local_shell_wrapper('nmap -sP {}{} | grep -oE \"{}({})\"'.format(ipPrefix, range, ipPrefix, threeNumbersRegex))
 
     # Make list object.
     return strHosts.splitlines()
@@ -103,13 +127,9 @@ def join_wrapper(sshClientObj, output=None):
     sshClientObj.pool.join(raise_error=True)
     if isVerbose and output:
         for host in sshClientObj.hosts:
-            verbose("command on",
-                    "host " + str(host))
-            #verbose("", "regular output:")
-            #for line in output[host].stdout:
-            #    print(line)
             for line in output[host].stderr:
-                verbose("error:", line)
+                log_verbose(host + " error: ", line)
+            #fyi, regular output in output[host].stdout:
 
 def debug_mode(sshClientObj, output=None):
     if isDebug:
@@ -117,7 +137,7 @@ def debug_mode(sshClientObj, output=None):
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
-timingNotification="parsing shared settings"
+timingNotification="get shared settings"
 
 start_clock(timingNotification)
 
@@ -130,19 +150,22 @@ settingsFileName = "settings.sh"
 localBashPath =     os.path.join(scriptDir, bashFileName)
 localSettingsPath = os.path.join(scriptDir, settingsFileName)
 if ((not os.path.isfile(localBashPath)) or (not os.path.isfile(localSettingsPath))):
-    log("ERROR: missing file(s)", "can't find {} and/or {}".format(localBashPath, localSettingsPath))
+    log("ERROR: missing file(s)",
+        "can't find {} and/or {}".format(localBashPath, localSettingsPath))
     exit(1)
 
 # Source shared settings.
-settings = local_shell_wrapper("bash -c \"source {} && env | grep '=' | grep -v ';\|:'\"".format(localSettingsPath))
+settings = local_shell_wrapper("bash -c \"source {} && env | grep = | grep -v :\"".format(localSettingsPath))
 for line in settings.splitlines():
     (key, _, value) = line.partition("=")
     os.environ[key] = value
-    verbose("key   " + key, "value " + value)
+    #log_verbose("key:   " + key,
+    #            "value: " + value)
 
 # Set vairables
 remoteBashPath =     os.path.join(os.environ["destination"], bashFileName)
 remoteSettingsPath = os.path.join(os.environ["destination"], settingsFileName)
+localAggregatePath = os.path.join(os.environ["HOME"], os.environ["gitAll"])
 
 stop_clock(timingNotification)
 
@@ -156,23 +179,20 @@ ipPrefix = get_local_ipv4_prefix()
 
 hosts = get_host_list(ipPrefix)
 
+# Create parallel SSH
+client = ParallelSSHClient(hosts)
+
 stop_clock(timingNotification)
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
-timingNotification="copy/execute script on machines then aggregate results"
+timingNotification="copy/execute script on machines"
 
 start_clock(timingNotification)
-
-# Create parallel SSH
-client = ParallelSSHClient(hosts)
 
 # Cleanup from previous run by removing existing script file.
 remote_shell_wrapper(client, "rm -f " + remoteBashPath)
 remote_shell_wrapper(client, "rm -f " + remoteSettingsPath)
-
-# Wait for removals to complete.
-join_wrapper(client)
 
 # Copy bash file to all machines.
 copy_to_remote(client, localBashPath, remoteBashPath)
@@ -183,23 +203,28 @@ output = remote_shell_wrapper(client, "bash " + remoteBashPath)
 
 join_wrapper(client, output)
 stop_clock(timingNotification)
-exit(3) #todo:
 
-# Copy output files to central location. #todo1
-try:
-    client.copy_remote_file("/tmp/gitInfo/AllGitDetails_.csv", "/home/lexoxaadmin/all/AllGitDetails_.csv")
-except:
-    pass
-try:
-    client.copy_remote_file("/home/lexoxaadmin/gitInfo_directory.txt", "/home/lexoxaadmin/all/gitInfo_directory.txt")
-except:
-    pass
-try:
-    client.copy_remote_file("/home/lexoxaadmin/gitInfo_directory.txt.sudo.txt", "/home/lexoxaadmin/all/gitInfo_directory.txt.sudo.txt")
-except:
-    pass
+# ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
-join_wrapper(client)
+timingNotification="aggregate results"
 
+start_clock(timingNotification)
+
+# Cleanup from previous run
+local_shell_wrapper("rm -rfv " + localAggregatePath)
+
+
+#local_shell_wrapper("mkdir -p -v " + localAggregatePath)
+
+# Copy output files to central location. #todo: extensions
+copy_from_remote(client,
+                 os.environ["gitDetailedFile"],
+                 os.path.join(localAggregatePath, os.environ["gitAll"]))
+copy_from_remote(client,
+                 os.environ["gitDirFile"],
+                 os.path.join(localAggregatePath, os.environ["dir"]))
 
 #todo: merge and remove all, but one header
+
+join_wrapper(client)
+stop_clock(timingNotification)
