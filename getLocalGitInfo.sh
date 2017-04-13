@@ -65,7 +65,7 @@ get_branch()
         # remove redundant (like  "origin/HEAD -> origin/master")
         branchesWithThisCommit="`git branch --remote --contains | grep -v '>'`"
 
-        # Fromat string.
+        # Format string.
         if [[ ! -z "$branchesWithThisCommit" ]]; then
             # Add explanation if there are more than one branches.
             multipleBranchExplanation=""
