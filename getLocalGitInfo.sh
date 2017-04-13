@@ -2,67 +2,37 @@
 # Copyright (c) Microsoft Corporation. All Rights Reserved.
 # Licensed under the MIT license. See LICENSE file on the project webpage for details.
 
-fileSuffix=".txt"
-outputSuffix=".csv"
- # Shouldn't be ' ' (space) character.
-delim=","
+set -e
 
-# Generated first and becomes primary "input"
-    dir="directory"
-    gitDirFile="gitInfo_${dir}_${HOSTNAME}${fileSuffix}"
-# Partial output (csv table columns)
-    url="remoteUrl"
-    gitUrlFile="${url}${fileSuffix}"
-    branch="currentBranch"
-    gitBranchFile="${branch}${fileSuffix}"
-    tag="currentTags"
-    gitTagFile="${tag}${fileSuffix}"
-    time="syncTime"
-    gitTimeFile="${time}${fileSuffix}"
-    commitDate="currentCommitDate"
-    gitCommitDateFile="${commitDate}${fileSuffix}"
-    commitDesc="currentCommitDescription"
-    gitCommitDescFile="${commitDesc}${fileSuffix}"
-    commitHash="currentCommitHash"
-    gitHashFile="${commitHash}${fileSuffix}"
-# Total output.
-    gitDetailedFile="AllGitDetails_${HOSTNAME}${outputSuffix}"
+# Load Settings.
+scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source $scriptDir/settings.sh
 
-set -xe
+set -x
 
-# Directory to write files to.
-basePath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-if [ -d "/tmp" ]; then
-    basePath="/tmp"
-elif [ -d "/var/tmp" ]; then
-    basePath="/var/tmp"
-fi
+initialize()
+{
+    # Cleanup from previous run.
+    rm -rfv "$workingDir"
+    mkdir -p -v "$workingDir"
 
-# Generate list of all local git enlistments.
-# This searches an entire machine's directory tree so we only do this once.
-# todo4: optional param that forces the creation of a new "git directory list" file.
-gitDirFilePath="$HOME/$gitDirFile"
-if [ ! -f $gitDirFilePath ]; then
-    # Don't exit on error. A few directories can't be searched.
-    set +e
-        #todo2: Pick one
-        find / -name \.git -type d > $gitDirFilePath
-        sudo find / -name \.git -type d > "${gitDirFilePath}.sudo${fileSuffix}"
-    set -e
+    # Generate list of all local git enlistments.
+    # This searches an machine's entire directory tree.
+    # todo: (perf optimization) param that persists this file for next run.
+    if [ ! -f $gitDirFile ]; then
+        # Don't exit on error. A few directories can't be searched.
+        set +e
+            echo "This operation takes a few seconds..."
+            find / -name \.git -type d 2> /dev/null 1> $gitDirFile
+        set -e
 
-    # We temporarily disabled "exit on error" so let's test for success before continuing.
-    if [ ! -f $gitDirFilePath ]; then
-        echo "failed to create file listing local git repository paths"
-        exit 1
+        # We temporarily disabled "exit on error" so let's test for success before continuing.
+        if [ ! -f $gitDirFile ]; then
+            echo "failed to create file listing local git repository paths"
+            exit 1
+        fi
     fi
-fi
-
-workingDir="${basePath}/gitInfo_${HOSTNAME}"
-gitDetailedFilePath="$workingDir/$gitDetailedFile"
-
-# Cleanup from previous run. Doesn't remove $gitDirFile
-rm -rf "$workingDir"
-mkdir -p -v "$workingDir"
+}
 
 append_delim()
 {
@@ -77,11 +47,11 @@ write_separated_values()
 {
     for val in "$@"; do
         withDelim=`append_delim "$val"`
-        printf "$withDelim" >> $gitDetailedFilePath
+        printf "$withDelim" >> $gitDetailedFile
     done
 
     # newline
-    echo >> $gitDetailedFilePath
+    echo >> $gitDetailedFile
 }
 
 get_branch()
@@ -117,7 +87,7 @@ get_branch()
 
 get_tag()
 {
-    prefix="tag:" #todo5: use, add a count, show header similar to branches
+    prefix="tag:" #todo: add a count, show header (similar to branches)
     # Get information, split into multiple lines, only keep values prefixed with 'tag:'
     tagInfo=`git log -g --decorate -1 | tr ',' '\n' | tr ')' '\n' | grep -o -i 'tag:.*'`
 
@@ -159,11 +129,12 @@ get_tag()
     echo "$tagInfo"
 }
 
+initialize
 
 # Write CSV header.
 # The first four columns are:
 #   - somewhat static for a given machine so they're set outside of the loop.
-#   - more helpful when results from more than one machine are merged. see #todo4
+#   - more helpful when results from more than one machine are merged
 # The remaining columns are:
 #   - also represented in corresponding files in $workingDir .
 write_separated_values  "machine" \
@@ -174,10 +145,10 @@ write_separated_values  "machine" \
                         "$url" \
                         "$branch" \
                         "$tag" \
-                        "$time" \
                         "$commitDate" \
                         "$commitDesc" \
-                        "$commitHash"
+                        "$commitHash" \
+                        "$time (accuracy not guarenteed)"
 
 # Put all machine ip addresses on their own line.
 ip=`hostname -I | tr ' ' '\n'`
@@ -188,31 +159,32 @@ gitVer=`git --version | grep -o '[0-9].*'`
 while read entry; do
     pushd ${entry}/..
 
-    # Sanitize token from URL before writing to file.
-    remote=`git config --get remote.origin.url | sed 's/\/\/.*@/\/\//g'`
-    echo "$remote" >> $workingDir/$gitUrlFile
-
-    currentBranch=`get_branch`
-    echo "$currentBranch" >> $workingDir/$gitBranchFile
-
-    latestCommitHash=`git log --pretty=format:"%h" -1`
-    echo "$latestCommitHash" >> $workingDir/$gitHashFile
-
-    currentTags=`get_tag $latestCommitHash`
-    echo "$currentTags" >> $workingDir/$gitTagFile
-
     # FETCH_HEAD file's modified timestamp is changed everytime git pulls from remote server.
+    # We do this first in case one of the operation below happen to modify the timestamp.
     syncTime=""
     if [ -f .git/FETCH_HEAD ]; then
         syncTime=`stat -c %y .git/FETCH_HEAD`
     fi
-    echo "$syncTime" >> $workingDir/$gitTimeFile
+    echo "$syncTime" >> $gitTimeFile
+
+    # Sanitize token from URL before writing to file.
+    remote=`git config --get remote.origin.url | sed 's/\/\/.*@/\/\//g'`
+    echo "$remote" >> $gitUrlFile
+
+    currentBranch=`get_branch`
+    echo "$currentBranch" >> $gitBranchFile
+
+    latestCommitHash=`git log --pretty=format:"%h" -1`
+    echo "$latestCommitHash" >> $gitHashFile
+
+    currentTags=`get_tag $latestCommitHash`
+    echo "$currentTags" >> $gitTagFile
 
     latestCommitDate=`git log --pretty=format:"%ai" -1`
-    echo "$latestCommitDate" >> $workingDir/$gitCommitDateFile
+    echo "$latestCommitDate" >> $gitCommitDateFile
 
     latestCommitDesc=`git log --pretty=format:"%s" -1`
-    echo "$latestCommitDesc" >> $workingDir/$gitCommitDescFile
+    echo "$latestCommitDesc" >> $gitCommitDescFile
 
     # Write CSV values.
     write_separated_values  "$HOSTNAME" \
@@ -223,24 +195,20 @@ while read entry; do
                             "$remote" \
                             "$currentBranch" \
                             "$currentTags" \
-                            "${syncTime}" \
                             "$latestCommitDate" \
                             "$latestCommitDesc" \
-                            "$latestCommitHash"
+                            "$latestCommitHash" \
+                            "${syncTime}"
 
     popd
-done < $gitDirFilePath
+done < $gitDirFile
 
-#todo3: verify all line counts are equal (except for branches, tags, and final csv file. Those can each have "in-cell" newlines)
+#todo: verify all line counts are equal (except for branches, tags, and final csv file. Those can each have "in-cell" newlines)
 
 # This statement only makes sense with set -e
 echo
 echo "Finished with no errors!"
-echo "See $gitDetailedFilePath"
+echo "See $gitDetailedFile"
 echo
-wc ${gitDirFilePath}* #todo2
+wc ${gitDirFile}
 echo
-
-#todo1: make wrapper file for parallel execution
-#   input: list of scp and ssh hosts/arguments OR sibling nodes.
-#   output: merged csv document -> error line of 3 fails
