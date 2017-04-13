@@ -62,8 +62,8 @@ def remote_shell_wrapper(sshClientObj, command):
     return output
 
 def copy_to_remote(sshClientObj, localFile, remoteFile):
-    log_verbose("copy:      " + localFile,
-                "to remote: " + remoteFile)
+    log_verbose("copy local: " + localFile,
+                "to remote:  " + remoteFile)
 
     sshClientObj.copy_file(localFile, remoteFile)
 
@@ -85,12 +85,10 @@ startTimes = dict() # key=uniqueStr, value=start.
 
 def start_clock(message):
     log("running \"{}\" operation...".format(message), "")
-
     startTimes[message] = datetime.datetime.now()
 
 def stop_clock(message):
     totalSeconds = datetime.datetime.now() - startTimes.pop(message)
-
     log("operation: \"{}\" complete".format(message),
         "took:      \"{}\" seconds".format(totalSeconds))
 
@@ -120,7 +118,7 @@ def get_host_list(ipPrefix):
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
-# Blocks execution until all parallel operations complete (worse perf).
+# Blocks execution until all parallel operations complete.
 def join_wrapper(sshClientObj, output=None):
     sshClientObj.pool.join(raise_error=True)
     if isVerbose and output:
@@ -159,8 +157,10 @@ if ((not os.path.isfile(localBashPath)) or (not os.path.isfile(localSettingsPath
         "can't find {} and/or {}".format(localBashPath, localSettingsPath))
     exit(1)
 
-# Source shared settings.
+# Source shared settings, print bash environment variables, parse meaningful values
 settings = local_shell_wrapper('bash -c \"source {} && env | grep = | grep -v :\"'.format(localSettingsPath))
+
+# Capture environment variables for later use.
 for line in settings.splitlines():
     (key, _, value) = line.partition("=")
     os.environ[key] = value
