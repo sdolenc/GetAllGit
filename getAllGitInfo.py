@@ -134,13 +134,11 @@ def debug_mode(sshClientObj, output=None):
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
 globalClock="all tasks"
-
 start_clock(globalClock)
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
 timingNotification="get shared settings"
-
 start_clock(timingNotification)
 
 # Directory of this python file.
@@ -177,7 +175,6 @@ stop_clock(timingNotification)
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
 timingNotification="finding hosts"
-
 start_clock(timingNotification)
 
 ipPrefix = get_local_ipv4_prefix()
@@ -192,7 +189,6 @@ stop_clock(timingNotification)
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
 timingNotification="copy/execute script on machines"
-
 start_clock(timingNotification)
 
 # Cleanup from previous run by removing existing script file.
@@ -212,7 +208,6 @@ stop_clock(timingNotification)
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
 timingNotification="aggregate results"
-
 start_clock(timingNotification)
 
 # Cleanup from previous run
