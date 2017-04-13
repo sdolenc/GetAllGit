@@ -256,4 +256,5 @@ stop_clock(timingNotification)
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
+log("aggregated resuls can be found in:", mergedCsvPath)
 stop_clock(globalClock)

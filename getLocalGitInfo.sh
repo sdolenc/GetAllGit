@@ -8,7 +8,7 @@ set -e
 scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $scriptDir/settings.sh
 
-set -x
+set -x # optional
 
 initialize()
 {
@@ -209,6 +209,4 @@ done < $gitDirFile
 echo
 echo "Finished with no errors!"
 echo "See $gitDetailedFile"
-echo
-wc ${gitDirFile}
 echo
