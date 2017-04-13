@@ -3,16 +3,12 @@
 # Licensed under the MIT license. See LICENSE file on the project webpage for details.
 
 #PRE-REQUISITES:
-#   - nmap already installed #todo:later maybe install nmap within this script?
 #   - pip install -r requirements.txt
 #   - all machines in the same 24bit ip address neighborhood have
 #       a) ssh installed
 #       b) the ssh credentials enabled for connections (with ssh-add, etc)
 #           in other words, the machine running this script should be able
 #           to "ssh <ipOtherMachine>"
-#       c) have same username as current logged in getpass.getuser() #todo:needed?
-
-#todo:later "Consider" comments below are low-priority feature ideas.
 
 import os
 import getpass
@@ -40,7 +36,7 @@ def log_verbose(header, message):
 def indent(anyString):
     return local_shell_quiet("printf \'{}\' | sed -e 's/^/  /'".format(anyString))
 
-# No logging.
+# No logging. Helper function.
 def local_shell_quiet(command):
     p = subprocess.Popen([command], stdout=subprocess.PIPE, shell=True)
     out, err = p.communicate()
@@ -107,13 +103,14 @@ threeNumbersRegex = "[0-9]{1,3}"
 # Example result: 10.0.0.
 # Note: trailing period is included
 def get_local_ipv4_prefix():
-    return local_shell_wrapper('hostname -I | grep -oE \"({}\.){}\"'.format(threeNumbersRegex, "{3}"))
-    #Consider: supporting ipv6
-    #Consider: returning list if machine has multiple ipv4 addresses.
+    return local_shell_wrapper('hostname -I | grep -oE \"({}\.){}\" | head -1'.format(threeNumbersRegex, "{3}"))
 
 # Looks for nearby hosts in /24 ipv4 neighborhood (the
 # 255 addresses contained in the last ip octet).
 def get_host_list(ipPrefix):
+    # Ensure nmap is available.
+    local_shell_wrapper('sudo apt-get install nmap -y --fix-missing')
+
     # Get string of hosts separated by newlines
     range = "1-255"
     strHosts = local_shell_wrapper('nmap -sP {}{} | grep -oE \"{}({})\"'.format(ipPrefix, range, ipPrefix, threeNumbersRegex))
@@ -151,11 +148,12 @@ start_clock(timingNotification)
 # Directory of this python file.
 scriptDir = os.path.dirname(os.path.realpath(__file__))
 
-# Ensure required bash files are also in this directory.
 bashFileName =      "getLocalGitInfo.sh"
 settingsFileName =  "settings.sh"
 localBashPath =     os.path.join(scriptDir, bashFileName)
 localSettingsPath = os.path.join(scriptDir, settingsFileName)
+
+# Ensure required bash files exist.
 if ((not os.path.isfile(localBashPath)) or (not os.path.isfile(localSettingsPath))):
     log("ERROR: missing file(s)",
         "can't find {} and/or {}".format(localBashPath, localSettingsPath))

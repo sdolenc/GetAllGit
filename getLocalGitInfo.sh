@@ -18,11 +18,12 @@ initialize()
 
     # Generate list of all local git enlistments.
     # This searches an machine's entire directory tree.
-    # todo: perf optimization param that persists this file.
+    # todo: (perf optimization) param that persists this file for next run.
     if [ ! -f $gitDirFile ]; then
         # Don't exit on error. A few directories can't be searched.
         set +e
-            find / -name \.git -type d > $gitDirFile
+            echo "This operation takes a few seconds..."
+            find / -name \.git -type d 2> /dev/null 1> $gitDirFile
         set -e
 
         # We temporarily disabled "exit on error" so let's test for success before continuing.
@@ -86,7 +87,7 @@ get_branch()
 
 get_tag()
 {
-    prefix="tag:" #todo: use, add a count, show header similar to branches
+    prefix="tag:" #todo: add a count, show header (similar to branches)
     # Get information, split into multiple lines, only keep values prefixed with 'tag:'
     tagInfo=`git log -g --decorate -1 | tr ',' '\n' | tr ')' '\n' | grep -o -i 'tag:.*'`
 
@@ -209,5 +210,5 @@ echo
 echo "Finished with no errors!"
 echo "See $gitDetailedFile"
 echo
-wc ${gitDirFile}* #todo:NOW
+wc ${gitDirFile}
 echo
