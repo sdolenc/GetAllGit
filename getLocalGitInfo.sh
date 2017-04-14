@@ -125,7 +125,7 @@ get_tag()
             # For old versions of git (like 1.7.9.5)
             if [ -z $nextTag ]; then
                 # Uses commit hash to get label then parse tag.
-                nextTag=`git rev-parse HEAD | git name-rev --stdin | grep -o 'tags/.*)' | sed 's/tags\///g' | tr ')' ' '`
+                nextTag=`git rev-parse HEAD | git name-rev --stdin --tags | grep -o 'tags/.*)' | sed 's/tags\///g' | tr ')' ' '`
             fi
         set -e
 
@@ -188,6 +188,14 @@ while read entry; do
     # Sanitize token from URL before writing to file.
     remote=`git config --get remote.origin.url | sed 's/\/\/.*@/\/\//g'`
     echo "$remote" >> $gitUrlFile
+
+    # Get latest upstream information. This won't sync or merge any code.
+    # - before retriving branch and tag information.
+    # - after recording syncTime (as this updateds FETCH_HEAD's timestamp)
+    # We allow for failure in case network connectivity or trouble elevating.
+    set +e
+    sudo git fetch
+    set -e
 
     currentBranch=`get_branch`
     echo "$currentBranch" >> $gitBranchFile
