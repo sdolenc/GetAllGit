@@ -54,32 +54,41 @@ write_separated_values()
     echo >> $gitDetailedFile
 }
 
+format_list()
+{
+    list="$1"
+    message="$2"
+
+    # Format string.
+    if [[ ! -z "$list" ]]; then
+        # Add explanation if there are more than one branches.
+        count=`echo -e "$list" | wc -l`
+        if (( $count > "1" )); then
+            # Prefix message with list size.
+            message="$count $message"
+            list="${message}:\n${list}"
+        else
+            # Remove indentation for single branch.
+            list=`echo $list | tr -d ' '`
+        fi
+    fi
+
+    echo "$list"
+}
+
 get_branch()
 {
+    prefix='* '
+
     # Current branch is prefixed with an asterisk. Remove it.
-    branchInfo=`git branch | grep '\*' | sed 's/* //g'`
+    branchInfo=`git branch | grep "$prefix" | sed "s/$prefix//g"`
 
     # Ensure branch information is useful.
     if [ -z "$branchInfo" ] || [[ $branchInfo == *"no branch"* ]] || [[ $branchInfo == *"detached"* ]]; then
-        # Get list of branches that share the current commit and
-        # remove redundant (like  "origin/HEAD -> origin/master")
-        branchesWithThisCommit="`git branch --remote --contains | grep -v '>'`"
+        # Get list of branches that share the current commit, remove redundant (like  "origin/HEAD -> origin/master")
+        branchInfo="`git branch --remote --contains | grep -v '>' | sed 's/origin\///g'`"
 
-        # Format string.
-        if [[ ! -z "$branchesWithThisCommit" ]]; then
-            # Add explanation if there are more than one branches.
-            multipleBranchExplanation=""
-            branchCount=`echo "$branchesWithThisCommit" | wc -l`
-            if (( $branchCount > "1" )); then
-                # Prefix message for more than one branches.
-                multipleBranchExplanation="$branchCount branches contain current commit:\n"
-            else
-                # Remove indentation for single branch.
-                branchesWithThisCommit=`echo $branchesWithThisCommit | sed 's/  //g'`
-            fi
-
-            branchInfo="${multipleBranchExplanation}${branchesWithThisCommit}"
-        fi
+        branchInfo=`format_list "$branchInfo" "branches contain current commit"`
     fi
 
     echo "$branchInfo"
@@ -87,21 +96,31 @@ get_branch()
 
 get_tag()
 {
-    prefix="tag:" #todo: add a count, show header (similar to branches)
-    # Get information, split into multiple lines, only keep values prefixed with 'tag:'
-    tagInfo=`git log -g --decorate -1 | tr ',' '\n' | tr ')' '\n' | grep -o -i 'tag:.*'`
+    prefix="tag: "
 
-    #If no explicitly created tags, then look for implicit tagging information.
+    # First see if there are named tag(s) for the current commit.
+    # Allow errors. This syntax isn't supported on old versions of git (like 1.7.9.5)
+    set +e
+    tagInfo=`git tag -l --points-at HEAD 2> /dev/null | sed -e 's/^/  /'`
+    set -e
+
+    # For old versions of git (like 1.7.9.5)
+    if [ -z $tagInfo ]; then
+        # Get information, split into multiple lines, only keep values prefixed with 'tag:', remove prefix
+        tagInfo=`git log -g --decorate -1 | tr ',' '\n' | tr ')' '\n' | grep -o -i "${prefix}.*" | sed "s/${prefix}/  /g"`
+    fi
+
+    # If no explicitly created tags, then look for implicit tagging information.
     if [ -z "$tagInfo" ]; then
         # Don't exit on error. There won't always be implicit tag information.
         set +e
             # Implicit tag created by a commit after a tag
             # Format: <prevTag>-<commitHash>
-            autoTag=`git describe --tags`
+            autoTag=`git describe --tags 2> /dev/null`
 
             # Implicit tag created by a commit that happens before a tag.
             # Format: <nextTag>~<numberOfCommitsUntilNextTag>
-            nextTag=`git describe --contains`
+            nextTag=`git describe --contains 2> /dev/null`
 
             # For old versions of git (like 1.7.9.5)
             if [ -z $nextTag ]; then
@@ -111,20 +130,19 @@ get_tag()
         set -e
 
         # We temporarily disabled "exit on error" so let's test the results before using them.
-        # Format string.
         if [ ! -z $autoTag ]; then
-            tagInfo="tag: $autoTag \n (note: $1 is current commit's short hash)"
+            tagInfo="  $autoTag"
         fi
         if [ ! -z $autoTag ] && [ ! -z $nextTag ]; then
             # Separate with newline if both automatic tags are available.
             tagInfo="${tagInfo}\n"
         fi
         if [ ! -z $nextTag ]; then
-            commitCount=`echo $nextTag | grep -o '~.*' | tr '~' ' '`
-            shortNextTag=`echo $nextTag | grep -o '.*~' | tr '~' ' '`
-            tagInfo="${tagInfo}tag: $nextTag \n (note:$commitCount commits after current state until tag $shortNextTag)"
+            tagInfo="${tagInfo}  $nextTag"
         fi
     fi
+
+    tagInfo=`format_list "$tagInfo" "tags point to current commit"`
 
     echo "$tagInfo"
 }
@@ -174,10 +192,7 @@ while read entry; do
     currentBranch=`get_branch`
     echo "$currentBranch" >> $gitBranchFile
 
-    latestCommitHash=`git log --pretty=format:"%h" -1`
-    echo "$latestCommitHash" >> $gitHashFile
-
-    currentTags=`get_tag $latestCommitHash`
+    currentTags=`get_tag`
     echo "$currentTags" >> $gitTagFile
 
     latestCommitDate=`git log --pretty=format:"%ai" -1`
@@ -185,6 +200,10 @@ while read entry; do
 
     latestCommitDesc=`git log --pretty=format:"%s" -1`
     echo "$latestCommitDesc" >> $gitCommitDescFile
+
+    # Short hash
+    latestCommitHash=`git log --pretty=format:"%h" -1`
+    echo "$latestCommitHash" >> $gitHashFile
 
     # Write CSV values.
     write_separated_values  "$HOSTNAME" \
@@ -202,8 +221,6 @@ while read entry; do
 
     popd
 done < $gitDirFile
-
-#todo: verify all line counts are equal (except for branches, tags, and final csv file. Those can each have "in-cell" newlines)
 
 # This statement only makes sense with set -e
 echo
