@@ -25,8 +25,9 @@ source_settings()
 class Summarized:
     'Consolidated git details'
 
-    def __init__(self):
+    def __init__(self, mainKey):
         self.todoNameMe = dict()
+        self.primaryKey = mainKey
 
     def add(self, collection):
         self.todoNameMe["a"] = 1
@@ -37,8 +38,10 @@ class RepoLocation:
         self.name = hostName
         self.dir = path
 
+Summaraized(os.environ["url"])
 csvFile = open(csvFilePath)
 data = csv.DictReader(csvFile)
 for row in data:
-    print(row)
+    #print(row)
+    print(os.environ["commitHash"])
 csvFile.close()

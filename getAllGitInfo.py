@@ -15,7 +15,7 @@ import getpass
 from pssh import ParallelSSHClient
 import sourceSettings
 
-isDebug = True      # worse perf, but better for debugging.
+isDebug = True
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
