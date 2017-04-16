@@ -15,13 +15,12 @@ def source_settings():
 
     bashFileName =      "getLocalGitInfo.sh"
     settingsFileName =  "settings.sh"
-    localBashPath =     os.path.join(scriptDir, bashFileName)
     localSettingsPath = os.path.join(scriptDir, settingsFileName)
 
     # Ensure required bash files exist.
-    if ((not os.path.isfile(localBashPath)) or (not os.path.isfile(localSettingsPath))):
-        log("ERROR: missing file(s)",
-            "can't find {} and/or {}".format(localBashPath, localSettingsPath))
+    if (not os.path.isfile(localSettingsPath)):
+        log("ERROR: missing files",
+            "can't find {}".format(localSettingsPath))
         exit(1)
 
     # Source shared settings, print bash environment variables, parse meaningful values

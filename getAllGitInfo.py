@@ -119,6 +119,8 @@ remote_shell_wrapper(client, "rm -f " + remoteBashPath)
 remote_shell_wrapper(client, "rm -f " + remoteSettingsPath)
 
 # Copy bash file to all machines.
+#todo: everything about this.
+localBashPath = os.path.join(scriptDir, bashFileName)
 copy_to_remote(client, localBashPath, remoteBashPath)
 copy_to_remote(client, localSettingsPath, remoteSettingsPath)
 

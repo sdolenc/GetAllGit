@@ -6,7 +6,7 @@ import os
 import sys
 import csv
 #import pandas
-from sourceSettings import source_settings
+from helpers.sourceSettings import source_settings
 
 # Expects directory as an argument.
 # todo: consider using getopt or argparse
