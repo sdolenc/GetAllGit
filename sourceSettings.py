@@ -2,6 +2,10 @@
 # Copyright (c) Microsoft Corporation. All Rights Reserved.
 # Licensed under the MIT license. See LICENSE file on the project webpage for details.
 
+import os
+from terminal import local_shell_wrapper
+from timeTracker import *
+
 def source_settings():
     timingNotification="get shared settings"
     start_clock(timingNotification)

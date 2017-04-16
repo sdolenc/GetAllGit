@@ -6,7 +6,7 @@ import os
 import sys
 import csv
 #import pandas
-import sourceSettings
+from sourceSettings import source_settings
 
 # Expects directory as an argument.
 # todo: consider using getopt or argparse
@@ -19,6 +19,23 @@ csvFilePath = "/home/localstepdo/Desktop/shared/devEnvExample2.csv"
 if (not os.path.isfile(csvFilePath)):
     print("Path {} is not a file".format(csvFilePath))
     exit(5)
+
+source_settings()
+
+class Summarized:
+    'Consolidated git details'
+
+    def __init__(self):
+        self.todoNameMe = dict()
+
+    def add(self, collection):
+        self.todoNameMe["a"] = 1
+
+class RepoLocation:
+    def __init__(self, ipAddress, hostName, path):
+        self.ip = ipAddress
+        self.name = hostName
+        self.dir = path
 
 csvFile = open(csvFilePath)
 data = csv.DictReader(csvFile)

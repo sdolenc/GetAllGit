@@ -12,45 +12,12 @@
 
 import os
 import getpass
-import datetime
-import subprocess
 from pssh import ParallelSSHClient
 import sourceSettings
 
-isVerbose = True    # more console messages
 isDebug = True      # worse perf, but better for debugging.
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
-
-def log(header, message):
-    print(header)
-    print(message)
-    print
-
-# Less important messages.
-def log_verbose(header, message):
-    if isVerbose:
-        log(indent(header), indent(message))
-
-# Indent each line of a string
-def indent(anyString):
-    return local_shell_quiet("printf \'{}\' | sed -e 's/^/  /'".format(anyString))
-
-# No logging. Helper function.
-def local_shell_quiet(command):
-    p = subprocess.Popen([command], stdout=subprocess.PIPE, shell=True)
-    out, err = p.communicate()
-    return out
-
-def local_shell_wrapper(command):
-    log_verbose("local bash command:", command)
-
-    # Trim leading/trailing whitespace
-    out = local_shell_quiet(command).strip()
-
-    log_verbose("local bash results:", out)
-
-    return out
 
 def remote_shell_wrapper(sshClientObj, command):
     log_verbose("remote bash command:", command)
@@ -78,20 +45,6 @@ def copy_from_remote(sshClientObj, remoteFile, destinationFilePrefix):
 
     # If debugging then wait for all parellel operations to complete
     debug_mode(sshClientObj)
-
-# ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
-
-# todo: move to helper folder.
-startTimes = dict() # key=uniqueStr, value=start.
-
-def start_clock(message):
-    log("running \"{}\" operation...".format(message), "")
-    startTimes[message] = datetime.datetime.now()
-
-def stop_clock(message):
-    totalSeconds = datetime.datetime.now() - startTimes.pop(message)
-    log("operation: \"{}\" complete".format(message),
-        "took:      \"{}\" seconds".format(totalSeconds))
 
 # ---- # # ---- # # ---- # # ---- # # ---- # # ---- # 
 
