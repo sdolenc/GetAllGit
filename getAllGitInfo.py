@@ -115,17 +115,15 @@ timingNotification="copy/execute script on machines"
 start_clock(timingNotification)
 
 # Cleanup from previous run by removing existing script file.
-remote_shell_wrapper(client, "rm -f " + remoteBashPath)
-remote_shell_wrapper(client, "rm -f " + remoteSettingsPath)
+remote_shell_wrapper(client, "rm -f " + os.environ["remoteBashPath"])
+remote_shell_wrapper(client, "rm -f " + os.environ["remoteSettingsPath"])
 
 # Copy bash file to all machines.
-#todo: everything about this.
-localBashPath = os.path.join(scriptDir, bashFileName)
-copy_to_remote(client, localBashPath, remoteBashPath)
-copy_to_remote(client, localSettingsPath, remoteSettingsPath)
+copy_to_remote(client, os.environ["localBashPath"],     os.environ["remoteBashPath"])
+copy_to_remote(client, os.environ["localSettingsPath"], os.environ["remoteSettingsPath"])
 
 # Run script.
-output = remote_shell_wrapper(client, "bash " + remoteBashPath)
+output = remote_shell_wrapper(client, "bash " + os.environ["remoteBashPath"])
 
 join_wrapper(client, output)
 stop_clock(timingNotification)
@@ -134,6 +132,7 @@ stop_clock(timingNotification)
 
 timingNotification="aggregate results"
 start_clock(timingNotification)
+localAggregatePath = os.path.join(os.environ["HOME"], os.environ["gitAll"])
 
 # Cleanup from previous run
 local_shell_wrapper("rm -rf " + localAggregatePath)

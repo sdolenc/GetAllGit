@@ -5,43 +5,73 @@
 import os
 import sys
 import csv
-#import pandas
+import json
 from helpers.sourceSettings import source_settings
 
 # Expects directory as an argument.
-# todo: consider using getopt or argparse
 if (len(sys.argv) != 2):
     print("Path Expected")
     exit(3)
-csvFilePath = "/home/localstepdo/Desktop/shared/devEnvExample2.csv"
-# "C:\\Users\\stepdo\\Desktop\\files\\devEnvExample2.csv" # sys.argv[1] #todo:
+csvFilePath = "/home/localstepdo/Desktop/shared/stampExample2.csv" # sys.argv[1] #todo:
 
 if (not os.path.isfile(csvFilePath)):
     print("Path {} is not a file".format(csvFilePath))
     exit(5)
 
 source_settings()
+urlKey = os.environ["url"]
+hashKey = os.environ["commitHash"]
+repoAndMachineKeys = os.environ["repoOnMachine"].split(",")
 
 class Summarized:
     'Consolidated git details'
 
-    def __init__(self, mainKey):
-        self.todoNameMe = dict()
-        self.primaryKey = mainKey
+    def __init__(self):
+        self.infoForRemoteGitUrl = dict()
 
     def add(self, collection):
-        self.todoNameMe["a"] = 1
+        # Key based on remote Git Url
+        remoteUrl = collection.pop(urlKey)
+        if (self.infoForRemoteGitUrl.get(remoteUrl) == None):
+            self.infoForRemoteGitUrl[remoteUrl] = dict()
 
-class RepoLocation:
-    def __init__(self, ipAddress, hostName, path):
-        self.ip = ipAddress
-        self.name = hostName
-        self.dir = path
+        # Key based on current commit hash
+        commitHash = collection.pop(hashKey)
+        if (self.infoForRemoteGitUrl.get(remoteUrl).get(commitHash) == None):
+            self.infoForRemoteGitUrl.get(remoteUrl)[commitHash] = RepoDetails()
 
-Summaraized(os.environ["url"])
+        # Write the remaining values.
+        self.infoForRemoteGitUrl.get(remoteUrl).get(commitHash).add(collection)
+
+class RepoDetails:
+    def __init__(self):
+        self.repoLocation = list()
+        self.repoCurrentCode = None
+
+    def add(self, collection):
+        # Always add file system details and machine information for a given repo.
+        newRepoLocation = { repoKey: collection.pop(repoKey) for repoKey in repoAndMachineKeys }
+        self.repoLocation.append(newRepoLocation)
+
+        # Only collect state of repo once because
+        # we've already keyed on a) remote repo and then b) commit hash.
+        # Therefore, these remaining values will be static for any repo.
+        if (self.repoCurrentCode == None):
+            # We've already been removing the values we don't want (via pop)
+            self.repoCurrentCode = collection
+
+
+condensed = Summarized()
 csvFile = open(csvFilePath)
 data = csv.DictReader(csvFile)
 for row in data:
-    #print(row)
-    print(os.environ["commitHash"])
+    row.pop("")
+    condensed.add(row)
 csvFile.close()
+
+# todo: location
+summaryFilePath = os.path.join(os.environ["scriptDir"], "summarized.json")
+summaryFile = open(summaryFilePath, "wb")
+summary = json.dumps(condensed, default=lambda o: o.__dict__)
+summaryFile.write(summary)
+summaryFile.close()

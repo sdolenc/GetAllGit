@@ -153,12 +153,13 @@ initialize
 # The first four columns are:
 #   - somewhat static for a given machine so they're set outside of the loop.
 #   - more helpful when results from more than one machine are merged
+#       todo:get list of python versions installed.
 # The remaining columns are:
 #   - also represented in corresponding files in $workingDir .
-write_separated_values  "machine" \
-                        "ipAdresses" \
-                        "osVer" \
-                        "gitVer" \
+write_separated_values  "$machine" \
+                        "$ipAdresses" \
+                        "$osVersion" \
+                        "$gitVersion" \
                         "$dir" \
                         "$url" \
                         "$branch" \
@@ -166,7 +167,7 @@ write_separated_values  "machine" \
                         "$commitDate" \
                         "$commitDesc" \
                         "$commitHash" \
-                        "$time (accuracy not guarenteed)"
+                        "$time"
 
 # Put all machine ip addresses on their own line.
 ip=`hostname -I | tr ' ' '\n'`

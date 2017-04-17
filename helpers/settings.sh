@@ -23,14 +23,14 @@ workingDir=$destination/${outputPrefix}
 # Generated first and becomes primary "input"
     dir="directory"
     gitDirFile=`        get_full_file_path  "${outputPrefix}_${dir}"    "${fileSuffix}"`
-# Partial output (csv table columns)
+# Partial output (csv table columns) and written to additional file.
     url="remoteUrl"
     gitUrlFile=`        get_full_file_path  "${url}"                    "${fileSuffix}"`
     branch="currentBranch"
     gitBranchFile=`     get_full_file_path  "${branch}"                 "${fileSuffix}"`
     tag="currentTags"
     gitTagFile=`        get_full_file_path  "${tag}"                    "${fileSuffix}"`
-    time="syncTime"
+    time="syncTime (accuracy not guarenteed)"
     gitTimeFile=`       get_full_file_path  "${time}"                   "${fileSuffix}"`
     commitDate="currentCommitDate"
     gitCommitDateFile=` get_full_file_path  "${commitDate}"             "${fileSuffix}"`
@@ -41,5 +41,16 @@ workingDir=$destination/${outputPrefix}
 # Total output.
     gitAll="all"
     gitDetailedFile=`   get_full_file_path  "${outputPrefix}_${gitAll}" "${outputSuffix}"`
-    
+# Partial output (more csv table columns), but only written to "total output"
+    machine="machine"
+    ipAdresses="ipAdresses"
+    osVersion="osVer"
+    gitVersion="gitVer"
+#$dir
+#$time
+
+# These are the details regarding the actual repo on the machine itself.
+# The other values describe the state of the code within the repo.
+repoOnMachine="$machine,$ipAdresses,$osVersion,$gitVersion,$dir,$time"
+
 set +a

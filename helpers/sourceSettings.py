@@ -11,20 +11,21 @@ def source_settings():
     start_clock(timingNotification)
 
     # Directory of this python file.
-    scriptDir = os.path.dirname(os.path.realpath(__file__))
+    os.environ["scriptDir"] = os.path.dirname(os.path.realpath(__file__))
 
     bashFileName =      "getLocalGitInfo.sh"
     settingsFileName =  "settings.sh"
-    localSettingsPath = os.path.join(scriptDir, settingsFileName)
+    os.environ["localBashPath"] =     os.path.join(os.environ["scriptDir"], bashFileName)
+    os.environ["localSettingsPath"] = os.path.join(os.environ["scriptDir"], settingsFileName)
 
     # Ensure required bash files exist.
-    if (not os.path.isfile(localSettingsPath)):
+    if (not os.path.isfile(os.environ["localSettingsPath"])):
         log("ERROR: missing files",
-            "can't find {}".format(localSettingsPath))
+            "can't find {}".format(os.environ["localSettingsPath"]))
         exit(1)
 
     # Source shared settings, print bash environment variables, parse meaningful values
-    settings = local_shell_wrapper('bash -c \"source {} && env | grep = | grep -v :\"'.format(localSettingsPath))
+    settings = local_shell_wrapper('bash -c \"source {} && env | grep = | grep -v :\"'.format(os.environ["localSettingsPath"]))
 
     # Capture environment variables for later use.
     for line in settings.splitlines():
@@ -34,8 +35,7 @@ def source_settings():
         #            "value: " + value)
 
     # Set vairables
-    remoteBashPath =     os.path.join(os.environ["destination"], bashFileName)
-    remoteSettingsPath = os.path.join(os.environ["destination"], settingsFileName)
-    localAggregatePath = os.path.join(os.environ["HOME"], os.environ["gitAll"])
+    os.environ["remoteBashPath"] =     os.path.join(os.environ["destination"], bashFileName)
+    os.environ["remoteSettingsPath"] = os.path.join(os.environ["destination"], settingsFileName)
 
     stop_clock(timingNotification)
