@@ -70,7 +70,8 @@ for row in data:
 csvFile.close()
 
 # todo: location
-summaryFilePath = os.path.join(os.environ["scriptDir"], "summarized.json")
+summaryFilePath = "/home/localstepdo/Desktop/shared/stampExample2.json"
+#summaryFilePath = os.path.join(os.environ["scriptDir"], "summarized.json")
 summaryFile = open(summaryFilePath, "wb")
 summary = json.dumps(condensed, default=lambda o: o.__dict__)
 summaryFile.write(summary)
