@@ -1,0 +1,1897 @@
+{
+	"all": [{
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:11.162711745 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/zendesk"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #3 from meowcoder/patch-1",
+							"currentTags": "",
+							"currentCommitDate": "2012-10-04 14:26:30 -0700",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "d53fe0e"
+				}
+			],
+			"remoteUrl": "https://github.com/eventbrite/zendesk.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 13:40:49.555655279 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/var/edx-themes/edx-themes"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:15:05.742777003 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/var/edx-themes/edx-themes"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #2 from edx/master",
+							"currentTags": "",
+							"currentCommitDate": "2016-09-28 10:17:37 +0500",
+							"currentBranch": "release"
+						}
+					},
+					"currentCommitHash": "75bba56"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/sample-themes.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-sga"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-sga"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:23.662804134 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-sga"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #56 from mitodl/rc/0.5.0",
+							"currentTags": "2 tags point to current commit:\n  v0.4.0-16-g172a90f\n  v0.6.0~1",
+							"currentCommitDate": "2015-02-12 16:46:43 -0500",
+							"currentBranch": "4 branches contain current commit:\n  fix/aq/exception_server\n  master\n  release\n  release-candidate"
+						}
+					},
+					"currentCommitHash": "172a90f"
+				}
+			],
+			"remoteUrl": "https://github.com/mitodl/edx-sga"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/certs/certificates"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/certs/certificates"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #51 from edx/add-openedx-yaml",
+							"currentTags": "16 tags point to current commit:\n  ned/test-ficus.1\n  ned/test-ficus.2\n  nedbat/test-ficus.1rc4\n  nedbat/test/ficus.1rc4.1\n  nedbat/test/ficus.1rc4.2\n  nedbat/test/ficus.1rc4.3\n  nedbat/test/ficus.2.1\n  nedbat/test/ficus.2.3\n  nedbat/test/ficus.2rc1.1\n  nedbat/test/ficus.2rc1.2\n  open-release/ficus.1\n  open-release/ficus.1rc1\n  open-release/ficus.1rc2\n  open-release/ficus.1rc3\n  open-release/ficus.1rc4\n  open-release/ficus.2",
+							"currentCommitDate": "2016-09-07 11:21:52 -0400",
+							"currentBranch": "open-release/ficus.master"
+						}
+					},
+					"currentCommitHash": "c23ca9a"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/edx-certificates"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/officemix"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/officemix"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #8 from kurtb/master",
+							"currentTags": "",
+							"currentCommitDate": "2015-11-23 17:50:05 -0800",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "3f876b5"
+				}
+			],
+			"remoteUrl": "https://github.com/OfficeDev/xblock-officemix.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:08.898694781 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/django-pipeline"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "bump version",
+							"currentTags": "1.5.3",
+							"currentCommitDate": "2015-08-01 11:02:49 -0700",
+							"currentBranch": "4 branches contain current commit:\n  1.5.x\n  1.6.x\n  add-coverage\n  master"
+						}
+					},
+					"currentCommitHash": "d068a01"
+				}
+			],
+			"remoteUrl": "https://github.com/cyberdelia/django-pipeline.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:20.226778952 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-milestones"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Version --> 0.1.5",
+							"currentTags": "release-2015-11-17",
+							"currentCommitDate": "2015-11-10 10:09:51 -0500",
+							"currentBranch": "5 branches contain current commit:\n  add-openedx-yaml\n  django1.8-upgrade\n  douglashall/update_opaque_keys_dependency\n  efischer/test\n  master"
+						}
+					},
+					"currentCommitHash": "81cbee0"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/edx-milestones.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:15:41.810486254 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/edx-platform"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #16 from Microsoft/btelnes-devstack",
+							"currentTags": "oxa/master.dog-2-gacaf782",
+							"currentCommitDate": "2017-02-03 11:27:34 -0800",
+							"currentBranch": "oxa/master"
+						}
+					},
+					"currentCommitHash": "acaf782"
+				}
+			],
+			"remoteUrl": "https://github.com/Microsoft/edx-platform.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-04-04 13:39:53.704225721 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/themes"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-12 16:24:27.560838949 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/themes"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #67 from Microsoft/email_temp_mani",
+							"currentTags": "oxa/master.dog-207-g6cc3f51",
+							"currentCommitDate": "2017-04-03 09:38:47 -0700",
+							"currentBranch": "oxa/master.fic"
+						}
+					},
+					"currentCommitHash": "6cc3f51"
+				}
+			],
+			"remoteUrl": "https://github.com/microsoft/edx-theme.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:21.890791168 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-user-state-client"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #10 from edx/alawibaba/mod_date_tests",
+							"currentTags": "1.0.0",
+							"currentCommitDate": "2015-07-31 10:29:29 -0400",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "30c0ad4"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/edx-user-state-client.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 13:15:02.713403744 -0700",
+								"osVer": "16.04",
+								"directory": "/oxa/oxa-tools"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Removed the GRANT PERMISSION statements for migrate and edxapp001 users since these are not production users and in manual migration document we have the GRANT permission step.",
+							"currentTags": "oxa/master.dog-194-ged1405e",
+							"currentCommitDate": "2017-03-21 16:13:09 -0700",
+							"currentBranch": "oxa/master.fic.eltonc"
+						}
+					},
+					"currentCommitHash": "ed1405e"
+				}, {
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 15:50:02.390087931 -0700",
+								"osVer": "16.04",
+								"directory": "/oxa/oxa-tools"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #119 from Microsoft/oxa/master.fic.eltonc.clidefault",
+							"currentTags": "oxa/master.dog-210-g1b5b6b4",
+							"currentCommitDate": "2017-04-06 14:52:42 -0700",
+							"currentBranch": "oxa/master.fic"
+						}
+					},
+					"currentCommitHash": "1b5b6b4"
+				}
+			],
+			"remoteUrl": "https://github.com/Microsoft/oxa-tools.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/xqueue/xqueue"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/xqueue/xqueue"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #119 from edx/edx-django-release-util/0.2.0",
+							"currentTags": "16 tags point to current commit:\n  ned/test-ficus.1\n  ned/test-ficus.2\n  nedbat/test-ficus.1rc4\n  nedbat/test/ficus.1rc4.1\n  nedbat/test/ficus.1rc4.2\n  nedbat/test/ficus.1rc4.3\n  nedbat/test/ficus.2.1\n  nedbat/test/ficus.2.3\n  nedbat/test/ficus.2rc1.1\n  nedbat/test/ficus.2rc1.2\n  open-release/ficus.1\n  open-release/ficus.1rc1\n  open-release/ficus.1rc2\n  open-release/ficus.1rc3\n  open-release/ficus.1rc4\n  open-release/ficus.2",
+							"currentCommitDate": "2016-12-05 11:18:56 -0500",
+							"currentBranch": "open-release/ficus.master"
+						}
+					},
+					"currentCommitHash": "2f780fc"
+				}, {
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "12.04",
+								"directory": "/edx/app/xqueue/xqueue"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #102 from edx/jeskew/PLAT-933_atomic_xaction",
+							"currentTags": "8 tags point to current commit:\n  named-release/dogwood.rc3\n  named-release/dogwood.rc2\n  named-release/dogwood.rc1\n  named-release/dogwood.3\n  named-release/dogwood.2\n  named-release/dogwood.1\n  named-release/dogwood\n  dogwood-first-18",
+							"currentCommitDate": "2015-12-03 14:44:47 -0500",
+							"currentBranch": "named-release/dogwood.rc"
+						}
+					},
+					"currentCommitHash": "3c11fce"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/xqueue.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:20:58.396338513 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/forum/.gem/bundler/gems/database_cleaner-b87f00320f8a"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Bundled.",
+							"currentTags": "v1.5.1",
+							"currentCommitDate": "2015-09-04 18:08:27 -0300",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "b87f003"
+				}
+			],
+			"remoteUrl": "/edx/app/forum/.gem/cache/bundler/git/database_cleaner-5a28af2a5165d702fbc58e635ac98383b8528938"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-04-12 20:34:48.193918352 +0000",
+								"osVer": "12.04",
+								"directory": "/oxa/oxa-tools-config"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #56 from Microsoft/oxa/master.fic.eltonc.configupdates",
+							"currentTags": "oxa/master.dog-50-gc2a5717",
+							"currentCommitDate": "2017-03-30 16:18:29 -0700",
+							"currentBranch": "oxa/master.fic"
+						}
+					},
+					"currentCommitHash": "c2a5717"
+				}
+			],
+			"remoteUrl": "https://github.com/microsoft/oxa-tools-config.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 13:41:12.104529021 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/django-splash"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:15:24.202793248 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/django-splash"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:15.558744481 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/django-splash"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "upgrade migrations",
+							"currentTags": "v0.2",
+							"currentCommitDate": "2015-10-22 18:33:56 +0500",
+							"currentBranch": "2 branches contain current commit:\n  ammar/upgrade-to-django1.8\n  master"
+						}
+					},
+					"currentCommitHash": "da3f5b7"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/django-splash.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:18.634767229 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/recommender-xblock"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #40 from pmitros/upload_file",
+							"currentTags": "v1.0~3",
+							"currentCommitDate": "2015-06-01 11:32:56 -0400",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "518234b"
+				}
+			],
+			"remoteUrl": "https://github.com/pmitros/RecommenderXBlock.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:20:59.480342856 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/forum/.gem/bundler/gems/mongoid-tree-b381dd56f1b3"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #1 from benedikt/master",
+							"currentTags": "v1.0.0-62-gb381dd5",
+							"currentCommitDate": "2015-09-15 13:43:35 -0400",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "b381dd5"
+				}
+			],
+			"remoteUrl": "/edx/app/forum/.gem/cache/bundler/git/mongoid-tree-782d1c594c580403d2c9520bbc2ed36dded0ca6a"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 13:42:18.130942335 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/xblock-drag-and-drop-v2"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:16:27.394948374 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/xblock-drag-and-drop-v2"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:43.658947497 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/xblock-drag-and-drop-v2"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #106 from arbrandes/final_state",
+							"currentTags": "v2.0.11",
+							"currentCommitDate": "2016-10-18 09:25:28 +0200",
+							"currentBranch": "6 branches contain current commit:\n  master\n  sstudent/new_release\n  sstudent/testing-2\n  ziafazal/WL-581\n  ziafazal/WL-581-b\n  ziafazal/remove-duplicae-msgid"
+						}
+					},
+					"currentCommitHash": "24c6ced"
+				}
+			],
+			"remoteUrl": "https://github.com/edx-solutions/xblock-drag-and-drop-v2.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 14:00:12.804663483 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/voteable_mongo-55fcfe76705a"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:34:18.553200609 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/voteable_mongo-55fcfe76705a"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Mongoid 5 compactable",
+							"currentTags": "v1.0.2-6-g55fcfe7",
+							"currentCommitDate": "2015-09-15 00:39:36 +0530",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "55fcfe7"
+				}
+			],
+			"remoteUrl": "/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/voteable_mongo-f658b63bf7f4c0d3b8e89a9df93833e33158cf2a"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:13.914732270 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/codejail"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #36 from edx/ned/proxy-subprocess",
+							"currentTags": "1.0~2",
+							"currentCommitDate": "2015-01-29 14:14:04 -0500",
+							"currentBranch": "6 branches contain current commit:\n  adam/test-middleware\n  cdyer/django-integration\n  edx-platform-master\n  master\n  ned/allow-subproc\n  ned/xenial"
+						}
+					},
+					"currentCommitHash": "6b17c33"
+				}, {
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/codejail"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/codejail"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Allow 15 threads instead of 5",
+							"currentTags": "",
+							"currentCommitDate": "2017-01-13 11:05:09 -0500",
+							"currentBranch": "edx-platform-master"
+						}
+					},
+					"currentCommitHash": "a320d43"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/codejail.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/rate-xblock"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/rate-xblock"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:19.150771033 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/rate-xblock"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "More i18n",
+							"currentTags": "",
+							"currentCommitDate": "2015-10-16 14:34:14 -0400",
+							"currentBranch": "4 branches contain current commit:\n  master\n  pmitros/ux-revamp\n  push-to-prod\n  release-alpha"
+						}
+					},
+					"currentCommitHash": "367e19c"
+				}
+			],
+			"remoteUrl": "https://github.com/pmitros/RateXBlock.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/tmp/ks_source"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-12 15:31:49.046071297 -0700",
+								"osVer": "16.04",
+								"directory": "/tmp/ks_source"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #2 from Microsoft/apenddate",
+							"currentTags": "",
+							"currentCommitDate": "2017-03-13 11:28:21 -0700",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "0698a4e"
+				}
+			],
+			"remoteUrl": "https://github.com/Microsoft/oxa_kitchen_sink.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:21:00.472346819 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/forum/.gem/bundler/gems/rack-contrib-6ff3ca2b2d98"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #79 from pvdb/round_max_age_to_integer_value",
+							"currentTags": "2 tags point to current commit:\n  1.1.0-66-g6ff3ca2\n  v1.2.0~3 ",
+							"currentCommitDate": "2013-12-26 00:38:41 -0800",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "6ff3ca2"
+				}
+			],
+			"remoteUrl": "/edx/app/forum/.gem/cache/bundler/git/rack-contrib-e0b18d5c2709e283f2805f404aad420ef7e7acdd"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-04-12 20:22:04.964730333 +0000",
+								"osVer": "12.04",
+								"directory": "/oxa/oxa-tools"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #119 from Microsoft/oxa/master.fic.eltonc.clidefault",
+							"currentTags": "oxa/master.dog-210-g1b5b6b4",
+							"currentCommitDate": "2017-04-06 14:52:42 -0700",
+							"currentBranch": "oxa/master.fic"
+						}
+					},
+					"currentCommitHash": "1b5b6b4"
+				}
+			],
+			"remoteUrl": "https://github.com/microsoft/oxa-tools.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 14:01:40.027348276 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/notifier/virtualenvs/notifier/src/opaque-keys"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:35:44.517237062 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/notifier/virtualenvs/notifier/src/opaque-keys"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #43 from edx/bug/old_namespaces",
+							"currentTags": "0.1.2",
+							"currentCommitDate": "2014-10-15 15:17:12 -0400",
+							"currentBranch": "5 branches contain current commit:\n  master\n  ormsbee/lazy_key\n  ormsbee/revert_caching\n  revert-84-ormsbee/reapply_optimizations\n  zub/ENT-211-add-aggregate-course-key"
+						}
+					},
+					"currentCommitHash": "a70af7c"
+				}, {
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:18.114763394 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/opaque-keys"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #56 from edx/aj/tnl2435-fix-studio-studio-schedule-details-broken-page",
+							"currentTags": "2 tags point to current commit:\n  0.1.2-31-g27dc382\n  0.2.0~5 ",
+							"currentCommitDate": "2015-07-01 14:21:46 +0500",
+							"currentBranch": "5 branches contain current commit:\n  master\n  ormsbee/lazy_key\n  ormsbee/revert_caching\n  revert-84-ormsbee/reapply_optimizations\n  zub/ENT-211-add-aggregate-course-key"
+						}
+					},
+					"currentCommitHash": "27dc382"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/opaque-keys.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/xqueue/venvs/xqueue/src/pika"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/xqueue/venvs/xqueue/src/pika"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "12.04",
+								"directory": "/edx/app/xqueue/venvs/xqueue/src/pika"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #292 from wulczer/channel-closed-and-ioloop-stop",
+							"currentTags": "2 tags point to current commit:\n  0.9.9-31-ga731347\n  0.9.10~24",
+							"currentCommitDate": "2013-02-26 08:52:05 -0800",
+							"currentBranch": "2 branches contain current commit:\n  client-properties-override\n  master"
+						}
+					},
+					"currentCommitHash": "a731347"
+				}
+			],
+			"remoteUrl": "https://github.com/pika/pika.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 14:00:11.432620512 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/mongoid-tree-b381dd56f1b3"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:34:17.209199749 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/mongoid-tree-b381dd56f1b3"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #1 from benedikt/master",
+							"currentTags": "v1.0.0-62-gb381dd5",
+							"currentCommitDate": "2015-09-15 13:43:35 -0400",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "b381dd5"
+				}
+			],
+			"remoteUrl": "/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/mongoid-tree-782d1c594c580403d2c9520bbc2ed36dded0ca6a"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 13:41:11.196494365 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/event-tracking"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:15:23.294792577 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/event-tracking"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:15.034740594 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/event-tracking"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #34 from edx/django1.8-upgrade",
+							"currentTags": "0.2.1",
+							"currentCommitDate": "2015-11-19 17:48:11 +0500",
+							"currentBranch": "2 branches contain current commit:\n  master\n  unpin-dependencies"
+						}
+					},
+					"currentCommitHash": "c9573cf"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/event-tracking.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 14:02:47.265366295 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edx_ansible/edx_ansible"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/oxa/configuration"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:36:50.577242554 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edx_ansible/edx_ansible"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/oxa/configuration"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #14 from Microsoft/oxa/master.fic.eltonc",
+							"currentTags": "open-release/eucalyptus/1rc1-872-ge5a47bd",
+							"currentCommitDate": "2017-03-21 14:47:51 -0700",
+							"currentBranch": "oxa/master.fic"
+						}
+					},
+					"currentCommitHash": "e5a47bd"
+				}, {
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:23:39.608856294 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edx_ansible/edx_ansible"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "12.04",
+								"directory": "/oxa/configuration"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #10 from Microsoft/btelnes-devstack",
+							"currentTags": "oxa/master.dog",
+							"currentCommitDate": "2017-01-30 14:27:10 -0800",
+							"currentBranch": "oxa/master"
+						}
+					},
+					"currentCommitHash": "76ee799"
+				}
+			],
+			"remoteUrl": "https://github.com/Microsoft/edx-configuration.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 14:01:37.831281691 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/notifier/src"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:35:42.401236580 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/notifier/src"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #41 from edx/ned/update-kombu-for-xenial",
+							"currentTags": "16 tags point to current commit:\n  ned/test-ficus.1\n  ned/test-ficus.2\n  nedbat/test-ficus.1rc4\n  nedbat/test/ficus.1rc4.1\n  nedbat/test/ficus.1rc4.2\n  nedbat/test/ficus.1rc4.3\n  nedbat/test/ficus.2.1\n  nedbat/test/ficus.2.3\n  nedbat/test/ficus.2rc1.1\n  nedbat/test/ficus.2rc1.2\n  open-release/ficus.1\n  open-release/ficus.1rc1\n  open-release/ficus.1rc2\n  open-release/ficus.1rc3\n  open-release/ficus.1rc4\n  open-release/ficus.2",
+							"currentCommitDate": "2016-11-18 18:00:55 -0500",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "c334599"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/notifier.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:19.686774979 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-search"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "upgrade to django 1.8",
+							"currentTags": "2 tags point to current commit:\n  release-2015-11-17\n  0.1.1",
+							"currentCommitDate": "2015-09-11 11:14:32 +0500",
+							"currentBranch": "7 branches contain current commit:\n  ammar/update-satellite-repos\n  ammar/upgrade-django-1.8\n  diana/use-correct-packages\n  efischer/devstack_fixes\n  master\n  v0.1.x\n  zoldak/install-tests-subpackage"
+						}
+					},
+					"currentCommitHash": "513662f"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/edx-search.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:16.690752868 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/ora2"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #800 from edx/andya/fix-staff-tools-styling-issue",
+							"currentTags": "8 tags point to current commit:\n  named-release/dogwood.rc3\n  named-release/dogwood.rc2\n  named-release/dogwood.rc1\n  named-release/dogwood.3\n  named-release/dogwood.2\n  named-release/dogwood.1\n  named-release/dogwood\n  0.2.4",
+							"currentCommitDate": "2015-11-30 10:01:31 -0500",
+							"currentBranch": "65 branches contain current commit:\n  aj/TNL-5883_announce_state\n  aj/test_ora2_build\n  benp/no-retries-wip\n  benp/profile-this\n  benp/update-libsass-0.11.1\n  cdyer/celery-3.1.25\n  christina/ora-e\n  christina/pep8\n  christina/timeout\n  christina/update-js\n  clintonb/requirements-fix\n  diana/ora-data-download\n  diana/ungraded-count\n  dmitry/upload_improvements\n  eficher/image_fix_sandbox\n  efischer/1.1.0\n  efischer/1.1.10\n  efischer/1.1.13\n  efischer/clear_state_user\n  efischer/credo_replay\n  efischer/criterion_names\n  efischer/css_fixes\n  efischer/fix_acceptance_tests\n  efischer/fix_release\n  efischer/fix_version\n  efischer/gemnasium_upgrade\n  efischer/haha_scott\n  efischer/i_think_ora_may_be_stable_at_this_point\n  efischer/image_fix\n  efischer/load_test_refactor\n  efischer/mathjax_change\n  efischer/new_i18n\n  efischer/new_name\n  efischer/new_release\n  efischer/no_options_cleanup\n  efischer/pylint_fixup\n  efischer/revert_name_change\n  efischer/string_update\n  efischer/sub_update\n  efischer/swallow_reset_signal\n  efischer/test_casing\n  efischer/tmp\n  efischer/update_i18n\n  efischer/update_readme\n  efischer/update_sub_dep\n  efischer/update_tx\n  efischer/wait_for_grades\n  grade_available_responses_view\n  greg-temp\n  greric/hackathon16\n  jlajoie/dsl-acceptance-tests\n  jlajoie/gocd-test\n  master\n  mushtaq/acceptance-test-optional-path-param\n  named-release/dogwood.rc\n  ned/test-dogwood.2\n  ned/test-eucalyptus\n  open-release/eucalyptus.master\n  rc/1.3.0\n  rc/1.3.3\n  release_candidate/1.1.12\n  revert-903-efischer/no_options_cleanup\n  ssemenova/keyboard\n  ssemenova/uniqueID\n  upgrade-numpy"
+						}
+					},
+					"currentCommitHash": "bc6d03b"
+				}, {
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 13:42:33.691483591 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/ora2"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:16:42.026981068 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/ora2"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #971 from edx/yro_release",
+							"currentTags": "1.2.0",
+							"currentCommitDate": "2017-01-26 15:31:04 -0500",
+							"currentBranch": "20 branches contain current commit:\n  aj/test_ora2_build\n  cdyer/celery-3.1.25\n  dmitry/upload_improvements\n  efischer/credo_replay\n  efischer/criterion_names\n  efischer/fix_acceptance_tests\n  efischer/new_name\n  efischer/pylint_fixup\n  efischer/sub_update\n  efischer/swallow_reset_signal\n  efischer/tmp\n  efischer/update_readme\n  grade_available_responses_view\n  greg-temp\n  greric/hackathon16\n  jlajoie/dsl-acceptance-tests\n  jlajoie/gocd-test\n  master\n  rc/1.3.0\n  rc/1.3.3"
+						}
+					},
+					"currentCommitHash": "4abd0ef"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/edx-ora2.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 13:41:01.312114299 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/edx-platform"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #20 from Microsoft/btelnes-oxa/master.fic",
+							"currentTags": "release-2016-08-09-1735-g622a362",
+							"currentCommitDate": "2017-03-21 09:38:34 -0700",
+							"currentBranch": "oxa/master.fic"
+						}
+					},
+					"currentCommitHash": "622a362"
+				}, {
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:15:14.158785099 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/edx-platform"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #21 from Microsoft/site_enrollment_mani",
+							"currentTags": "release-2016-08-09-1739-g6dbfd19",
+							"currentCommitDate": "2017-04-10 12:46:24 -0700",
+							"currentBranch": "oxa/master.fic"
+						}
+					},
+					"currentCommitHash": "6dbfd19"
+				}
+			],
+			"remoteUrl": "https://github.com/microsoft/edx-platform.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/acid-xblock"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/acid-xblock"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:16.058748189 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/acid-xblock"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #9 from edx/dhm/aside",
+							"currentTags": "",
+							"currentCommitDate": "2014-11-26 16:13:02 -0500",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "e46f9cd"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/acid-block.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:15:51.634563072 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/themes/default"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #29 from Microsoft/hukoyun/selfpaced",
+							"currentTags": "oxa/master.dog-13-g1ac68d0",
+							"currentCommitDate": "2017-02-10 15:49:46 -0800",
+							"currentBranch": "pilot"
+						}
+					},
+					"currentCommitHash": "1ac68d0"
+				}
+			],
+			"remoteUrl": "https://github.com/Microsoft/edx-theme.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 13:42:12.886757745 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/done-xblock"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:16:22.358936057 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/done-xblock"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:42.162936959 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/done-xblock"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Fixes for doctype=html",
+							"currentTags": "release-2016-08-10~17",
+							"currentCommitDate": "2014-06-05 16:00:25 -0400",
+							"currentBranch": "3 branches contain current commit:\n  master\n  pmitros/analytics-review\n  pr-review-a"
+						}
+					},
+					"currentCommitHash": "1ce0ac1"
+				}
+			],
+			"remoteUrl": "https://github.com/pmitros/DoneXBlock.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/forum/.rbenv"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/forum/.rbenv"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "rbenv 1.0.0",
+							"currentTags": "v1.0.0",
+							"currentCommitDate": "2015-12-24 18:34:52 +0100",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "3997a39"
+				}, {
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "12.04",
+								"directory": "/edx/app/forum/.rbenv"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/.rbenv"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "rbenv 0.4.0",
+							"currentTags": "v0.4.0",
+							"currentCommitDate": "2013-01-04 12:27:26 -0600",
+							"currentBranch": "3 branches contain current commit:\n  master\n  user-gems\n  version-aliases"
+						}
+					},
+					"currentCommitHash": "9375e99"
+				}
+			],
+			"remoteUrl": "https://github.com/sstephenson/rbenv.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/parse-rest"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/parse-rest"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:12.838724257 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/parse-rest"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #107 from danrobinson/ACL",
+							"currentTags": "",
+							"currentCommitDate": "2015-04-13 10:26:29 -0400",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "7949b9f"
+				}
+			],
+			"remoteUrl": "https://github.com/dgrtwo/ParsePy.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 13:41:23.776970694 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/xblock-poll"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:15:35.482800513 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/xblock-poll"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #18 from open-craft/poll-options-a11y",
+							"currentTags": "v1.2.3",
+							"currentCommitDate": "2016-12-06 09:48:08 +0100",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "f3a675c"
+				}, {
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:24.222808223 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/xblock-poll"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #6 from open-craft/edx-release",
+							"currentTags": "2 tags point to current commit:\n  v1.0-5-ge7a6c95\n  v1.1~4 ",
+							"currentCommitDate": "2015-08-19 14:03:43 +0300",
+							"currentBranch": "3 branches contain current commit:\n  copy-change-patch\n  edx-release\n  master"
+						}
+					},
+					"currentCommitHash": "e7a6c95"
+				}
+			],
+			"remoteUrl": "https://github.com/open-craft/xblock-poll"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/pystache-custom"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/pystache-custom"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:10.526706986 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/pystache-custom"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "added support for applying lambda function after rendering",
+							"currentTags": "v0.5.2-5-g7769737",
+							"currentCommitDate": "2012-08-19 17:55:28 -0700",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "7769737"
+				}
+			],
+			"remoteUrl": "https://github.com/dementrock/pystache_custom.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 13:41:21.124870952 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-reverification-block"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:15:32.886799015 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-reverification-block"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:21.342787148 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-reverification-block"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "bump library version",
+							"currentTags": "0.0.5",
+							"currentCommitDate": "2015-11-06 12:08:54 +0500",
+							"currentBranch": "3 branches contain current commit:\n  ammar/update-satellite-repos\n  master\n  ned/upgrade-django-1.8"
+						}
+					},
+					"currentCommitHash": "cd9a252"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/edx-reverification-block.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/xblock-google-drive"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/xblock-google-drive"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:20.746782773 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/xblock-google-drive"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #25 from edx-solutions/mjevtic/PR-18",
+							"currentTags": "",
+							"currentCommitDate": "2015-02-20 16:06:44 +0100",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "138e6fa"
+				}
+			],
+			"remoteUrl": "https://github.com/edx-solutions/xblock-google-drive.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:14.458736314 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/js-test-tool"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #55 from edx/gprice/specify-port",
+							"currentTags": "v0.1.6",
+							"currentCommitDate": "2014-11-18 16:07:17 -0500",
+							"currentBranch": "4 branches contain current commit:\n  benp/fix-jscover\n  ekafeel/upgrade-jasmine\n  master\n  pip-remove-use-mirrors"
+						}
+					},
+					"currentCommitHash": "a07bf1b"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/js-test-tool.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:17.570759375 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-submissions"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #31 from edx/andya/update-requirements",
+							"currentTags": "0.1.3",
+							"currentCommitDate": "2015-11-20 17:30:38 -0500",
+							"currentBranch": "17 branches contain current commit:\n  diana/all-submissions\n  efischer/1_0_0_release\n  efischer/archive_table\n  efischer/clear_state\n  efischer/delete_studentitem\n  efischer/django_unpin\n  efischer/django_version\n  efischer/gemnasium\n  efischer/mangle_key\n  efischer/pytz\n  efischer/score_summary\n  efischer/send_time\n  efischer/soft_delete_sub\n  efischer/sql_data\n  efischer/swallow_reset_signal\n  efischer/version_bump\n  master"
+						}
+					},
+					"currentCommitHash": "02ccd59"
+				}, {
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 13:41:18.180759809 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-submissions"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:15:30.082797280 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-submissions"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #51 from edx/efischer/send_time",
+							"currentTags": "1.1.4",
+							"currentCommitDate": "2016-12-06 16:05:34 -0500",
+							"currentBranch": "5 branches contain current commit:\n  efischer/django_unpin\n  efischer/pytz\n  efischer/swallow_reset_signal\n  efischer/version_bump\n  master"
+						}
+					},
+					"currentCommitHash": "e4c4eae"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/edx-submissions.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-jsme"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-jsme"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #6 from cahrens/patch-1",
+							"currentTags": "1.0.1-5-g690dbf7",
+							"currentCommitDate": "2017-01-05 13:46:13 -0700",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "690dbf7"
+				}, {
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:12.246719842 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/edx-jsme"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Start change log.",
+							"currentTags": "1.0.1",
+							"currentCommitDate": "2014-09-17 15:13:41 -0400",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "c5bfa5d"
+				}
+			],
+			"remoteUrl": "https://github.com/jazkarta/edx-jsme.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 13:42:39.435681038 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/lti-consumer-xblock"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:16:47.818992778 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/lti-consumer-xblock"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "updated version in setup.py",
+							"currentTags": "v1.1.2",
+							"currentCommitDate": "2017-01-30 19:32:07 +0500",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "0f808cd"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/xblock-lti-consumer.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:21:01.520350995 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/forum/.gem/bundler/gems/voteable_mongo-55fcfe76705a"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Mongoid 5 compactable",
+							"currentTags": "v1.0.2-6-g55fcfe7",
+							"currentCommitDate": "2015-09-15 00:39:36 +0530",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "55fcfe7"
+				}
+			],
+			"remoteUrl": "/edx/app/forum/.gem/cache/bundler/git/voteable_mongo-f658b63bf7f4c0d3b8e89a9df93833e33158cf2a"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 13:42:23.447128323 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/azure-media-services"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #24 from Microsoft/apgooglechrm",
+							"currentTags": "v0.2-53-g013c958",
+							"currentCommitDate": "2017-03-10 14:10:39 -0800",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "013c958"
+				}, {
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:16:32.318959883 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/azure-media-services"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "support for more than one video per page/unit (#26)",
+							"currentTags": "v0.2-58-g7df83f1",
+							"currentCommitDate": "2017-04-07 09:00:44 -0700",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "7df83f1"
+				}
+			],
+			"remoteUrl": "https://github.com/Microsoft/xblock-azure-media-services.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "2017-03-22 14:00:12.132642440 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/rack-contrib-6ff3ca2b2d98"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "2017-04-10 16:34:17.897200191 -0700",
+								"osVer": "16.04",
+								"directory": "/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/rack-contrib-6ff3ca2b2d98"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #79 from pvdb/round_max_age_to_integer_value",
+							"currentTags": "2 tags point to current commit:\n  1.1.0-66-g6ff3ca2\n  v1.2.0~3",
+							"currentCommitDate": "2013-12-26 00:38:41 -0800",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "6ff3ca2"
+				}
+			],
+			"remoteUrl": "/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/rack-contrib-e0b18d5c2709e283f2805f404aad420ef7e7acdd"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/programs/programs"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/programs/programs"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Archive the programs repository",
+							"currentTags": "",
+							"currentCommitDate": "2017-03-09 10:49:47 -0500",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "fb0e680"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/programs.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-04-15 00:41:29.612896123 +0000",
+								"osVer": "12.04",
+								"directory": "/home/lexoxaadmin/getAllGit"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "fetch latest tag and branch info from remote",
+							"currentTags": "v1.0.0-2-g1f963c5",
+							"currentCommitDate": "2017-04-14 15:47:17 -0700",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "1f963c5"
+				}
+			],
+			"remoteUrl": "https://github.com/sdolenc/getAllGit.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/forum/cs_comments_service"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/forum/cs_comments_service"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #238 from edx/robrap/newrelic",
+							"currentTags": "5 tags point to current commit:\n  nedbat/test/ficus.2.1\n  nedbat/test/ficus.2.3\n  nedbat/test/ficus.2rc1.1\n  nedbat/test/ficus.2rc1.2\n  open-release/ficus.2",
+							"currentCommitDate": "2017-03-02 10:31:20 -0500",
+							"currentBranch": "open-release/ficus.master"
+						}
+					},
+					"currentCommitHash": "67d9763"
+				}, {
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "12.04",
+								"directory": "/edx/app/forum/cs_comments_service"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Updated Nokogiri to  '~>1.6.7.1'",
+							"currentTags": "named-release/dogwood-4-gd658427",
+							"currentCommitDate": "2016-01-04 14:21:32 -0500",
+							"currentBranch": "mongoid5-release"
+						}
+					},
+					"currentCommitHash": "d658427"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/cs_comments_service.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:09.458698983 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/django-oauth2-provider"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "update django and python versions for travis",
+							"currentTags": "2 tags point to current commit:\n  0.2.7-fork-edx-7\n  0.2.7-fork-edx-6a",
+							"currentCommitDate": "2015-11-10 18:07:01 +0500",
+							"currentBranch": "6 branches contain current commit:\n  douglashall/WL-286/support_multiple_client_urls\n  edx\n  jbarciauskas/PLAT-1062-add-multicolumn-index-on-expires\n  jeskew/django_1_9_upgrade\n  jsa/fix-constants-import\n  will/django-1.8-upgrade"
+						}
+					},
+					"currentCommitHash": "764601a"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/django-oauth2-provider.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:09.994703003 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/djangorestframework-oauth"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Merge pull request #1 from wedaly/master",
+							"currentTags": "1.0.1-4-gf0b503f",
+							"currentCommitDate": "2015-09-09 11:36:56 -0700",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "f0b503f"
+				}
+			],
+			"remoteUrl": "https://github.com/edx/django-rest-framework-oauth.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:13.370728220 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/ccx-keys"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "add a method to the `CCXBlockUsageLocator` class that will return a normal BlockUsageLocator.  In keeping with the idea of a 'neutral' or 'course-local' version of ccx keys",
+							"currentTags": "",
+							"currentCommitDate": "2015-06-01 00:50:28 -0700",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "e6b0370"
+				}
+			],
+			"remoteUrl": "https://github.com/jazkarta/ccx-keys.git"
+		}, {
+			"gitInfo": [{
+					"repo": {
+						"repoLocation": [{
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.7",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/pygeoip"
+							}, {
+								"gitVer": "2.7.4",
+								"machine": "lexoxabvtc12vmss000001",
+								"ipAdresses": "10.0.0.6",
+								"syncTime (accuracy not guarenteed)": "",
+								"osVer": "16.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/pygeoip"
+							}, {
+								"gitVer": "1.7.9.5",
+								"machine": "lexoxabvtc12jb",
+								"ipAdresses": "10.0.0.4",
+								"syncTime (accuracy not guarenteed)": "2017-03-21 00:16:11.714715870 +0000",
+								"osVer": "12.04",
+								"directory": "/edx/app/edxapp/venvs/edxapp/src/pygeoip"
+							}
+						],
+						"repoCurrentCode": {
+							"currentCommitDescription": "Add heading over the toctree",
+							"currentTags": "2 tags point to current commit:\n  v0.3.1-5-g95e6934\n  v0.3.2~10",
+							"currentCommitDate": "2014-02-11 01:48:32 +0100",
+							"currentBranch": "master"
+						}
+					},
+					"currentCommitHash": "95e6934"
+				}
+			],
+			"remoteUrl": "https://github.com/appliedsec/pygeoip.git"
+		}
+	],
+	"todo": "counts? lists? etc"
+}
