@@ -17,34 +17,24 @@ var AppointmentList = Backbone.Collection.extend({
 // Views
 //--------------
 var AppointmentView = Backbone.View.extend({
-    tagName: 'li',
-    className: 'todo',
+    tagName: 'div',
+    className: '',
 
     template: _.template($('#todo-tmpl').html()),
 
     initialize: function() {
         this.model.on('change', this.render, this);
-        this.model.on('remove', this.remove, this);
     },
 
     render: function() {
         this.$el.html(this.template(this.model.toJSON()));
         return this;
-    },
-
-    toggleComplete: function() {
-        this.model.set({ complete: !this.model.get("complete") });
-    },
-
-    cancel: function() {
-        this.model.set({ canceled: true });
-        this.collection.remove(this.model);
     }
 });
 
 var AppointmentListView = Backbone.View.extend({
-    tagName: 'ul',
-    className: 'todos',
+    tagName: 'div',
+    className: '',
 
     initialize: function() {
         this.collection.on('sync', this.render, this);
@@ -61,14 +51,12 @@ var AppointmentListView = Backbone.View.extend({
             collection: this.collection
         });
         this.$el.append(appointmentView.render().el);
-    },
-
-    remove: function() {
-        this.$el.remove();
     }
 });
 
-
+//--------------
+// Gath model
+//--------------
 var appointments = new AppointmentList();
 appointments.fetch();
 
@@ -76,4 +64,7 @@ var appointmentListView = new AppointmentListView({
     collection: appointments
 });
 
+//--------------
+// Attach markup
+//--------------
 $('#app').html(appointmentListView.el);
