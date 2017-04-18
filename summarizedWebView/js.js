@@ -4,13 +4,18 @@
 // Models
 //--------------
 var Appointment = Backbone.Model.extend();
+var Header = null;
 
 //--------------
 // Collections
 //--------------
 var AppointmentList = Backbone.Collection.extend({
     url: 'example.json',
-    model: Appointment
+    model: Appointment,
+    parse: function(response, options) {
+        Header = response.todo;
+        return response.all;
+    }
 });
 
 //--------------
