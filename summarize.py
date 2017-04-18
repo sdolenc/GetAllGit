@@ -12,7 +12,7 @@ from helpers.sourceSettings import source_settings
 if (len(sys.argv) != 2):
     print("Path Expected")
     exit(3)
-csvFilePath = "/home/localstepdo/Desktop/shared/stampExample2.csv" # sys.argv[1] #todo:
+csvFilePath = "/home/localstepdo/Desktop/shared/example.csv" # sys.argv[1] #todo:
 
 if (not os.path.isfile(csvFilePath)):
     print("Path {} is not a file".format(csvFilePath))
@@ -84,7 +84,7 @@ csvFile.close()
 #todo: stop clock
 
 # todo: location
-summaryFilePath = "/home/localstepdo/Desktop/shared/stampExample6.json"
+summaryFilePath = "/home/localstepdo/Desktop/shared/example.json"
 #summaryFilePath = os.path.join(os.environ["scriptDir"], "summarized.json")
 
 #todo: start clock to write json
