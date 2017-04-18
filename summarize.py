@@ -73,6 +73,6 @@ csvFile.close()
 summaryFilePath = "/home/localstepdo/Desktop/shared/stampExample2.json"
 #summaryFilePath = os.path.join(os.environ["scriptDir"], "summarized.json")
 summaryFile = open(summaryFilePath, "wb")
-summary = json.dumps(condensed, default=lambda o: o.__dict__)
+summary = json.dumps(condensed.infoForRemoteGitUrl, default=lambda o: o.__dict__)
 summaryFile.write(summary)
 summaryFile.close()
