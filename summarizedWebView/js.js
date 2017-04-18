@@ -9,7 +9,7 @@ var Appointment = Backbone.Model.extend();
 // Collections
 //--------------
 var AppointmentList = Backbone.Collection.extend({
-    url: 'dyGek.js', // https://codepen.io/cfleschhut/pen/dyGek.js
+    url: 'example.json',
     model: Appointment
 });
 
@@ -21,11 +21,6 @@ var AppointmentView = Backbone.View.extend({
     className: 'todo',
 
     template: _.template($('#todo-tmpl').html()),
-
-    events: {
-        'click [type=checkbox]': 'toggleComplete',
-        'click .cancel': 'cancel'
-    },
 
     initialize: function() {
         this.model.on('change', this.render, this);
