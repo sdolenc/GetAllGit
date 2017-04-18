@@ -3,15 +3,15 @@
 //--------------
 // Models
 //--------------
-var Appointment = Backbone.Model.extend();
+var Remote = Backbone.Model.extend();
 var Header = null;
 
 //--------------
 // Collections
 //--------------
-var AppointmentList = Backbone.Collection.extend({
+var RemoteList = Backbone.Collection.extend({
     url: 'example.json',
-    model: Appointment,
+    model: Remote,
     parse: function(response, options) {
         Header = response.todo;
         return response.all;
@@ -21,7 +21,7 @@ var AppointmentList = Backbone.Collection.extend({
 //--------------
 // Views
 //--------------
-var AppointmentView = Backbone.View.extend({
+var RemoteView = Backbone.View.extend({
     tagName: 'div',
     className: '',
 
@@ -37,7 +37,7 @@ var AppointmentView = Backbone.View.extend({
     }
 });
 
-var AppointmentListView = Backbone.View.extend({
+var RemoteListView = Backbone.View.extend({
     tagName: 'div',
     className: '',
 
@@ -51,25 +51,25 @@ var AppointmentListView = Backbone.View.extend({
     },
 
     addOne: function(model) {
-        var appointmentView = new AppointmentView({
+        var remoteView = new RemoteView({
             model: model,
             collection: this.collection
         });
-        this.$el.append(appointmentView.render().el);
+        this.$el.append(remoteView.render().el);
     }
 });
 
 //--------------
 // Gath model
 //--------------
-var appointments = new AppointmentList();
-appointments.fetch();
+var remotes = new RemoteList();
+remotes.fetch();
 
-var appointmentListView = new AppointmentListView({
-    collection: appointments
+var remoteListView = new RemoteListView({
+    collection: remotes
 });
 
 //--------------
 // Attach markup
 //--------------
-$('#app').html(appointmentListView.el);
+$('#app').html(remoteListView.el);
