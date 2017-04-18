@@ -43,6 +43,10 @@ class Summarized:
         # Write the remaining values.
         self.infoForRemoteGitUrl.get(remoteUrl).get(commitHash).add(collection)
 
+    def getRemoteUrls(self):
+        return {"children": [{'name': key,"size": value} for key,value in self.infoForRemoteGitUrl.items()]}
+
+
 class RepoDetails:
     def __init__(self):
         self.repoLocation = list()
@@ -73,6 +77,6 @@ csvFile.close()
 summaryFilePath = "/home/localstepdo/Desktop/shared/stampExample2.json"
 #summaryFilePath = os.path.join(os.environ["scriptDir"], "summarized.json")
 summaryFile = open(summaryFilePath, "wb")
-summary = json.dumps(condensed.infoForRemoteGitUrl, default=lambda o: o.__dict__)
+summary = json.dumps(condensed.getRemoteUrls(), default=lambda o: o.__dict__)
 summaryFile.write(summary)
 summaryFile.close()
