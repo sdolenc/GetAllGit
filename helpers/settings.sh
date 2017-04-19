@@ -46,8 +46,6 @@ workingDir=$destination/${outputPrefix}
     ipAdresses="ipAdresses"
     osVersion="osVer"
     gitVersion="gitVer"
-#$dir
-#$time
 
 # These are the details regarding the actual repo on the machine itself.
 # The other values describe the state of the code within the repo.
