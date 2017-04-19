@@ -33,12 +33,12 @@ class Summarized:
 
     def add(self, collection):
         # Key based on remote Git Url
-        remoteUrl = collection.pop(urlKey)
+        remoteUrl = collection.pop(urlKey).lower()
         if (self.infoForRemoteGitUrl.get(remoteUrl) == None):
             self.infoForRemoteGitUrl[remoteUrl] = dict()
 
         # Key based on current commit hash
-        commitHash = collection.pop(hashKey)
+        commitHash = collection.pop(hashKey).upper()
         if (self.infoForRemoteGitUrl.get(remoteUrl).get(commitHash) == None):
             self.infoForRemoteGitUrl.get(remoteUrl)[commitHash] = RepoDetails()
 
@@ -47,12 +47,9 @@ class Summarized:
 
     # Expand dictionarists so that keys have consistent name.
     def getJsonObject(self):
-        return {
-            "todo" : "counts? lists? etc", #todo:
-            listKey: [ { urlKey: key, gitDetailsKey: self.getJsonObjHelper(value) } for key,value in self.infoForRemoteGitUrl.items() ]
-        }
+        return [{ urlKey: key, gitDetailsKey: self.getJsonObjHelper(value) } for key,value in self.infoForRemoteGitUrl.items() ]
     def getJsonObjHelper(self, dictObj):
-            return [{ hashKey: key, "repo": value } for key,value in dictObj.items() ]
+        return [{ hashKey: key, "repo": value } for key,value in dictObj.items() ]
 
 class RepoDetails:
     def __init__(self):

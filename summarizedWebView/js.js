@@ -4,7 +4,6 @@
 // Models
 //--------------
 var Remote = Backbone.Model.extend();
-var Header = null;
 
 //--------------
 // Collections
@@ -13,8 +12,7 @@ var RemoteList = Backbone.Collection.extend({
     url: 'example.json',
     model: Remote,
     parse: function(response, options) {
-        Header = response.todo;
-        return response.all;
+        return response;
     }
 });
 

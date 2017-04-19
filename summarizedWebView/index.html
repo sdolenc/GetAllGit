@@ -27,6 +27,15 @@
                 <div>
                     <%= git.repo.repoLocation.length %> path(s) are at commit: <br/>
                     <%= git.currentCommitHash %> from <%= git.repo.repoCurrentCode.currentCommitDate %>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <%- git.repo.repoCurrentCode.currentTags %>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             <% }); %>
         </div>
