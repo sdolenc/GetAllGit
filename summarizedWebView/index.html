@@ -14,31 +14,37 @@
     <!-- Templates -->
     <!-- todos:
         internal expansion: hash, directory
-        base model, header: list of organizations (count), all, edx, etc.
-        base model, header: multiple versions (count): all, one, multiple
-        hyperlink full github urls,tags (new tab)
-        drop protocals from dispalyed url, add organization to class
+        models
+            tag/branch count -> toggle prefix
+            base model, header: list of organizations (count), all, edx, etc.
+            base model, header: multiple versions (count): all, one, multiple
+            hyperlink full github urls,tags (new tab)
+            drop protocals from dispalyed url, add organization to class
         header: type tag (rows will/hide show based on filter)
         expand all
     -->
     <script type="text/template" id="todo-tmpl">
         <div class="ver<%= gitInfo.length %>">
-            <span class="verCount"><%= gitInfo.length %> versions of</span> <%= remoteUrl %>
+            <span class="count"><%= gitInfo.length %> versions of</span> <%= remoteUrl %>
             <% _.each(gitInfo, function(git){ %>
                 <div>
-                    <%= git.repo.repoLocation.length %> path(s) are at commit: <br/>
-                    <%= git.currentCommitHash %> from <%= git.repo.repoCurrentCode.currentCommitDate %>
+                    <%= git.repo.repoLocation.length %> path(s) are at
+                    commit: <%= git.currentCommitHash %>
+                    from <%= git.repo.repoCurrentCode.currentCommitDate %>
                     <div>
                         <table>
                             <tr>
-                                <td><div>
+                                <td><div class="branch<%= %>">
+                                    <span class="count">Branch:</span><br/>
                                     <%= git.repo.repoCurrentCode.currentBranch %>
                                 </div></td>
-                                <td><div>
+                                <td><div class="tag<%= %>">
+                                    <span class="count">Tag:</span><br/>
                                     <%= git.repo.repoCurrentCode.currentTags %>
                                 </div></td>
-                                <td><div>
-                                    Change description: <%= git.repo.repoCurrentCode.currentCommitDescription %>
+                            </tr><tr>
+                                <td colspan="2"><div class="desc">
+                                    Change: <%= git.repo.repoCurrentCode.currentCommitDescription %>
                                 </div></td>
                             </tr>
                         </table>

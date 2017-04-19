@@ -1,32 +1,33 @@
+body {
+    background: #def;
+    margin: 0;
+    padding: 0;
+}
 
 .alternateBG:nth-child(odd) {
-    background: #eee;
+    background: #f3f3f3;
 }
-div {
+.alternateBG div {
     width: 93%;
-    border-top: 1px #ddd solid;
+    border-top: 1px #d3d3d3 solid;
     padding: 1em;
     margin: 0 auto;
 }
-.ver1 span.verCount {
+.ver1 span.count,
+.branch1 span.count,
+.tag1 span.count {
     display: none;
 }
 
 table td {
-    border-left: 1px #ccc solid;
-    padding-left: .2em;
     vertical-align: top;
-    max-width: 13em;
 }
-table td:first-child {
-    border-left: none;
-}
-table td div {
-    width: 100%;
-    border-top: none;
-    padding: 0;
-    margin: 0;
+table td>div {
+    padding: .2em .4em !important;
     max-height: 6.5em;
     overflow: auto;
-    white-space: nowrap;
+    border: none;
+}
+table td>div.desc {
+    text-align: right;
 }
