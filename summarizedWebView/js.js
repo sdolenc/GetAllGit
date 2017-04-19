@@ -23,7 +23,7 @@ var RemoteList = Backbone.Collection.extend({
 //--------------
 var RemoteView = Backbone.View.extend({
     tagName: 'div',
-    className: '',
+    className: 'alternateBG',
 
     template: _.template($('#todo-tmpl').html()),
 
@@ -52,8 +52,7 @@ var RemoteListView = Backbone.View.extend({
 
     addOne: function(model) {
         var remoteView = new RemoteView({
-            model: model,
-            collection: this.collection
+            model: model
         });
         this.$el.append(remoteView.render().el);
     }
