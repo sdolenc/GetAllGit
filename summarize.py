@@ -63,10 +63,11 @@ class RepoDetails:
 
         # Only collect state of repo once because
         # we've already keyed on a) remote repo and then b) commit hash.
-        # Therefore, these remaining values will be static for any repo.
+        # Therefore, these remaining values will be static for any repo so only store once.
         if (self.repoCurrentCode == None):
-            # We've already been removing the values we don't want (via pop)
-            self.repoCurrentCode = collection
+            # We've already removed all other values so a normal assignment would work,
+            # but we're using this opportunity to incorporate newlines in the markup.
+            self.repoCurrentCode = { key: value.replace('\n', '<br/>') for key,value in collection.items() }
 
 #todo: start clock to read csv
 condensed = Summarized()

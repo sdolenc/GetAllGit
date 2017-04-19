@@ -11,3 +11,22 @@ div {
 .ver1 span.verCount {
     display: none;
 }
+
+table td {
+    border-left: 1px #ccc solid;
+    padding-left: .2em;
+    vertical-align: top;
+    max-width: 13em;
+}
+table td:first-child {
+    border-left: none;
+}
+table td div {
+    width: 100%;
+    border-top: none;
+    padding: 0;
+    margin: 0;
+    max-height: 6.5em;
+    overflow: auto;
+    white-space: nowrap;
+}

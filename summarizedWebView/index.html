@@ -19,6 +19,7 @@
         hyperlink full github urls,tags (new tab)
         drop protocals from dispalyed url, add organization to class
         header: type tag (rows will/hide show based on filter)
+        expand all
     -->
     <script type="text/template" id="todo-tmpl">
         <div class="ver<%= gitInfo.length %>">
@@ -30,9 +31,15 @@
                     <div>
                         <table>
                             <tr>
-                                <td>
-                                    <%- git.repo.repoCurrentCode.currentTags %>
-                                </td>
+                                <td><div>
+                                    <%= git.repo.repoCurrentCode.currentBranch %>
+                                </div></td>
+                                <td><div>
+                                    <%= git.repo.repoCurrentCode.currentTags %>
+                                </div></td>
+                                <td><div>
+                                    Change description: <%= git.repo.repoCurrentCode.currentCommitDescription %>
+                                </div></td>
                             </tr>
                         </table>
                     </div>
