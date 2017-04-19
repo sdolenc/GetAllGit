@@ -25,7 +25,7 @@
     -->
     <script type="text/template" id="todo-tmpl">
         <div class="ver<%= gitInfo.length %>">
-            <span class="count"><%= gitInfo.length %> versions of</span> <%= remoteUrl %>
+            <span class="countVer"><%= gitInfo.length %> versions of</span> <%= remoteUrl %>
             <% _.each(gitInfo, function(git){ %>
                 <div>
                     <%= git.repo.repoLocation.length %> path(s) are at
@@ -34,12 +34,12 @@
                     <div>
                         <table>
                             <tr>
-                                <td><div class="branch<%= %>">
-                                    <span class="count">Branch:<br/></span>
+                                <td><div class="branch"> <!--todo-->
+                                    <span class="countBranch">Branch:<br/></span>
                                     <%= git.repo.repoCurrentCode.currentBranch %>
                                 </div></td>
-                                <td><div class="tag<%= %>">
-                                    <span class="count">Tag:<br/></span>
+                                <td><div class="tag"> <!--todo-->
+                                    <span class="countTag">Tag:<br/></span>
                                     <%= git.repo.repoCurrentCode.currentTags %>
                                 </div></td>
                             </tr><tr>

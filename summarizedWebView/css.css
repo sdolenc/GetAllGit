@@ -9,20 +9,32 @@ body {
 }
 .alternateBG div {
     width: 93%;
-    border-top: 1px #d3d3d3 solid;
     padding: 1em;
     margin: 0 auto;
 }
-.ver1 span.count,
-.branch1 span.count,
-.tag1 span.count {
+.ver1 span.countVer,
+span.countBranch,
+span.countTag {
     display: none;
 }
+/* Show branch and tag prefix when there's only one */
+.branch1 span.countBranch,
+.tag1 span.countTag {
+    display: inline;
+}
 
+table td:nth-child(2) {
+    border-left: 1px #d3d3d3 solid;
+}
+table tr:nth-child(2) td {
+    border-top: 1px #d3d3d3 solid;
+}
 table td {
     vertical-align: top;
+    padding: .2em .8em
 }
 table td>div {
+    width: 100% !important;
     padding: .2em .4em !important;
     max-height: 6.5em;
     overflow: auto;
