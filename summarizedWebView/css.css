@@ -1,9 +1,13 @@
 
 .alternateBG:nth-child(odd) {
-    background: #ddd;
+    background: #eee;
 }
 div {
-    width: 95%;
-    border: 1px black solid;
+    width: 93%;
+    border-top: 1px #ddd solid;
     padding: 1em;
+    margin: 0 auto;
+}
+.ver1 span.verCount {
+    display: none;
 }

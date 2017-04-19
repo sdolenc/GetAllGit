@@ -12,17 +12,23 @@
     <div id="app"></div>
 
     <!-- Templates -->
+    <!-- todos:
+        internal expansion: hash, directory
+        base model, header: list of organizations (count), all, edx, etc.
+        base model, header: multiple versions (count): all, one, multiple
+        hyperlink full github urls,tags (new tab)
+        drop protocals from dispalyed url, add organization to class
+        header: type tag (rows will/hide show based on filter)
+    -->
     <script type="text/template" id="todo-tmpl">
-        <div class="<%= gitInfo.length %>">
-            <%= gitInfo.length %> versions of <%= remoteUrl %>
-            <div>
+        <div class="ver<%= gitInfo.length %>">
+            <span class="verCount"><%= gitInfo.length %> versions of</span> <%= remoteUrl %>
+            <% _.each(gitInfo, function(git){ %>
                 <div>
-                    a
+                    <%= git.repo.repoLocation.length %> path(s) are at commit: <br/>
+                    <%= git.currentCommitHash %> from <%= git.repo.repoCurrentCode.currentCommitDate %>
                 </div>
-                <div>
-                    b
-                </div>
-            </div>
+            <% }); %>
         </div>
     </script>
 
