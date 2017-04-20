@@ -23,7 +23,7 @@ var RemoteView = Backbone.View.extend({
     tagName: 'div',
     className: 'alternateBG',
 
-    template: _.template($('#todo-tmpl').html()),
+    template: _.template($('#git-tmpl').html()),
 
     initialize: function() {
         this.model.on('change', this.render, this);
@@ -32,6 +32,18 @@ var RemoteView = Backbone.View.extend({
     render: function() {
         this.$el.html(this.template(this.model.toJSON()));
         return this;
+    },
+
+    events: {
+        'click .specificCommit a': 'toggleCommitDetails'
+    },
+
+    toggleCommitDetails: function(e) {
+        $(e.target.parentElement).find(".tableParent").first().slideToggle("slow");
+
+        // Don't change scroll position even if href begins with the hash symbol #.
+        e.preventDefault();
+        return false;
     }
 });
 

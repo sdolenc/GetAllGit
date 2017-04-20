@@ -190,10 +190,10 @@ while read entry; do
     remote=`git config --get remote.origin.url | sed 's/\/\/.*@/\/\//g'`
     echo "$remote" >> $gitUrlFile
 
-    # Get latest upstream information. This won't sync or merge any code.
-    # - before retriving branch and tag information.
-    # - after recording syncTime (as this updateds FETCH_HEAD's timestamp)
-    # We allow for failure in case network connectivity or trouble elevating.
+    # Get latest upstream information. This won't sync or merge any code. Happens
+    # - before retrieving branch and tag information BUT
+    # - after recording syncTime (as this will update FETCH_HEAD's timestamp)
+    # We allow for failure in case network connectivity or permissions trouble.
     set +e
     sudo git fetch
     set -e

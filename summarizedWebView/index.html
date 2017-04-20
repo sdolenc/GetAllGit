@@ -13,7 +13,7 @@
 
     <!-- Templates -->
     <!-- todos:
-        internal expansion: hash, directory
+        internal expansion: directory
         models
             tag/branch count -> toggle prefix
             base model, header: list of organizations (count), all, edx, etc.
@@ -23,22 +23,22 @@
         header: type tag (rows will/hide show based on filter)
         expand all
     -->
-    <script type="text/template" id="todo-tmpl">
+    <script type="text/template" id="git-tmpl">
         <div class="ver<%= gitInfo.length %>">
             <span class="countVer"><%= gitInfo.length %> versions of</span> <%= remoteUrl %>
             <% _.each(gitInfo, function(git){ %>
-                <div>
+                <div class="specificCommit">
                     <%= git.repo.repoLocation.length %> path(s) are at
-                    commit: <%= git.currentCommitHash %>
+                    <a href="#">commit: <%= git.currentCommitHash %></a>
                     from <%= git.repo.repoCurrentCode.currentCommitDate %>
-                    <div>
+                    <div class="tableParent" style="display:none">
                         <table>
                             <tr>
                                 <td><div class="branch"> <!--todo-->
                                     <span class="countBranch">Branch:<br/></span>
                                     <%= git.repo.repoCurrentCode.currentBranch %>
                                 </div></td>
-                                <td><div class="tag"> <!--todo-->
+                                <td><div class="tag"> <!--todo 0,1, multiple-->
                                     <span class="countTag">Tag:<br/></span>
                                     <%= git.repo.repoCurrentCode.currentTags %>
                                 </div></td>
