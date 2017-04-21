@@ -39,10 +39,12 @@ var RemoteView = Backbone.View.extend({
     },
 
     toggleCommitDetails: function(e) {
+        // Don't change scroll position even if href begins with the hash symbol #.
+        e.preventDefault();
+
         $(e.target.parentElement).find(".tableParent").first().slideToggle("slow");
 
         // Don't change scroll position even if href begins with the hash symbol #.
-        e.preventDefault();
         return false;
     }
 });

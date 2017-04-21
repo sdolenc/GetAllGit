@@ -23,7 +23,8 @@ initialize()
         # Don't exit on error. A few directories can't be searched.
         set +e
             echo "This operation takes a few seconds..."
-            find / -name \.git -type d 2> /dev/null 1> $gitDirFile
+            gitDirectories=`find / -name \.git -type d 2> /dev/null | grep -v -i "\.local\|Trash\|expunged"`
+            echo "$gitDirectories" >> $gitDirFile
         set -e
 
         # We temporarily disabled "exit on error" so let's test for success before continuing.
