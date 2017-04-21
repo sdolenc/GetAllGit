@@ -6,7 +6,7 @@ set -e
 
 # Load Settings.
 scriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source $scriptDir/settings.sh
+source $scriptDir/helpers/settings.sh
 
 set -x # optional
 
@@ -105,7 +105,7 @@ get_tag()
     set -e
 
     # For old versions of git (like 1.7.9.5)
-    if [ -z $tagInfo ]; then
+    if [ -z "$tagInfo" ]; then
         # Get information, split into multiple lines, only keep values prefixed with 'tag:', remove prefix
         tagInfo=`git log -g --decorate -1 | tr ',' '\n' | tr ')' '\n' | grep -o -i "${prefix}.*" | sed "s/${prefix}/  /g"`
     fi
@@ -123,21 +123,21 @@ get_tag()
             nextTag=`git describe --contains 2> /dev/null`
 
             # For old versions of git (like 1.7.9.5)
-            if [ -z $nextTag ]; then
+            if [ -z "$nextTag" ]; then
                 # Uses commit hash to get label then parse tag.
                 nextTag=`git rev-parse HEAD | git name-rev --stdin --tags | grep -o 'tags/.*)' | sed 's/tags\///g' | tr ')' ' '`
             fi
         set -e
 
         # We temporarily disabled "exit on error" so let's test the results before using them.
-        if [ ! -z $autoTag ]; then
+        if [ ! -z "$autoTag" ]; then
             tagInfo="  $autoTag"
         fi
-        if [ ! -z $autoTag ] && [ ! -z $nextTag ]; then
+        if [ ! -z "$autoTag" ] && [ ! -z "$nextTag" ]; then
             # Separate with newline if both automatic tags are available.
             tagInfo="${tagInfo}\n"
         fi
-        if [ ! -z $nextTag ]; then
+        if [ ! -z "$nextTag" ]; then
             tagInfo="${tagInfo}  $nextTag"
         fi
     fi
@@ -176,7 +176,7 @@ gitVer=`git --version | grep -o '[0-9].*'`
 
 # Iterate over list of local git enlistments.
 while read entry; do
-    pushd ${entry}/..
+    pushd "${entry}/.."
 
     # FETCH_HEAD file's modified timestamp is changed everytime git pulls from remote server.
     # We do this first in case one of the operation below happen to modify the timestamp.
@@ -184,10 +184,11 @@ while read entry; do
     if [ -f .git/FETCH_HEAD ]; then
         syncTime=`stat -c %y .git/FETCH_HEAD`
     fi
-    echo "$syncTime" >> $gitTimeFile
+    echo "$syncTime" >> "$gitTimeFile"
 
     # Sanitize token from URL before writing to file.
-    remote=`git config --get remote.origin.url | sed 's/\/\/.*@/\/\//g'`
+    protocolSlashes='//' # // like in https://
+    remote=`git config --get remote.origin.url | sed "s#$protocolSlashes.*@#$protocolSlashes#g"`
     echo "$remote" >> $gitUrlFile
 
     # Get latest upstream information. This won't sync or merge any code. Happens
