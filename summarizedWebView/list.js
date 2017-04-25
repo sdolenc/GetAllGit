@@ -9,7 +9,7 @@ var Remote = Backbone.Model.extend();
 // Collections
 //--------------
 var RemoteList = Backbone.Collection.extend({
-    url: 'example2.json',
+    url: 'example2b.json',
     model: Remote,
     parse: function(response, options) {
         return response;
@@ -100,7 +100,6 @@ $('#app').html(remoteListView.el);
         model values -> array
         reconstruct header string, toggle prefix based on count
         hyperlink full github urls: tags,branch (new tab)
-        drop protocals from dispalyed url
 
     validate all code path before merge
         test nmap installer on 14,16

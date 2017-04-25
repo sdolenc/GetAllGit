@@ -14,7 +14,8 @@
     <!-- Templates -->
     <script type="text/template" id="git-tmpl">
         <div class="ver<%= gitInfo.length %>">
-            <span class="countVer"><%= gitInfo.length %> versions of</span> <%= remoteUrl %>
+            <span class="countVer"><%= gitInfo.length %> versions of</span>
+            <a href="<%= remoteUrl.full %>" target="_blank" class="external"><%= remoteUrl.short %></a>
             <% _.each(gitInfo, function(git){ %>
                 <div class="specificCommit">
                     <a href="#" data-table=".dir"><%= git.repo.repoLocation.length %> path(s)</a>

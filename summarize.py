@@ -6,7 +6,7 @@ import os
 import sys
 import csv
 import json
-from urlparse import urlparse
+from urlparse import urlparse,urljoin
 from helpers.sourceSettings import source_settings
 
 # Expects directory as an argument.
@@ -77,14 +77,14 @@ class RepoDetails:
 
 class UrlDetails:
     def __init__(self, url):
-        self.full = url
         parsed = urlparse(url)
         parts = parsed.path.split('.')
         self.short = parsed.netloc + parts[0]
-        if (parsed.netloc):
-            parts = parts[0].split('/')
-            self.org = parts[1]
-            self.project = parts[2]
+        self.full = urljoin(url, parts[0])
+
+        parts = parts[0].split('/')
+        self.org = parts[1]
+        self.project = parts[2]
 
 #todo: start clock to read csv
 condensed = Summarized()
