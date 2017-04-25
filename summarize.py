@@ -12,7 +12,7 @@ from helpers.sourceSettings import source_settings
 if (len(sys.argv) != 2):
     print("Path Expected")
     exit(3)
-csvFilePath = "/home/localstepdo/e/getAllGit/summarizedWebView/example.csv" # sys.argv[1] #todo:
+csvFilePath = "/home/localstepdo/e/getAllGit/summarizedWebView/example2.csv" # sys.argv[1] #todo:
 
 if (not os.path.isfile(csvFilePath)):
     print("Path {} is not a file".format(csvFilePath))
@@ -75,14 +75,16 @@ csvFile = open(csvFilePath)
 data = csv.DictReader(csvFile)
 for row in data:
     # Remove empty column created by trailing comma.
-    row.pop("")
+    if (row.get("") != None):
+        row.pop("")
+
     # Push row into summarized object.
     condensed.add(row)
 csvFile.close()
 #todo: stop clock
 
 # todo: location
-summaryFilePath = "/home/localstepdo/e/getAllGit/summarizedWebView/example.json"
+summaryFilePath = "/home/localstepdo/e/getAllGit/summarizedWebView/example2.json"
 #summaryFilePath = os.path.join(os.environ["scriptDir"], "summarized.json")
 
 #todo: start clock to write json

@@ -9,7 +9,7 @@ var Remote = Backbone.Model.extend();
 // Collections
 //--------------
 var RemoteList = Backbone.Collection.extend({
-    url: 'example.json',
+    url: 'example2.json',
     model: Remote,
     parse: function(response, options) {
         return response;
@@ -85,3 +85,29 @@ var remoteListView = new RemoteListView({
 // Attach markup
 //--------------
 $('#app').html(remoteListView.el);
+
+/*
+    top filter
+        separate model,view for filters
+        organization (count): all (x), edx (y), etc (z). -> sorted by totals
+        show all collections,just collections with differences
+
+    diff
+        sort by commit date
+        radio buttons -> link
+
+    UX branch,tag count header
+        model values -> array
+        reconstruct header string, toggle prefix based on count
+        hyperlink full github urls: tags,branch (new tab)
+        drop protocals from dispalyed url
+
+    validate all code path before merge
+        test nmap installer on 14,16
+
+    reach
+        type tag (rows will/hide show based on filter)
+            autocomplete
+        real webApp,deployment
+            model ingestion (form upload,scp,email)
+*/

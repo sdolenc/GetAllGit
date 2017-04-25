@@ -1,0 +1,1489 @@
+machine,ipAdresses,osVer,gitVer,directory,remoteUrl,currentBranch,currentTags,currentCommitDate,currentCommitDescription,currentCommitHash,syncTime (accuracy not guarenteed)
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/edx-submissions,https://github.com/edx/edx-submissions.git,"12 branches contain current commit:
+  diana/all-submissions
+  efischer/1_0_0_release
+  efischer/archive_table
+  efischer/clear_state
+  efischer/delete_studentitem
+  efischer/django_version
+  efischer/gemnasium
+  efischer/mangle_key
+  efischer/score_summary
+  efischer/soft_delete_sub
+  efischer/sql_data
+  master",0.1.3,2015-11-20 17:30:38 -0500,Merge pull request #31 from edx/andya/update-requirements,02ccd59,2016-11-23 00:45:58.843595235 +0000
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/ora2,https://github.com/edx/edx-ora2.git,"14 branches contain current commit:
+  aj/test_ora2_build
+  cdyer/celery-3.1.25
+  efischer/criterion_names
+  efischer/fix_acceptance_tests
+  efischer/pylint_fixup
+  efischer/sub_update
+  efischer/swallow_reset_signal
+  efischer/tmp
+  efischer/update_readme
+  grade_available_responses_view
+  jlajoie/dsl-acceptance-tests
+  jlajoie/gocd-test
+  master
+  rc/1.3.0",1.2.0,2017-01-26 15:31:04 -0500,Merge pull request #971 from edx/yro_release,4abd0ef,2017-03-23 16:53:51.989786155 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/ora2,https://github.com/edx/edx-ora2.git,"14 branches contain current commit:
+  aj/test_ora2_build
+  cdyer/celery-3.1.25
+  efischer/criterion_names
+  efischer/fix_acceptance_tests
+  efischer/pylint_fixup
+  efischer/sub_update
+  efischer/swallow_reset_signal
+  efischer/tmp
+  efischer/update_readme
+  grade_available_responses_view
+  jlajoie/dsl-acceptance-tests
+  jlajoie/gocd-test
+  master
+  rc/1.3.0",1.2.0,2017-01-26 15:31:04 -0500,Merge pull request #971 from edx/yro_release,4abd0ef,2017-03-23 16:56:44.628205914 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/ora2,https://github.com/edx/edx-ora2.git,"14 branches contain current commit:
+  aj/test_ora2_build
+  cdyer/celery-3.1.25
+  efischer/criterion_names
+  efischer/fix_acceptance_tests
+  efischer/pylint_fixup
+  efischer/sub_update
+  efischer/swallow_reset_signal
+  efischer/tmp
+  efischer/update_readme
+  grade_available_responses_view
+  jlajoie/dsl-acceptance-tests
+  jlajoie/gocd-test
+  master
+  rc/1.3.0",1.2.0,2017-01-26 15:31:04 -0500,Merge pull request #971 from edx/yro_release,4abd0ef,2017-03-23 16:57:23.042281333 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/ora2,https://github.com/edx/edx-ora2.git,"14 branches contain current commit:
+  aj/test_ora2_build
+  cdyer/celery-3.1.25
+  efischer/criterion_names
+  efischer/fix_acceptance_tests
+  efischer/pylint_fixup
+  efischer/sub_update
+  efischer/swallow_reset_signal
+  efischer/tmp
+  efischer/update_readme
+  grade_available_responses_view
+  jlajoie/dsl-acceptance-tests
+  jlajoie/gocd-test
+  master
+  rc/1.3.0",1.2.0,2017-01-26 15:31:04 -0500,Merge pull request #971 from edx/yro_release,4abd0ef,2017-03-23 16:49:19.310679794 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/ora2,https://github.com/edx/edx-ora2.git,"14 branches contain current commit:
+  aj/test_ora2_build
+  cdyer/celery-3.1.25
+  efischer/criterion_names
+  efischer/fix_acceptance_tests
+  efischer/pylint_fixup
+  efischer/sub_update
+  efischer/swallow_reset_signal
+  efischer/tmp
+  efischer/update_readme
+  grade_available_responses_view
+  jlajoie/dsl-acceptance-tests
+  jlajoie/gocd-test
+  master
+  rc/1.3.0",1.2.0,2017-01-26 15:31:04 -0500,Merge pull request #971 from edx/yro_release,4abd0ef,2017-03-23 16:59:59.149962857 -0700
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/django-splash,https://github.com/edx/django-splash.git,"2 branches contain current commit:
+  ammar/upgrade-to-django1.8
+  master",v0.2,2015-10-22 18:33:56 +0500,upgrade migrations,da3f5b7,2017-04-13 12:06:29.296845931 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/django-splash,https://github.com/edx/django-splash.git,"2 branches contain current commit:
+  ammar/upgrade-to-django1.8
+  master",v0.2,2015-10-22 18:33:56 +0500,upgrade migrations,da3f5b7,2017-04-13 11:59:59.533689037 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/django-splash,https://github.com/edx/django-splash.git,"2 branches contain current commit:
+  ammar/upgrade-to-django1.8
+  master",v0.2,2015-10-22 18:33:56 +0500,upgrade migrations,da3f5b7,2017-04-13 11:41:56.857458256 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/django-splash,https://github.com/edx/django-splash.git,"2 branches contain current commit:
+  ammar/upgrade-to-django1.8
+  master",v0.2,2015-10-22 18:33:56 +0500,upgrade migrations,da3f5b7,2017-03-23 16:52:22.343736985 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/django-splash,https://github.com/edx/django-splash.git,"2 branches contain current commit:
+  ammar/upgrade-to-django1.8
+  master",v0.2,2015-10-22 18:33:56 +0500,upgrade migrations,da3f5b7,2017-04-13 11:41:22.956638960 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/django-splash,https://github.com/edx/django-splash.git,"2 branches contain current commit:
+  ammar/upgrade-to-django1.8
+  master",v0.2,2015-10-22 18:33:56 +0500,upgrade migrations,da3f5b7,2017-03-23 16:55:33.008963260 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/django-splash,https://github.com/edx/django-splash.git,"2 branches contain current commit:
+  ammar/upgrade-to-django1.8
+  master",v0.2,2015-10-22 18:33:56 +0500,upgrade migrations,da3f5b7,2016-11-23 00:45:56.551598897 +0000
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/django-splash,https://github.com/edx/django-splash.git,"2 branches contain current commit:
+  ammar/upgrade-to-django1.8
+  master",v0.2,2015-10-22 18:33:56 +0500,upgrade migrations,da3f5b7,2017-03-23 16:55:55.265925726 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/django-splash,https://github.com/edx/django-splash.git,"2 branches contain current commit:
+  ammar/upgrade-to-django1.8
+  master",v0.2,2015-10-22 18:33:56 +0500,upgrade migrations,da3f5b7,2017-03-23 16:48:03.495919401 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/django-splash,https://github.com/edx/django-splash.git,"2 branches contain current commit:
+  ammar/upgrade-to-django1.8
+  master",v0.2,2015-10-22 18:33:56 +0500,upgrade migrations,da3f5b7,2017-03-23 16:58:32.079975151 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/django-splash,https://github.com/edx/django-splash.git,"2 branches contain current commit:
+  ammar/upgrade-to-django1.8
+  master",v0.2,2015-10-22 18:33:56 +0500,upgrade migrations,da3f5b7,2017-04-13 11:41:18.031643418 -0700
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/xqueue/venvs/xqueue/src/pika,https://github.com/pika/pika.git,"2 branches contain current commit:
+  client-properties-override
+  master","0.9.9-31-ga731347
+0.9.10~24",2013-02-26 08:52:05 -0800,Merge pull request #292 from wulczer/channel-closed-and-ioloop-stop,a731347,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/xqueue/venvs/xqueue/src/pika,https://github.com/pika/pika.git,"2 branches contain current commit:
+  client-properties-override
+  master","0.9.9-31-ga731347
+0.9.10~24",2013-02-26 08:52:05 -0800,Merge pull request #292 from wulczer/channel-closed-and-ioloop-stop,a731347,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/xqueue/venvs/xqueue/src/pika,https://github.com/pika/pika.git,"2 branches contain current commit:
+  client-properties-override
+  master","0.9.9-31-ga731347
+0.9.10~24",2013-02-26 08:52:05 -0800,Merge pull request #292 from wulczer/channel-closed-and-ioloop-stop,a731347,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/xqueue/venvs/xqueue/src/pika,https://github.com/pika/pika.git,"2 branches contain current commit:
+  client-properties-override
+  master","0.9.9-31-ga731347
+0.9.10~24",2013-02-26 08:52:05 -0800,Merge pull request #292 from wulczer/channel-closed-and-ioloop-stop,a731347,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/xqueue/venvs/xqueue/src/pika,https://github.com/pika/pika.git,"2 branches contain current commit:
+  client-properties-override
+  master","0.9.9-31-ga731347
+0.9.10~24",2013-02-26 08:52:05 -0800,Merge pull request #292 from wulczer/channel-closed-and-ioloop-stop,a731347,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/xqueue/venvs/xqueue/src/pika,https://github.com/pika/pika.git,"2 branches contain current commit:
+  client-properties-override
+  master","0.9.9-31-ga731347
+0.9.10~24",2013-02-26 08:52:05 -0800,Merge pull request #292 from wulczer/channel-closed-and-ioloop-stop,a731347,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/xqueue/venvs/xqueue/src/pika,https://github.com/pika/pika.git,"2 branches contain current commit:
+  client-properties-override
+  master","0.9.9-31-ga731347
+0.9.10~24",2013-02-26 08:52:05 -0800,Merge pull request #292 from wulczer/channel-closed-and-ioloop-stop,a731347,2016-11-23 00:47:20.983469964 +0000
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/xqueue/venvs/xqueue/src/pika,https://github.com/pika/pika.git,"2 branches contain current commit:
+  client-properties-override
+  master","0.9.9-31-ga731347
+0.9.10~24",2013-02-26 08:52:05 -0800,Merge pull request #292 from wulczer/channel-closed-and-ioloop-stop,a731347,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/xqueue/venvs/xqueue/src/pika,https://github.com/pika/pika.git,"2 branches contain current commit:
+  client-properties-override
+  master","0.9.9-31-ga731347
+0.9.10~24",2013-02-26 08:52:05 -0800,Merge pull request #292 from wulczer/channel-closed-and-ioloop-stop,a731347,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/xqueue/venvs/xqueue/src/pika,https://github.com/pika/pika.git,"2 branches contain current commit:
+  client-properties-override
+  master","0.9.9-31-ga731347
+0.9.10~24",2013-02-26 08:52:05 -0800,Merge pull request #292 from wulczer/channel-closed-and-ioloop-stop,a731347,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/xqueue/venvs/xqueue/src/pika,https://github.com/pika/pika.git,"2 branches contain current commit:
+  client-properties-override
+  master","0.9.9-31-ga731347
+0.9.10~24",2013-02-26 08:52:05 -0800,Merge pull request #292 from wulczer/channel-closed-and-ioloop-stop,a731347,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/xblock-poll,https://github.com/open-craft/xblock-poll,"2 branches contain current commit:
+  edx-release
+  master","v1.0-5-ge7a6c95
+v1.1~4",2015-08-19 14:03:43 +0300,Merge pull request #6 from open-craft/edx-release,e7a6c95,2016-11-23 00:46:05.967583909 +0000
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/edx-sga,https://github.com/mitodl/edx-sga,"2 branches contain current commit:
+  master
+  release","2 tags point to current commit:
+  v0.4.0-16-g172a90f
+  v0.6.0~1",2015-02-12 16:46:43 -0500,Merge pull request #56 from mitodl/rc/0.5.0,172a90f,2016-11-23 00:46:05.375584847 +0000
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/event-tracking,https://github.com/edx/event-tracking.git,"2 branches contain current commit:
+  master
+  unpin-dependencies",0.2.1,2015-11-19 17:48:11 +0500,Merge pull request #34 from edx/django1.8-upgrade,c9573cf,2017-04-13 12:06:28.428842448 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/event-tracking,https://github.com/edx/event-tracking.git,"2 branches contain current commit:
+  master
+  unpin-dependencies",0.2.1,2015-11-19 17:48:11 +0500,Merge pull request #34 from edx/django1.8-upgrade,c9573cf,2017-04-13 11:59:58.661675767 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/event-tracking,https://github.com/edx/event-tracking.git,"2 branches contain current commit:
+  master
+  unpin-dependencies",0.2.1,2015-11-19 17:48:11 +0500,Merge pull request #34 from edx/django1.8-upgrade,c9573cf,2017-04-13 11:41:55.985447640 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/event-tracking,https://github.com/edx/event-tracking.git,"2 branches contain current commit:
+  master
+  unpin-dependencies",0.2.1,2015-11-19 17:48:11 +0500,Merge pull request #34 from edx/django1.8-upgrade,c9573cf,2017-03-23 16:52:21.451685596 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/event-tracking,https://github.com/edx/event-tracking.git,"2 branches contain current commit:
+  master
+  unpin-dependencies",0.2.1,2015-11-19 17:48:11 +0500,Merge pull request #34 from edx/django1.8-upgrade,c9573cf,2017-04-13 11:41:22.084637421 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/event-tracking,https://github.com/edx/event-tracking.git,"2 branches contain current commit:
+  master
+  unpin-dependencies",0.2.1,2015-11-19 17:48:11 +0500,Merge pull request #34 from edx/django1.8-upgrade,c9573cf,2017-03-23 16:55:32.172922595 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/event-tracking,https://github.com/edx/event-tracking.git,"2 branches contain current commit:
+  master
+  unpin-dependencies",0.2.1,2015-11-19 17:48:11 +0500,Merge pull request #34 from edx/django1.8-upgrade,c9573cf,2016-11-23 00:45:55.911599921 +0000
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/event-tracking,https://github.com/edx/event-tracking.git,"2 branches contain current commit:
+  master
+  unpin-dependencies",0.2.1,2015-11-19 17:48:11 +0500,Merge pull request #34 from edx/django1.8-upgrade,c9573cf,2017-03-23 16:55:54.341866972 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/event-tracking,https://github.com/edx/event-tracking.git,"2 branches contain current commit:
+  master
+  unpin-dependencies",0.2.1,2015-11-19 17:48:11 +0500,Merge pull request #34 from edx/django1.8-upgrade,c9573cf,2017-03-23 16:48:02.651896883 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/event-tracking,https://github.com/edx/event-tracking.git,"2 branches contain current commit:
+  master
+  unpin-dependencies",0.2.1,2015-11-19 17:48:11 +0500,Merge pull request #34 from edx/django1.8-upgrade,c9573cf,2017-03-23 16:58:31.183955533 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/event-tracking,https://github.com/edx/event-tracking.git,"2 branches contain current commit:
+  master
+  unpin-dependencies",0.2.1,2015-11-19 17:48:11 +0500,Merge pull request #34 from edx/django1.8-upgrade,c9573cf,2017-04-13 11:41:17.207643588 -0700
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/ora2,https://github.com/edx/edx-ora2.git,"20 branches contain current commit:
+  aj/test_ora2_build
+  cdyer/celery-3.1.25
+  dmitry/upload_improvements
+  efischer/credo_replay
+  efischer/criterion_names
+  efischer/fix_acceptance_tests
+  efischer/new_name
+  efischer/pylint_fixup
+  efischer/sub_update
+  efischer/swallow_reset_signal
+  efischer/tmp
+  efischer/update_readme
+  grade_available_responses_view
+  greg-temp
+  greric/hackathon16
+  jlajoie/dsl-acceptance-tests
+  jlajoie/gocd-test
+  master
+  rc/1.3.0
+  rc/1.3.3",1.2.0,2017-01-26 15:31:04 -0500,Merge pull request #971 from edx/yro_release,4abd0ef,2017-04-13 12:07:47.405295932 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/ora2,https://github.com/edx/edx-ora2.git,"20 branches contain current commit:
+  aj/test_ora2_build
+  cdyer/celery-3.1.25
+  dmitry/upload_improvements
+  efischer/credo_replay
+  efischer/criterion_names
+  efischer/fix_acceptance_tests
+  efischer/new_name
+  efischer/pylint_fixup
+  efischer/sub_update
+  efischer/swallow_reset_signal
+  efischer/tmp
+  efischer/update_readme
+  grade_available_responses_view
+  greg-temp
+  greric/hackathon16
+  jlajoie/dsl-acceptance-tests
+  jlajoie/gocd-test
+  master
+  rc/1.3.0
+  rc/1.3.3",1.2.0,2017-01-26 15:31:04 -0500,Merge pull request #971 from edx/yro_release,4abd0ef,2017-04-13 12:01:18.290830381 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/ora2,https://github.com/edx/edx-ora2.git,"20 branches contain current commit:
+  aj/test_ora2_build
+  cdyer/celery-3.1.25
+  dmitry/upload_improvements
+  efischer/credo_replay
+  efischer/criterion_names
+  efischer/fix_acceptance_tests
+  efischer/new_name
+  efischer/pylint_fixup
+  efischer/sub_update
+  efischer/swallow_reset_signal
+  efischer/tmp
+  efischer/update_readme
+  grade_available_responses_view
+  greg-temp
+  greric/hackathon16
+  jlajoie/dsl-acceptance-tests
+  jlajoie/gocd-test
+  master
+  rc/1.3.0
+  rc/1.3.3",1.2.0,2017-01-26 15:31:04 -0500,Merge pull request #971 from edx/yro_release,4abd0ef,2017-04-13 11:43:16.574191569 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/ora2,https://github.com/edx/edx-ora2.git,"20 branches contain current commit:
+  aj/test_ora2_build
+  cdyer/celery-3.1.25
+  dmitry/upload_improvements
+  efischer/credo_replay
+  efischer/criterion_names
+  efischer/fix_acceptance_tests
+  efischer/new_name
+  efischer/pylint_fixup
+  efischer/sub_update
+  efischer/swallow_reset_signal
+  efischer/tmp
+  efischer/update_readme
+  grade_available_responses_view
+  greg-temp
+  greric/hackathon16
+  jlajoie/dsl-acceptance-tests
+  jlajoie/gocd-test
+  master
+  rc/1.3.0
+  rc/1.3.3",1.2.0,2017-01-26 15:31:04 -0500,Merge pull request #971 from edx/yro_release,4abd0ef,2017-04-13 11:42:43.768783393 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/ora2,https://github.com/edx/edx-ora2.git,"20 branches contain current commit:
+  aj/test_ora2_build
+  cdyer/celery-3.1.25
+  dmitry/upload_improvements
+  efischer/credo_replay
+  efischer/criterion_names
+  efischer/fix_acceptance_tests
+  efischer/new_name
+  efischer/pylint_fixup
+  efischer/sub_update
+  efischer/swallow_reset_signal
+  efischer/tmp
+  efischer/update_readme
+  grade_available_responses_view
+  greg-temp
+  greric/hackathon16
+  jlajoie/dsl-acceptance-tests
+  jlajoie/gocd-test
+  master
+  rc/1.3.0
+  rc/1.3.3",1.2.0,2017-01-26 15:31:04 -0500,Merge pull request #971 from edx/yro_release,4abd0ef,2017-04-13 11:42:31.395920292 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/codejail,https://github.com/edx/codejail.git,"3 branches contain current commit:
+  adam/test-middleware
+  cdyer/django-integration
+  master",1.0~2,2015-01-29 14:14:04 -0500,Merge pull request #36 from edx/ned/proxy-subprocess,6b17c33,2016-11-23 00:45:54.643601953 +0000
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-reverification-block,https://github.com/edx/edx-reverification-block.git,"3 branches contain current commit:
+  ammar/update-satellite-repos
+  master
+  ned/upgrade-django-1.8",0.0.5,2015-11-06 12:08:54 +0500,bump library version,cd9a252,2017-04-13 12:06:38.356884466 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-reverification-block,https://github.com/edx/edx-reverification-block.git,"3 branches contain current commit:
+  ammar/update-satellite-repos
+  master
+  ned/upgrade-django-1.8",0.0.5,2015-11-06 12:08:54 +0500,bump library version,cd9a252,2017-04-13 12:00:08.717827920 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-reverification-block,https://github.com/edx/edx-reverification-block.git,"3 branches contain current commit:
+  ammar/update-satellite-repos
+  master
+  ned/upgrade-django-1.8",0.0.5,2015-11-06 12:08:54 +0500,bump library version,cd9a252,2017-04-13 11:42:06.949576891 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-reverification-block,https://github.com/edx/edx-reverification-block.git,"3 branches contain current commit:
+  ammar/update-satellite-repos
+  master
+  ned/upgrade-django-1.8",0.0.5,2015-11-06 12:08:54 +0500,bump library version,cd9a252,2017-03-23 16:52:33.136354130 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-reverification-block,https://github.com/edx/edx-reverification-block.git,"3 branches contain current commit:
+  ammar/update-satellite-repos
+  master
+  ned/upgrade-django-1.8",0.0.5,2015-11-06 12:08:54 +0500,bump library version,cd9a252,2017-04-13 11:41:34.196658177 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-reverification-block,https://github.com/edx/edx-reverification-block.git,"3 branches contain current commit:
+  ammar/update-satellite-repos
+  master
+  ned/upgrade-django-1.8",0.0.5,2015-11-06 12:08:54 +0500,bump library version,cd9a252,2017-03-23 16:55:41.937393573 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/edx-reverification-block,https://github.com/edx/edx-reverification-block.git,"3 branches contain current commit:
+  ammar/update-satellite-repos
+  master
+  ned/upgrade-django-1.8",0.0.5,2015-11-06 12:08:54 +0500,bump library version,cd9a252,2016-11-23 00:46:03.251588217 +0000
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-reverification-block,https://github.com/edx/edx-reverification-block.git,"3 branches contain current commit:
+  ammar/update-satellite-repos
+  master
+  ned/upgrade-django-1.8",0.0.5,2015-11-06 12:08:54 +0500,bump library version,cd9a252,2017-03-23 16:56:05.278555140 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-reverification-block,https://github.com/edx/edx-reverification-block.git,"3 branches contain current commit:
+  ammar/update-satellite-repos
+  master
+  ned/upgrade-django-1.8",0.0.5,2015-11-06 12:08:54 +0500,bump library version,cd9a252,2017-03-23 16:48:12.644183898 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-reverification-block,https://github.com/edx/edx-reverification-block.git,"3 branches contain current commit:
+  ammar/update-satellite-repos
+  master
+  ned/upgrade-django-1.8",0.0.5,2015-11-06 12:08:54 +0500,bump library version,cd9a252,2017-03-23 16:58:42.404202665 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-reverification-block,https://github.com/edx/edx-reverification-block.git,"3 branches contain current commit:
+  ammar/update-satellite-repos
+  master
+  ned/upgrade-django-1.8",0.0.5,2015-11-06 12:08:54 +0500,bump library version,cd9a252,2017-04-13 11:41:26.879641324 -0700
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-submissions,https://github.com/edx/edx-submissions.git,"3 branches contain current commit:
+  efischer/django_unpin
+  efischer/pytz
+  master",1.1.4,2016-12-06 16:05:34 -0500,Merge pull request #51 from edx/efischer/send_time,e4c4eae,2017-04-13 12:06:35.480871809 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-submissions,https://github.com/edx/edx-submissions.git,"3 branches contain current commit:
+  efischer/django_unpin
+  efischer/pytz
+  master",1.1.4,2016-12-06 16:05:34 -0500,Merge pull request #51 from edx/efischer/send_time,e4c4eae,2017-04-13 12:00:05.797783937 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-submissions,https://github.com/edx/edx-submissions.git,"3 branches contain current commit:
+  efischer/django_unpin
+  efischer/pytz
+  master",1.1.4,2016-12-06 16:05:34 -0500,Merge pull request #51 from edx/efischer/send_time,e4c4eae,2017-04-13 11:42:04.125544482 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-submissions,https://github.com/edx/edx-submissions.git,"3 branches contain current commit:
+  efischer/django_unpin
+  efischer/pytz
+  master",1.1.4,2016-12-06 16:05:34 -0500,Merge pull request #51 from edx/efischer/send_time,e4c4eae,2017-04-13 11:41:31.288653313 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-submissions,https://github.com/edx/edx-submissions.git,"3 branches contain current commit:
+  efischer/django_unpin
+  efischer/pytz
+  master",1.1.4,2016-12-06 16:05:34 -0500,Merge pull request #51 from edx/efischer/send_time,e4c4eae,2017-04-13 11:41:24.215642006 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/opaque-keys,https://github.com/edx/opaque-keys.git,"3 branches contain current commit:
+  master
+  ormsbee/lazy_key
+  ormsbee/revert_caching","0.1.2-31-g27dc382
+0.3.2~12",2015-07-01 14:21:46 +0500,Merge pull request #56 from edx/aj/tnl2435-fix-studio-studio-schedule-details-broken-page,27dc382,2016-11-23 00:45:59.439594284 +0000
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/done-xblock,https://github.com/pmitros/DoneXBlock.git,"3 branches contain current commit:
+  master
+  pmitros/analytics-review
+  pr-review-a",release-2016-08-10~17,2014-06-05 16:00:25 -0400,Fixes for doctype=html,1ce0ac1,2017-04-13 12:07:28.357163178 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/done-xblock,https://github.com/pmitros/DoneXBlock.git,"3 branches contain current commit:
+  master
+  pmitros/analytics-review
+  pr-review-a",release-2016-08-10~17,2014-06-05 16:00:25 -0400,Fixes for doctype=html,1ce0ac1,2017-04-13 12:00:58.522554123 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/done-xblock,https://github.com/pmitros/DoneXBlock.git,"3 branches contain current commit:
+  master
+  pmitros/analytics-review
+  pr-review-a",release-2016-08-10~17,2014-06-05 16:00:25 -0400,Fixes for doctype=html,1ce0ac1,2017-04-13 11:42:56.710051093 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/done-xblock,https://github.com/pmitros/DoneXBlock.git,"3 branches contain current commit:
+  master
+  pmitros/analytics-review
+  pr-review-a",release-2016-08-10~17,2014-06-05 16:00:25 -0400,Fixes for doctype=html,1ce0ac1,2017-03-23 16:53:31.188373624 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/done-xblock,https://github.com/pmitros/DoneXBlock.git,"3 branches contain current commit:
+  master
+  pmitros/analytics-review
+  pr-review-a",release-2016-08-10~17,2014-06-05 16:00:25 -0400,Fixes for doctype=html,1ce0ac1,2017-04-13 11:42:24.296749045 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/done-xblock,https://github.com/pmitros/DoneXBlock.git,"3 branches contain current commit:
+  master
+  pmitros/analytics-review
+  pr-review-a",release-2016-08-10~17,2014-06-05 16:00:25 -0400,Fixes for doctype=html,1ce0ac1,2017-03-23 16:56:27.063453026 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/done-xblock,https://github.com/pmitros/DoneXBlock.git,"3 branches contain current commit:
+  master
+  pmitros/analytics-review
+  pr-review-a",release-2016-08-10~17,2014-06-05 16:00:25 -0400,Fixes for doctype=html,1ce0ac1,2016-11-23 00:46:28.055549353 +0000
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/done-xblock,https://github.com/pmitros/DoneXBlock.git,"3 branches contain current commit:
+  master
+  pmitros/analytics-review
+  pr-review-a",release-2016-08-10~17,2014-06-05 16:00:25 -0400,Fixes for doctype=html,1ce0ac1,2017-03-23 16:57:01.025285486 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/done-xblock,https://github.com/pmitros/DoneXBlock.git,"3 branches contain current commit:
+  master
+  pmitros/analytics-review
+  pr-review-a",release-2016-08-10~17,2014-06-05 16:00:25 -0400,Fixes for doctype=html,1ce0ac1,2017-03-23 16:49:00.906009764 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/done-xblock,https://github.com/pmitros/DoneXBlock.git,"3 branches contain current commit:
+  master
+  pmitros/analytics-review
+  pr-review-a",release-2016-08-10~17,2014-06-05 16:00:25 -0400,Fixes for doctype=html,1ce0ac1,2017-03-23 16:59:38.213475005 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/done-xblock,https://github.com/pmitros/DoneXBlock.git,"3 branches contain current commit:
+  master
+  pmitros/analytics-review
+  pr-review-a",release-2016-08-10~17,2014-06-05 16:00:25 -0400,Fixes for doctype=html,1ce0ac1,2017-04-13 11:42:13.127814605 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/django-pipeline,https://github.com/cyberdelia/django-pipeline.git,"4 branches contain current commit:
+  1.5.x
+  1.6.x
+  master
+  new-django",1.5.3,2015-08-01 11:02:49 -0700,bump version,d068a01,2016-11-23 00:45:49.003611023 +0000
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/js-test-tool,https://github.com/edx/js-test-tool.git,"4 branches contain current commit:
+  benp/fix-jscover
+  ekafeel/upgrade-jasmine
+  master
+  pip-remove-use-mirrors",v0.1.6,2014-11-18 16:07:17 -0500,Merge pull request #55 from edx/gprice/specify-port,a07bf1b,2016-11-23 00:45:55.259600966 +0000
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/.rbenv,https://github.com/sstephenson/rbenv.git,"4 branches contain current commit:
+  detect-shell-from-script
+  master
+  user-gems
+  version-aliases",v0.4.0,2013-01-04 12:27:26 -0600,rbenv 0.4.0,9.375E+102,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/forum/.rbenv,https://github.com/sstephenson/rbenv.git,"4 branches contain current commit:
+  detect-shell-from-script
+  master
+  user-gems
+  version-aliases",v0.4.0,2013-01-04 12:27:26 -0600,rbenv 0.4.0,9.375E+102,
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-sga,https://github.com/mitodl/edx-sga,"4 branches contain current commit:
+  fix/aq/exception_server
+  master
+  release
+  release-candidate","2 tags point to current commit:
+  v0.4.0-16-g172a90f
+  v0.6.0~1",2015-02-12 16:46:43 -0500,Merge pull request #56 from mitodl/rc/0.5.0,172a90f,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-sga,https://github.com/mitodl/edx-sga,"4 branches contain current commit:
+  fix/aq/exception_server
+  master
+  release
+  release-candidate","2 tags point to current commit:
+  v0.4.0-16-g172a90f
+  v0.6.0~1",2015-02-12 16:46:43 -0500,Merge pull request #56 from mitodl/rc/0.5.0,172a90f,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-sga,https://github.com/mitodl/edx-sga,"4 branches contain current commit:
+  fix/aq/exception_server
+  master
+  release
+  release-candidate","2 tags point to current commit:
+  v0.4.0-16-g172a90f
+  v0.6.0~1",2015-02-12 16:46:43 -0500,Merge pull request #56 from mitodl/rc/0.5.0,172a90f,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-sga,https://github.com/mitodl/edx-sga,"4 branches contain current commit:
+  fix/aq/exception_server
+  master
+  release
+  release-candidate","2 tags point to current commit:
+  v0.4.0-16-g172a90f
+  v0.6.0~1",2015-02-12 16:46:43 -0500,Merge pull request #56 from mitodl/rc/0.5.0,172a90f,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-sga,https://github.com/mitodl/edx-sga,"4 branches contain current commit:
+  fix/aq/exception_server
+  master
+  release
+  release-candidate","2 tags point to current commit:
+  v0.4.0-16-g172a90f
+  v0.6.0~1",2015-02-12 16:46:43 -0500,Merge pull request #56 from mitodl/rc/0.5.0,172a90f,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-sga,https://github.com/mitodl/edx-sga,"4 branches contain current commit:
+  fix/aq/exception_server
+  master
+  release
+  release-candidate","2 tags point to current commit:
+  v0.4.0-16-g172a90f
+  v0.6.0~1",2015-02-12 16:46:43 -0500,Merge pull request #56 from mitodl/rc/0.5.0,172a90f,
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-sga,https://github.com/mitodl/edx-sga,"4 branches contain current commit:
+  fix/aq/exception_server
+  master
+  release
+  release-candidate","2 tags point to current commit:
+  v0.4.0-16-g172a90f
+  v0.6.0~1",2015-02-12 16:46:43 -0500,Merge pull request #56 from mitodl/rc/0.5.0,172a90f,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-sga,https://github.com/mitodl/edx-sga,"4 branches contain current commit:
+  fix/aq/exception_server
+  master
+  release
+  release-candidate","2 tags point to current commit:
+  v0.4.0-16-g172a90f
+  v0.6.0~1",2015-02-12 16:46:43 -0500,Merge pull request #56 from mitodl/rc/0.5.0,172a90f,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-sga,https://github.com/mitodl/edx-sga,"4 branches contain current commit:
+  fix/aq/exception_server
+  master
+  release
+  release-candidate","2 tags point to current commit:
+  v0.4.0-16-g172a90f
+  v0.6.0~1",2015-02-12 16:46:43 -0500,Merge pull request #56 from mitodl/rc/0.5.0,172a90f,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-sga,https://github.com/mitodl/edx-sga,"4 branches contain current commit:
+  fix/aq/exception_server
+  master
+  release
+  release-candidate","2 tags point to current commit:
+  v0.4.0-16-g172a90f
+  v0.6.0~1",2015-02-12 16:46:43 -0500,Merge pull request #56 from mitodl/rc/0.5.0,172a90f,
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/rate-xblock,https://github.com/pmitros/RateXBlock.git,"4 branches contain current commit:
+  master
+  pmitros/ux-revamp
+  push-to-prod
+  release-alpha",,2015-10-16 14:34:14 -0400,More i18n,367e19c,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/rate-xblock,https://github.com/pmitros/RateXBlock.git,"4 branches contain current commit:
+  master
+  pmitros/ux-revamp
+  push-to-prod
+  release-alpha",,2015-10-16 14:34:14 -0400,More i18n,367e19c,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/rate-xblock,https://github.com/pmitros/RateXBlock.git,"4 branches contain current commit:
+  master
+  pmitros/ux-revamp
+  push-to-prod
+  release-alpha",,2015-10-16 14:34:14 -0400,More i18n,367e19c,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/rate-xblock,https://github.com/pmitros/RateXBlock.git,"4 branches contain current commit:
+  master
+  pmitros/ux-revamp
+  push-to-prod
+  release-alpha",,2015-10-16 14:34:14 -0400,More i18n,367e19c,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/rate-xblock,https://github.com/pmitros/RateXBlock.git,"4 branches contain current commit:
+  master
+  pmitros/ux-revamp
+  push-to-prod
+  release-alpha",,2015-10-16 14:34:14 -0400,More i18n,367e19c,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/rate-xblock,https://github.com/pmitros/RateXBlock.git,"4 branches contain current commit:
+  master
+  pmitros/ux-revamp
+  push-to-prod
+  release-alpha",,2015-10-16 14:34:14 -0400,More i18n,367e19c,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/rate-xblock,https://github.com/pmitros/RateXBlock.git,"4 branches contain current commit:
+  master
+  pmitros/ux-revamp
+  push-to-prod
+  release-alpha",,2015-10-16 14:34:14 -0400,More i18n,367e19c,2016-11-23 00:46:00.643592365 +0000
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/rate-xblock,https://github.com/pmitros/RateXBlock.git,"4 branches contain current commit:
+  master
+  pmitros/ux-revamp
+  push-to-prod
+  release-alpha",,2015-10-16 14:34:14 -0400,More i18n,367e19c,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/rate-xblock,https://github.com/pmitros/RateXBlock.git,"4 branches contain current commit:
+  master
+  pmitros/ux-revamp
+  push-to-prod
+  release-alpha",,2015-10-16 14:34:14 -0400,More i18n,367e19c,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/rate-xblock,https://github.com/pmitros/RateXBlock.git,"4 branches contain current commit:
+  master
+  pmitros/ux-revamp
+  push-to-prod
+  release-alpha",,2015-10-16 14:34:14 -0400,More i18n,367e19c,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/rate-xblock,https://github.com/pmitros/RateXBlock.git,"4 branches contain current commit:
+  master
+  pmitros/ux-revamp
+  push-to-prod
+  release-alpha",,2015-10-16 14:34:14 -0400,More i18n,367e19c,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/ora2,https://github.com/edx/edx-ora2.git,"42 branches contain current commit:
+  benp/no-retries-wip
+  benp/profile-this
+  benp/update-libsass-0.11.1
+  christina/ora-e
+  christina/pep8
+  christina/timeout
+  christina/update-js
+  clintonb/requirements-fix
+  diana/ora-data-download
+  diana/ungraded-count
+  eficher/image_fix_sandbox
+  efischer/1.1.0
+  efischer/1.1.10
+  efischer/clear_state_user
+  efischer/css_fixes
+  efischer/fix_release
+  efischer/gemnasium_upgrade
+  efischer/i_think_ora_may_be_stable_at_this_point
+  efischer/image_fix
+  efischer/load_test_refactor
+  efischer/mathjax_change
+  efischer/new_i18n
+  efischer/new_release
+  efischer/no_options_cleanup
+  efischer/revert_name_change
+  efischer/string_update
+  efischer/test_casing
+  efischer/update_i18n
+  efischer/update_sub_dep
+  efischer/update_tx
+  efischer/version_bump
+  efischer/wait_for_grades
+  master
+  mushtaq/acceptance-test-optional-path-param
+  named-release/dogwood.rc
+  ned/test-dogwood.2
+  ned/test-eucalyptus
+  open-release/eucalyptus.master
+  revert-903-efischer/no_options_cleanup
+  ssemenova/keyboard
+  ssemenova/uniqueID
+  upgrade-numpy","named-release/dogwood.rc3
+named-release/dogwood.rc2
+named-release/dogwood.rc1
+named-release/dogwood.3
+named-release/dogwood.2
+named-release/dogwood.1
+named-release/dogwood
+0.2.4",2015-11-30 10:01:31 -0500,Merge pull request #800 from edx/andya/fix-staff-tools-styling-issue,bc6d03b,2016-11-23 00:45:57.855596812 +0000
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/edx-milestones,https://github.com/edx/edx-milestones.git,"5 branches contain current commit:
+  add-openedx-yaml
+  django1.8-upgrade
+  douglashall/update_opaque_keys_dependency
+  efischer/test
+  master",release-2015-11-17,2015-11-10 10:09:51 -0500,Version --> 0.1.5,81cbee0,2016-11-23 00:46:01.967590257 +0000
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-submissions,https://github.com/edx/edx-submissions.git,"5 branches contain current commit:
+  efischer/django_unpin
+  efischer/pytz
+  efischer/swallow_reset_signal
+  efischer/version_bump
+  master",1.1.4,2016-12-06 16:05:34 -0500,Merge pull request #51 from edx/efischer/send_time,e4c4eae,2017-03-23 16:52:30.064179318 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-submissions,https://github.com/edx/edx-submissions.git,"5 branches contain current commit:
+  efischer/django_unpin
+  efischer/pytz
+  efischer/swallow_reset_signal
+  efischer/version_bump
+  master",1.1.4,2016-12-06 16:05:34 -0500,Merge pull request #51 from edx/efischer/send_time,e4c4eae,2017-03-23 16:55:39.193262064 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-submissions,https://github.com/edx/edx-submissions.git,"5 branches contain current commit:
+  efischer/django_unpin
+  efischer/pytz
+  efischer/swallow_reset_signal
+  efischer/version_bump
+  master",1.1.4,2016-12-06 16:05:34 -0500,Merge pull request #51 from edx/efischer/send_time,e4c4eae,2017-03-23 16:56:02.010351141 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-submissions,https://github.com/edx/edx-submissions.git,"5 branches contain current commit:
+  efischer/django_unpin
+  efischer/pytz
+  efischer/swallow_reset_signal
+  efischer/version_bump
+  master",1.1.4,2016-12-06 16:05:34 -0500,Merge pull request #51 from edx/efischer/send_time,e4c4eae,2017-03-23 16:48:10.012093173 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-submissions,https://github.com/edx/edx-submissions.git,"5 branches contain current commit:
+  efischer/django_unpin
+  efischer/pytz
+  efischer/swallow_reset_signal
+  efischer/version_bump
+  master",1.1.4,2016-12-06 16:05:34 -0500,Merge pull request #51 from edx/efischer/send_time,e4c4eae,2017-03-23 16:58:39.380135751 -0700
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/notifier/virtualenvs/notifier/src/opaque-keys,https://github.com/edx/opaque-keys.git,"5 branches contain current commit:
+  master
+  ormsbee/lazy_key
+  ormsbee/revert_caching
+  revert-84-ormsbee/reapply_optimizations
+  zub/ENT-211-add-aggregate-course-key",0.1.2,2014-10-15 15:17:12 -0400,Merge pull request #43 from edx/bug/old_namespaces,a70af7c,2017-04-13 12:26:05.581731898 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/notifier/virtualenvs/notifier/src/opaque-keys,https://github.com/edx/opaque-keys.git,"5 branches contain current commit:
+  master
+  ormsbee/lazy_key
+  ormsbee/revert_caching
+  revert-84-ormsbee/reapply_optimizations
+  zub/ENT-211-add-aggregate-course-key",0.1.2,2014-10-15 15:17:12 -0400,Merge pull request #43 from edx/bug/old_namespaces,a70af7c,2017-04-13 12:17:35.996594245 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/notifier/virtualenvs/notifier/src/opaque-keys,https://github.com/edx/opaque-keys.git,"5 branches contain current commit:
+  master
+  ormsbee/lazy_key
+  ormsbee/revert_caching
+  revert-84-ormsbee/reapply_optimizations
+  zub/ENT-211-add-aggregate-course-key",0.1.2,2014-10-15 15:17:12 -0400,Merge pull request #43 from edx/bug/old_namespaces,a70af7c,2017-04-13 12:02:10.701356723 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/notifier/virtualenvs/notifier/src/opaque-keys,https://github.com/edx/opaque-keys.git,"5 branches contain current commit:
+  master
+  ormsbee/lazy_key
+  ormsbee/revert_caching
+  revert-84-ormsbee/reapply_optimizations
+  zub/ENT-211-add-aggregate-course-key",0.1.2,2014-10-15 15:17:12 -0400,Merge pull request #43 from edx/bug/old_namespaces,a70af7c,2017-03-23 17:14:43.321065507 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/notifier/virtualenvs/notifier/src/opaque-keys,https://github.com/edx/opaque-keys.git,"5 branches contain current commit:
+  master
+  ormsbee/lazy_key
+  ormsbee/revert_caching
+  revert-84-ormsbee/reapply_optimizations
+  zub/ENT-211-add-aggregate-course-key",0.1.2,2014-10-15 15:17:12 -0400,Merge pull request #43 from edx/bug/old_namespaces,a70af7c,2017-04-13 12:01:55.408059904 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/notifier/virtualenvs/notifier/src/opaque-keys,https://github.com/edx/opaque-keys.git,"5 branches contain current commit:
+  master
+  ormsbee/lazy_key
+  ormsbee/revert_caching
+  revert-84-ormsbee/reapply_optimizations
+  zub/ENT-211-add-aggregate-course-key",0.1.2,2014-10-15 15:17:12 -0400,Merge pull request #43 from edx/bug/old_namespaces,a70af7c,2017-03-23 17:15:17.122844073 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/notifier/virtualenvs/notifier/src/opaque-keys,https://github.com/edx/opaque-keys.git,"5 branches contain current commit:
+  master
+  ormsbee/lazy_key
+  ormsbee/revert_caching
+  revert-84-ormsbee/reapply_optimizations
+  zub/ENT-211-add-aggregate-course-key",0.1.2,2014-10-15 15:17:12 -0400,Merge pull request #43 from edx/bug/old_namespaces,a70af7c,2017-03-23 17:18:08.413079294 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/notifier/virtualenvs/notifier/src/opaque-keys,https://github.com/edx/opaque-keys.git,"5 branches contain current commit:
+  master
+  ormsbee/lazy_key
+  ormsbee/revert_caching
+  revert-84-ormsbee/reapply_optimizations
+  zub/ENT-211-add-aggregate-course-key",0.1.2,2014-10-15 15:17:12 -0400,Merge pull request #43 from edx/bug/old_namespaces,a70af7c,2017-03-23 17:07:52.988640368 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/notifier/virtualenvs/notifier/src/opaque-keys,https://github.com/edx/opaque-keys.git,"5 branches contain current commit:
+  master
+  ormsbee/lazy_key
+  ormsbee/revert_caching
+  revert-84-ormsbee/reapply_optimizations
+  zub/ENT-211-add-aggregate-course-key",0.1.2,2014-10-15 15:17:12 -0400,Merge pull request #43 from edx/bug/old_namespaces,a70af7c,2017-03-23 17:20:43.149442109 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/notifier/virtualenvs/notifier/src/opaque-keys,https://github.com/edx/opaque-keys.git,"5 branches contain current commit:
+  master
+  ormsbee/lazy_key
+  ormsbee/revert_caching
+  revert-84-ormsbee/reapply_optimizations
+  zub/ENT-211-add-aggregate-course-key",0.1.2,2014-10-15 15:17:12 -0400,Merge pull request #43 from edx/bug/old_namespaces,a70af7c,2017-04-13 12:00:21.871828798 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-drag-and-drop-v2,https://github.com/edx-solutions/xblock-drag-and-drop-v2.git,"5 branches contain current commit:
+  master
+  sstudent/testing-2
+  ziafazal/WL-581
+  ziafazal/WL-581-b
+  ziafazal/remove-duplicae-msgid",v2.0.11,2016-10-18 09:25:28 +0200,Merge pull request #106 from arbrandes/final_state,24c6ced,2017-03-23 16:57:06.669542194 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-drag-and-drop-v2,https://github.com/edx-solutions/xblock-drag-and-drop-v2.git,"5 branches contain current commit:
+  master
+  sstudent/testing-2
+  ziafazal/WL-581
+  ziafazal/WL-581-b
+  ziafazal/remove-duplicae-msgid",v2.0.11,2016-10-18 09:25:28 +0200,Merge pull request #106 from arbrandes/final_state,24c6ced,2017-03-23 16:49:05.526179231 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-drag-and-drop-v2,https://github.com/edx-solutions/xblock-drag-and-drop-v2.git,"5 branches contain current commit:
+  master
+  sstudent/testing-2
+  ziafazal/WL-581
+  ziafazal/WL-581-b
+  ziafazal/remove-duplicae-msgid",v2.0.11,2016-10-18 09:25:28 +0200,Merge pull request #106 from arbrandes/final_state,24c6ced,2017-03-23 16:59:43.501598036 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/edx-search,https://github.com/edx/edx-search.git,"6 branches contain current commit:
+  ammar/update-satellite-repos
+  ammar/upgrade-django-1.8
+  efischer/devstack_fixes
+  master
+  v0.1.x
+  zoldak/install-tests-subpackage","release-2015-11-17
+0.1.1",2015-09-11 11:14:32 +0500,upgrade to django 1.8,513662f,2016-11-23 00:46:01.303591314 +0000
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/django-oauth2-provider,https://github.com/edx/django-oauth2-provider.git,"6 branches contain current commit:
+  douglashall/WL-286/support_multiple_client_urls
+  edx
+  jbarciauskas/PLAT-1062-add-multicolumn-index-on-expires
+  jeskew/django_1_9_upgrade
+  jsa/fix-constants-import
+  will/django-1.8-upgrade","0.2.7-fork-edx-7
+0.2.7-fork-edx-6a",2015-11-10 18:07:01 +0500,update django and python versions for travis,764601a,2016-11-23 00:45:49.667609952 +0000
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-drag-and-drop-v2,https://github.com/edx-solutions/xblock-drag-and-drop-v2.git,"6 branches contain current commit:
+  master
+  sstudent/new_release
+  sstudent/testing-2
+  ziafazal/WL-581
+  ziafazal/WL-581-b
+  ziafazal/remove-duplicae-msgid",v2.0.11,2016-10-18 09:25:28 +0200,Merge pull request #106 from arbrandes/final_state,24c6ced,2017-04-13 11:42:17.831842268 -0700
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/codejail,https://github.com/edx/codejail.git,edx-platform-master,,2017-01-13 11:05:09 -0500,Allow 15 threads instead of 5,a320d43,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/codejail,https://github.com/edx/codejail.git,edx-platform-master,,2017-01-13 11:05:09 -0500,Allow 15 threads instead of 5,a320d43,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/codejail,https://github.com/edx/codejail.git,edx-platform-master,,2017-01-13 11:05:09 -0500,Allow 15 threads instead of 5,a320d43,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/codejail,https://github.com/edx/codejail.git,edx-platform-master,,2017-01-13 11:05:09 -0500,Allow 15 threads instead of 5,a320d43,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/codejail,https://github.com/edx/codejail.git,edx-platform-master,,2017-01-13 11:05:09 -0500,Allow 15 threads instead of 5,a320d43,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/codejail,https://github.com/edx/codejail.git,edx-platform-master,,2017-01-13 11:05:09 -0500,Allow 15 threads instead of 5,a320d43,
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/codejail,https://github.com/edx/codejail.git,edx-platform-master,,2017-01-13 11:05:09 -0500,Allow 15 threads instead of 5,a320d43,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/codejail,https://github.com/edx/codejail.git,edx-platform-master,,2017-01-13 11:05:09 -0500,Allow 15 threads instead of 5,a320d43,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/codejail,https://github.com/edx/codejail.git,edx-platform-master,,2017-01-13 11:05:09 -0500,Allow 15 threads instead of 5,a320d43,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/codejail,https://github.com/edx/codejail.git,edx-platform-master,,2017-01-13 11:05:09 -0500,Allow 15 threads instead of 5,a320d43,
+lexoxaprodc1mongo2,10.0.0.12,14.04,1.9.1,/oxa/oxa-tools,https://github.com/Microsoft/oxa-tools.git,eltonc,,2016-11-25 15:18:06 -0800,Linking bepool name to the deployment slot,20ef4fc,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/oxa/oxa-tools,https://github.com/microsoft/oxa-tools.git,eltonc,oxa_v1.0.0,2016-11-22 22:20:18 -0800,Fixing machine role determination - support hex naming for vmss,d148093,2016-11-23 07:33:47.239990420 +0000
+lexoxaprodc1mongo2,10.0.0.12,14.04,1.9.1,/oxa/oxa-tools-config,https://github.com/Microsoft/oxa-tools-config.git,eltonc,,2016-11-25 12:21:43 -0800,Enable monitoring installation for backend servers,6badf3e,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/home/lexoxaadmin/monitoring/oxa-tools-config,https://github.com/microsoft/oxa-tools-config.git,eltonc,,2016-12-06 09:21:56 -0800,adding LEXBIMySqlAccnt creds to secrets (#33),cceea96,2017-03-25 02:35:59.076535787 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/home/lexoxaadmin/monitoring/oxa-tools-config,https://github.com/microsoft/oxa-tools-config.git,eltonc,,2016-12-06 09:21:56 -0800,adding LEXBIMySqlAccnt creds to secrets (#33),cceea96,2017-03-25 02:36:35.985891941 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/oxa/oxa-tools-config,https://github.com/microsoft/oxa-tools-config.git,eltonc,,2016-12-06 09:21:56 -0800,adding LEXBIMySqlAccnt creds to secrets (#33),cceea96,2016-12-07 01:08:49.109890407 +0000
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/migration/monitoring/oxa-tools-config,https://github.com/microsoft/oxa-tools-config.git,eltonc,,2016-12-06 09:21:56 -0800,adding LEXBIMySqlAccnt creds to secrets (#33),cceea96,2017-03-25 09:18:03.720834653 +0000
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/home/lexoxaadmin/monitoring/oxa-tools-config,https://github.com/microsoft/oxa-tools-config.git,eltonc,,2016-12-06 09:21:56 -0800,adding LEXBIMySqlAccnt creds to secrets (#33),cceea96,2017-03-25 02:35:49.172104146 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/home/lexoxaadmin/oxa-tools-config,https://github.com/microsoft/oxa-tools-config.git,eltonc,,2016-12-06 09:21:56 -0800,adding LEXBIMySqlAccnt creds to secrets (#33),cceea96,2017-03-24 13:45:37.382678776 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/home/lexoxaadmin/monitoring/oxa-tools-config,https://github.com/microsoft/oxa-tools-config.git,eltonc,,2016-12-06 09:21:56 -0800,adding LEXBIMySqlAccnt creds to secrets (#33),cceea96,2017-03-25 02:37:50.802431528 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/home/lexoxaadmin/monitoring/oxa-tools-config,https://github.com/microsoft/oxa-tools-config.git,eltonc,,2016-12-06 09:21:56 -0800,adding LEXBIMySqlAccnt creds to secrets (#33),cceea96,2017-03-25 02:37:10.373408889 -0700
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pystache-custom,https://github.com/dementrock/pystache_custom.git,master,v0.5.2-5-g7769737,2012-08-19 17:55:28 -0700,added support for applying lambda function after rendering,7769737,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pystache-custom,https://github.com/dementrock/pystache_custom.git,master,v0.5.2-5-g7769737,2012-08-19 17:55:28 -0700,added support for applying lambda function after rendering,7769737,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pystache-custom,https://github.com/dementrock/pystache_custom.git,master,v0.5.2-5-g7769737,2012-08-19 17:55:28 -0700,added support for applying lambda function after rendering,7769737,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pystache-custom,https://github.com/dementrock/pystache_custom.git,master,v0.5.2-5-g7769737,2012-08-19 17:55:28 -0700,added support for applying lambda function after rendering,7769737,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pystache-custom,https://github.com/dementrock/pystache_custom.git,master,v0.5.2-5-g7769737,2012-08-19 17:55:28 -0700,added support for applying lambda function after rendering,7769737,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pystache-custom,https://github.com/dementrock/pystache_custom.git,master,v0.5.2-5-g7769737,2012-08-19 17:55:28 -0700,added support for applying lambda function after rendering,7769737,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/pystache-custom,https://github.com/dementrock/pystache_custom.git,master,v0.5.2-5-g7769737,2012-08-19 17:55:28 -0700,added support for applying lambda function after rendering,7769737,2016-11-23 00:45:50.891607980 +0000
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pystache-custom,https://github.com/dementrock/pystache_custom.git,master,v0.5.2-5-g7769737,2012-08-19 17:55:28 -0700,added support for applying lambda function after rendering,7769737,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pystache-custom,https://github.com/dementrock/pystache_custom.git,master,v0.5.2-5-g7769737,2012-08-19 17:55:28 -0700,added support for applying lambda function after rendering,7769737,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pystache-custom,https://github.com/dementrock/pystache_custom.git,master,v0.5.2-5-g7769737,2012-08-19 17:55:28 -0700,added support for applying lambda function after rendering,7769737,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pystache-custom,https://github.com/dementrock/pystache_custom.git,master,v0.5.2-5-g7769737,2012-08-19 17:55:28 -0700,added support for applying lambda function after rendering,7769737,
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/lti-consumer-xblock,https://github.com/edx/xblock-lti-consumer.git,master,v1.1.2,2017-01-30 19:32:07 +0500,updated version in setup.py,0f808cd,2017-04-13 12:07:52.913336793 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/lti-consumer-xblock,https://github.com/edx/xblock-lti-consumer.git,master,v1.1.2,2017-01-30 19:32:07 +0500,updated version in setup.py,0f808cd,2017-04-13 12:01:23.718905103 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/lti-consumer-xblock,https://github.com/edx/xblock-lti-consumer.git,master,v1.1.2,2017-01-30 19:32:07 +0500,updated version in setup.py,0f808cd,2017-04-13 11:43:22.370227563 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/lti-consumer-xblock,https://github.com/edx/xblock-lti-consumer.git,master,v1.1.2,2017-01-30 19:32:07 +0500,updated version in setup.py,0f808cd,2017-03-23 16:53:58.050183022 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/lti-consumer-xblock,https://github.com/edx/xblock-lti-consumer.git,master,v1.1.2,2017-01-30 19:32:07 +0500,updated version in setup.py,0f808cd,2017-04-13 11:42:49.448793090 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/lti-consumer-xblock,https://github.com/edx/xblock-lti-consumer.git,master,v1.1.2,2017-01-30 19:32:07 +0500,updated version in setup.py,0f808cd,2017-03-23 16:56:49.588416688 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/lti-consumer-xblock,https://github.com/edx/xblock-lti-consumer.git,master,v1.1.2,2017-01-30 19:32:07 +0500,updated version in setup.py,0f808cd,2017-03-23 16:57:29.434567716 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/lti-consumer-xblock,https://github.com/edx/xblock-lti-consumer.git,master,v1.1.2,2017-01-30 19:32:07 +0500,updated version in setup.py,0f808cd,2017-03-23 16:49:24.322859982 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/lti-consumer-xblock,https://github.com/edx/xblock-lti-consumer.git,master,v1.1.2,2017-01-30 19:32:07 +0500,updated version in setup.py,0f808cd,2017-03-23 17:00:05.710117197 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/lti-consumer-xblock,https://github.com/edx/xblock-lti-consumer.git,master,v1.1.2,2017-01-30 19:32:07 +0500,updated version in setup.py,0f808cd,2017-04-13 11:42:36.807950713 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/migration/getAllGit,http://github.com/sdolenc/getAllGit.git,master,,2017-04-13 10:19:35 -0700,minor text change,10408ba,
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-google-drive,https://github.com/edx-solutions/xblock-google-drive.git,master,,2015-02-20 16:06:44 +0100,Merge pull request #25 from edx-solutions/mjevtic/PR-18,138e6fa,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-google-drive,https://github.com/edx-solutions/xblock-google-drive.git,master,,2015-02-20 16:06:44 +0100,Merge pull request #25 from edx-solutions/mjevtic/PR-18,138e6fa,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-google-drive,https://github.com/edx-solutions/xblock-google-drive.git,master,,2015-02-20 16:06:44 +0100,Merge pull request #25 from edx-solutions/mjevtic/PR-18,138e6fa,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-google-drive,https://github.com/edx-solutions/xblock-google-drive.git,master,,2015-02-20 16:06:44 +0100,Merge pull request #25 from edx-solutions/mjevtic/PR-18,138e6fa,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-google-drive,https://github.com/edx-solutions/xblock-google-drive.git,master,,2015-02-20 16:06:44 +0100,Merge pull request #25 from edx-solutions/mjevtic/PR-18,138e6fa,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-google-drive,https://github.com/edx-solutions/xblock-google-drive.git,master,,2015-02-20 16:06:44 +0100,Merge pull request #25 from edx-solutions/mjevtic/PR-18,138e6fa,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/xblock-google-drive,https://github.com/edx-solutions/xblock-google-drive.git,master,,2015-02-20 16:06:44 +0100,Merge pull request #25 from edx-solutions/mjevtic/PR-18,138e6fa,2016-11-23 00:46:02.635589195 +0000
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-google-drive,https://github.com/edx-solutions/xblock-google-drive.git,master,,2015-02-20 16:06:44 +0100,Merge pull request #25 from edx-solutions/mjevtic/PR-18,138e6fa,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-google-drive,https://github.com/edx-solutions/xblock-google-drive.git,master,,2015-02-20 16:06:44 +0100,Merge pull request #25 from edx-solutions/mjevtic/PR-18,138e6fa,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-google-drive,https://github.com/edx-solutions/xblock-google-drive.git,master,,2015-02-20 16:06:44 +0100,Merge pull request #25 from edx-solutions/mjevtic/PR-18,138e6fa,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-google-drive,https://github.com/edx-solutions/xblock-google-drive.git,master,,2015-02-20 16:06:44 +0100,Merge pull request #25 from edx-solutions/mjevtic/PR-18,138e6fa,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/forum/.gem/bundler/gems/kaminari-82a38e07db1c,/edx/app/forum/.gem/cache/bundler/git/kaminari-0678070381de74e354c281c5dbc8d733b06ac23d,master,v0.13.0-79-g82a38e0,2012-06-20 13:25:14 +0900,"""warning: instance variable @last not initialized"",""82a38e0",2016-11-22 23:35:09.955687760 +0000,
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-drag-and-drop-v2,https://github.com/edx-solutions/xblock-drag-and-drop-v2.git,master,v2.0.11,2016-10-18 09:25:28 +0200,Merge pull request #106 from arbrandes/final_state,24c6ced,2017-04-13 12:07:33.265196080 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-drag-and-drop-v2,https://github.com/edx-solutions/xblock-drag-and-drop-v2.git,master,v2.0.11,2016-10-18 09:25:28 +0200,Merge pull request #106 from arbrandes/final_state,24c6ced,2017-04-13 12:01:03.478624001 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-drag-and-drop-v2,https://github.com/edx-solutions/xblock-drag-and-drop-v2.git,master,v2.0.11,2016-10-18 09:25:28 +0200,Merge pull request #106 from arbrandes/final_state,24c6ced,2017-04-13 11:43:01.738089191 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-drag-and-drop-v2,https://github.com/edx-solutions/xblock-drag-and-drop-v2.git,master,v2.0.11,2016-10-18 09:25:28 +0200,Merge pull request #106 from arbrandes/final_state,24c6ced,2017-03-23 16:53:36.548745275 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-drag-and-drop-v2,https://github.com/edx-solutions/xblock-drag-and-drop-v2.git,master,v2.0.11,2016-10-18 09:25:28 +0200,Merge pull request #106 from arbrandes/final_state,24c6ced,2017-04-13 11:42:29.296758029 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-drag-and-drop-v2,https://github.com/edx-solutions/xblock-drag-and-drop-v2.git,master,v2.0.11,2016-10-18 09:25:28 +0200,Merge pull request #106 from arbrandes/final_state,24c6ced,2017-03-23 16:56:31.507644489 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/xblock-drag-and-drop-v2,https://github.com/edx-solutions/xblock-drag-and-drop-v2.git,master,v2.0.11,2016-10-18 09:25:28 +0200,Merge pull request #106 from arbrandes/final_state,24c6ced,2016-11-23 00:46:29.755546729 +0000
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/forum/.gem/bundler/gems/mongoid-magic-counter-cache-28bc5e617cab,/edx/app/forum/.gem/cache/bundler/git/mongoid-magic-counter-cache-a64fdd13c59566c1f7fdafd7b05caa30ba55997e,master,v0.1.1-1-g28bc5e6,2012-08-01 18:55:16 -0400,update gemspec to 3.0,28bc5e6,2016-11-22 23:35:11.223664334 +0000
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/edx-user-state-client,https://github.com/edx/edx-user-state-client.git,master,1.0.0,2015-07-31 10:29:29 -0400,Merge pull request #10 from edx/alawibaba/mod_date_tests,30c0ad4,2016-11-23 00:46:03.847587270 +0000
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/forum/.rbenv,https://github.com/sstephenson/rbenv.git,master,v1.0.0,2015-12-24 18:34:52 +0100,rbenv 1.0.0,3997a39,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/forum/.rbenv,https://github.com/sstephenson/rbenv.git,master,v1.0.0,2015-12-24 18:34:52 +0100,rbenv 1.0.0,3997a39,2017-04-13 12:13:12.546979028 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/forum/.rbenv,https://github.com/sstephenson/rbenv.git,master,v1.0.0,2015-12-24 18:34:52 +0100,rbenv 1.0.0,3997a39,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/forum/.rbenv,https://github.com/sstephenson/rbenv.git,master,v1.0.0,2015-12-24 18:34:52 +0100,rbenv 1.0.0,3997a39,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/forum/.rbenv,https://github.com/sstephenson/rbenv.git,master,v1.0.0,2015-12-24 18:34:52 +0100,rbenv 1.0.0,3997a39,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/forum/.rbenv,https://github.com/sstephenson/rbenv.git,master,v1.0.0,2015-12-24 18:34:52 +0100,rbenv 1.0.0,3997a39,
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/forum/.rbenv,https://github.com/sstephenson/rbenv.git,master,v1.0.0,2015-12-24 18:34:52 +0100,rbenv 1.0.0,3997a39,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/forum/.rbenv,https://github.com/sstephenson/rbenv.git,master,v1.0.0,2015-12-24 18:34:52 +0100,rbenv 1.0.0,3997a39,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/forum/.rbenv,https://github.com/sstephenson/rbenv.git,master,v1.0.0,2015-12-24 18:34:52 +0100,rbenv 1.0.0,3997a39,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/forum/.rbenv,https://github.com/sstephenson/rbenv.git,master,v1.0.0,2015-12-24 18:34:52 +0100,rbenv 1.0.0,3997a39,
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/officemix,https://github.com/OfficeDev/xblock-officemix.git,master,,2015-11-23 17:50:05 -0800,Merge pull request #8 from kurtb/master,3f876b5,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/officemix,https://github.com/OfficeDev/xblock-officemix.git,master,,2015-11-23 17:50:05 -0800,Merge pull request #8 from kurtb/master,3f876b5,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/officemix,https://github.com/OfficeDev/xblock-officemix.git,master,,2015-11-23 17:50:05 -0800,Merge pull request #8 from kurtb/master,3f876b5,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/officemix,https://github.com/OfficeDev/xblock-officemix.git,master,,2015-11-23 17:50:05 -0800,Merge pull request #8 from kurtb/master,3f876b5,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/officemix,https://github.com/OfficeDev/xblock-officemix.git,master,,2015-11-23 17:50:05 -0800,Merge pull request #8 from kurtb/master,3f876b5,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/officemix,https://github.com/OfficeDev/xblock-officemix.git,master,,2015-11-23 17:50:05 -0800,Merge pull request #8 from kurtb/master,3f876b5,
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/officemix,https://github.com/OfficeDev/xblock-officemix.git,master,,2015-11-23 17:50:05 -0800,Merge pull request #8 from kurtb/master,3f876b5,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/officemix,https://github.com/OfficeDev/xblock-officemix.git,master,,2015-11-23 17:50:05 -0800,Merge pull request #8 from kurtb/master,3f876b5,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/officemix,https://github.com/OfficeDev/xblock-officemix.git,master,,2015-11-23 17:50:05 -0800,Merge pull request #8 from kurtb/master,3f876b5,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/officemix,https://github.com/OfficeDev/xblock-officemix.git,master,,2015-11-23 17:50:05 -0800,Merge pull request #8 from kurtb/master,3f876b5,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/forum/.gem/bundler/gems/delayed_job_mongoid-48b1420d59bc,/edx/app/forum/.gem/cache/bundler/git/delayed_job_mongoid-c8507782d90b887401c4c7711052ae104ef4466b,master,v1.0.8-6-g48b1420,2012-05-28 05:17:32 +0400,Bumped version of mongoid to 3.0.0.rc release  removed bson_ext dependency,48b1420,2016-11-22 23:35:09.183702036 +0000
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/recommender-xblock,https://github.com/pmitros/RecommenderXBlock.git,master,v1.0~3,2015-06-01 11:32:56 -0400,Merge pull request #40 from pmitros/upload_file,518234b,2016-11-23 00:46:00.023593353 +0000
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/forum/.gem/bundler/gems/voteable_mongo-538e86856daa,/edx/app/forum/.gem/cache/bundler/git/voteable_mongo-1f8d9f33b983d3926f8d20089699919f7489cafa,master,v0.9.3-7-g538e868,2012-07-31 17:52:02 -0400,updated readme,538e868,2016-11-22 23:35:12.863634067 +0000
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/voteable_mongo-55fcfe76705a,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/voteable_mongo-f658b63bf7f4c0d3b8e89a9df93833e33158cf2a,master,v1.0.2-6-g55fcfe7,2015-09-15 00:39:36 +0530,Mongoid 5 compactable,55fcfe7,2017-04-13 12:24:44.573533935 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/voteable_mongo-55fcfe76705a,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/voteable_mongo-f658b63bf7f4c0d3b8e89a9df93833e33158cf2a,master,v1.0.2-6-g55fcfe7,2015-09-15 00:39:36 +0530,Mongoid 5 compactable,55fcfe7,2017-04-13 12:16:10.370890132 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/voteable_mongo-55fcfe76705a,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/voteable_mongo-f658b63bf7f4c0d3b8e89a9df93833e33158cf2a,master,v1.0.2-6-g55fcfe7,2015-09-15 00:39:36 +0530,Mongoid 5 compactable,55fcfe7,2017-04-13 12:00:44.175847169 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/voteable_mongo-55fcfe76705a,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/voteable_mongo-f658b63bf7f4c0d3b8e89a9df93833e33158cf2a,master,v1.0.2-6-g55fcfe7,2015-09-15 00:39:36 +0530,Mongoid 5 compactable,55fcfe7,2017-03-23 17:13:04.313439392 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/voteable_mongo-55fcfe76705a,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/voteable_mongo-f658b63bf7f4c0d3b8e89a9df93833e33158cf2a,master,v1.0.2-6-g55fcfe7,2015-09-15 00:39:36 +0530,Mongoid 5 compactable,55fcfe7,2017-04-13 12:00:27.732176295 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/voteable_mongo-55fcfe76705a,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/voteable_mongo-f658b63bf7f4c0d3b8e89a9df93833e33158cf2a,master,v1.0.2-6-g55fcfe7,2015-09-15 00:39:36 +0530,Mongoid 5 compactable,55fcfe7,2017-03-23 17:13:50.667405867 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/voteable_mongo-55fcfe76705a,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/voteable_mongo-f658b63bf7f4c0d3b8e89a9df93833e33158cf2a,master,v1.0.2-6-g55fcfe7,2015-09-15 00:39:36 +0530,Mongoid 5 compactable,55fcfe7,2017-03-23 17:16:30.485234494 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/voteable_mongo-55fcfe76705a,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/voteable_mongo-f658b63bf7f4c0d3b8e89a9df93833e33158cf2a,master,v1.0.2-6-g55fcfe7,2015-09-15 00:39:36 +0530,Mongoid 5 compactable,55fcfe7,2017-03-23 17:06:28.897972646 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/voteable_mongo-55fcfe76705a,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/voteable_mongo-f658b63bf7f4c0d3b8e89a9df93833e33158cf2a,master,v1.0.2-6-g55fcfe7,2015-09-15 00:39:36 +0530,Mongoid 5 compactable,55fcfe7,2017-03-23 17:19:13.834717047 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/voteable_mongo-55fcfe76705a,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/voteable_mongo-f658b63bf7f4c0d3b8e89a9df93833e33158cf2a,master,v1.0.2-6-g55fcfe7,2015-09-15 00:39:36 +0530,Mongoid 5 compactable,55fcfe7,2017-04-13 11:58:56.543738643 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/forum/.gem/bundler/gems/mongoid-tree-5aa7a4ee16cd,/edx/app/forum/.gem/cache/bundler/git/mongoid-tree-9ad6eea5344f9041088cdb6e70238bc42687ccf1,master,v1.0.0-6-g5aa7a4e,2012-07-31 17:46:35 -0400,Merge branch 'mongoid-2.0',5aa7a4e,2016-11-22 23:35:10.659674752 +0000
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-jsme,https://github.com/jazkarta/edx-jsme.git,master,1.0.1-5-g690dbf7,2017-01-05 13:46:13 -0700,Merge pull request #6 from cahrens/patch-1,690dbf7,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-jsme,https://github.com/jazkarta/edx-jsme.git,master,1.0.1-5-g690dbf7,2017-01-05 13:46:13 -0700,Merge pull request #6 from cahrens/patch-1,690dbf7,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-jsme,https://github.com/jazkarta/edx-jsme.git,master,1.0.1-5-g690dbf7,2017-01-05 13:46:13 -0700,Merge pull request #6 from cahrens/patch-1,690dbf7,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-jsme,https://github.com/jazkarta/edx-jsme.git,master,1.0.1-5-g690dbf7,2017-01-05 13:46:13 -0700,Merge pull request #6 from cahrens/patch-1,690dbf7,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-jsme,https://github.com/jazkarta/edx-jsme.git,master,1.0.1-5-g690dbf7,2017-01-05 13:46:13 -0700,Merge pull request #6 from cahrens/patch-1,690dbf7,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-jsme,https://github.com/jazkarta/edx-jsme.git,master,1.0.1-5-g690dbf7,2017-01-05 13:46:13 -0700,Merge pull request #6 from cahrens/patch-1,690dbf7,
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-jsme,https://github.com/jazkarta/edx-jsme.git,master,1.0.1-5-g690dbf7,2017-01-05 13:46:13 -0700,Merge pull request #6 from cahrens/patch-1,690dbf7,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-jsme,https://github.com/jazkarta/edx-jsme.git,master,1.0.1-5-g690dbf7,2017-01-05 13:46:13 -0700,Merge pull request #6 from cahrens/patch-1,690dbf7,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-jsme,https://github.com/jazkarta/edx-jsme.git,master,1.0.1-5-g690dbf7,2017-01-05 13:46:13 -0700,Merge pull request #6 from cahrens/patch-1,690dbf7,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/edx-jsme,https://github.com/jazkarta/edx-jsme.git,master,1.0.1-5-g690dbf7,2017-01-05 13:46:13 -0700,Merge pull request #6 from cahrens/patch-1,690dbf7,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/forum/.gem/bundler/gems/rack-contrib-6ff3ca2b2d98,/edx/app/forum/.gem/cache/bundler/git/rack-contrib-e0b18d5c2709e283f2805f404aad420ef7e7acdd,master,"1.1.0-66-g6ff3ca2
+v1.2.0~3",2013-12-26 00:38:41 -0800,Merge pull request #79 from pvdb/round_max_age_to_integer_value,6ff3ca2,2016-11-22 23:35:12.103648088 +0000
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/rack-contrib-6ff3ca2b2d98,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/rack-contrib-e0b18d5c2709e283f2805f404aad420ef7e7acdd,master,"1.1.0-66-g6ff3ca2
+v1.2.0~3",2013-12-26 00:38:41 -0800,Merge pull request #79 from pvdb/round_max_age_to_integer_value,6ff3ca2,2017-04-13 12:24:43.849528555 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/rack-contrib-6ff3ca2b2d98,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/rack-contrib-e0b18d5c2709e283f2805f404aad420ef7e7acdd,master,"1.1.0-66-g6ff3ca2
+v1.2.0~3",2013-12-26 00:38:41 -0800,Merge pull request #79 from pvdb/round_max_age_to_integer_value,6ff3ca2,2017-04-13 12:16:09.674875977 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/rack-contrib-6ff3ca2b2d98,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/rack-contrib-e0b18d5c2709e283f2805f404aad420ef7e7acdd,master,"1.1.0-66-g6ff3ca2
+v1.2.0~3",2013-12-26 00:38:41 -0800,Merge pull request #79 from pvdb/round_max_age_to_integer_value,6ff3ca2,2017-04-13 12:00:43.403830175 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/rack-contrib-6ff3ca2b2d98,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/rack-contrib-e0b18d5c2709e283f2805f404aad420ef7e7acdd,master,"1.1.0-66-g6ff3ca2
+v1.2.0~3",2013-12-26 00:38:41 -0800,Merge pull request #79 from pvdb/round_max_age_to_integer_value,6ff3ca2,2017-03-23 17:13:03.577411473 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/rack-contrib-6ff3ca2b2d98,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/rack-contrib-e0b18d5c2709e283f2805f404aad420ef7e7acdd,master,"1.1.0-66-g6ff3ca2
+v1.2.0~3",2013-12-26 00:38:41 -0800,Merge pull request #79 from pvdb/round_max_age_to_integer_value,6ff3ca2,2017-04-13 12:00:26.892177487 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/rack-contrib-6ff3ca2b2d98,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/rack-contrib-e0b18d5c2709e283f2805f404aad420ef7e7acdd,master,"1.1.0-66-g6ff3ca2
+v1.2.0~3",2013-12-26 00:38:41 -0800,Merge pull request #79 from pvdb/round_max_age_to_integer_value,6ff3ca2,2017-03-23 17:13:49.895376405 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/rack-contrib-6ff3ca2b2d98,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/rack-contrib-e0b18d5c2709e283f2805f404aad420ef7e7acdd,master,"1.1.0-66-g6ff3ca2
+v1.2.0~3",2013-12-26 00:38:41 -0800,Merge pull request #79 from pvdb/round_max_age_to_integer_value,6ff3ca2,2017-03-23 17:16:29.265185967 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/rack-contrib-6ff3ca2b2d98,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/rack-contrib-e0b18d5c2709e283f2805f404aad420ef7e7acdd,master,"1.1.0-66-g6ff3ca2
+v1.2.0~3",2013-12-26 00:38:41 -0800,Merge pull request #79 from pvdb/round_max_age_to_integer_value,6ff3ca2,2017-03-23 17:06:28.209950611 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/rack-contrib-6ff3ca2b2d98,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/rack-contrib-e0b18d5c2709e283f2805f404aad420ef7e7acdd,master,"1.1.0-66-g6ff3ca2
+v1.2.0~3",2013-12-26 00:38:41 -0800,Merge pull request #79 from pvdb/round_max_age_to_integer_value,6ff3ca2,2017-03-23 17:19:13.054693120 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/rack-contrib-6ff3ca2b2d98,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/rack-contrib-e0b18d5c2709e283f2805f404aad420ef7e7acdd,master,"1.1.0-66-g6ff3ca2
+v1.2.0~3",2013-12-26 00:38:41 -0800,Merge pull request #79 from pvdb/round_max_age_to_integer_value,6ff3ca2,2017-04-13 11:58:55.751737558 -0700
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/parse-rest,https://github.com/dgrtwo/ParsePy.git,master,,2015-04-13 10:26:29 -0400,Merge pull request #107 from danrobinson/ACL,7949b9f,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/parse-rest,https://github.com/dgrtwo/ParsePy.git,master,,2015-04-13 10:26:29 -0400,Merge pull request #107 from danrobinson/ACL,7949b9f,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/parse-rest,https://github.com/dgrtwo/ParsePy.git,master,,2015-04-13 10:26:29 -0400,Merge pull request #107 from danrobinson/ACL,7949b9f,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/parse-rest,https://github.com/dgrtwo/ParsePy.git,master,,2015-04-13 10:26:29 -0400,Merge pull request #107 from danrobinson/ACL,7949b9f,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/parse-rest,https://github.com/dgrtwo/ParsePy.git,master,,2015-04-13 10:26:29 -0400,Merge pull request #107 from danrobinson/ACL,7949b9f,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/parse-rest,https://github.com/dgrtwo/ParsePy.git,master,,2015-04-13 10:26:29 -0400,Merge pull request #107 from danrobinson/ACL,7949b9f,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/parse-rest,https://github.com/dgrtwo/ParsePy.git,master,,2015-04-13 10:26:29 -0400,Merge pull request #107 from danrobinson/ACL,7949b9f,2016-11-23 00:45:53.423603910 +0000
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/parse-rest,https://github.com/dgrtwo/ParsePy.git,master,,2015-04-13 10:26:29 -0400,Merge pull request #107 from danrobinson/ACL,7949b9f,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/parse-rest,https://github.com/dgrtwo/ParsePy.git,master,,2015-04-13 10:26:29 -0400,Merge pull request #107 from danrobinson/ACL,7949b9f,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/parse-rest,https://github.com/dgrtwo/ParsePy.git,master,,2015-04-13 10:26:29 -0400,Merge pull request #107 from danrobinson/ACL,7949b9f,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/parse-rest,https://github.com/dgrtwo/ParsePy.git,master,,2015-04-13 10:26:29 -0400,Merge pull request #107 from danrobinson/ACL,7949b9f,
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/tmp/ks_source,https://github.com/Microsoft/oxa_kitchen_sink.git,master,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-13 11:28:21 -0700,Merge pull request #2 from Microsoft/apenddate,0698a4e,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/tmp/ks_source,https://github.com/Microsoft/oxa_kitchen_sink.git,master,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-13 11:28:21 -0700,Merge pull request #2 from Microsoft/apenddate,0698a4e,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/tmp/ks_source,https://github.com/Microsoft/oxa_kitchen_sink.git,master,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-13 11:28:21 -0700,Merge pull request #2 from Microsoft/apenddate,0698a4e,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/tmp/ks_source,https://github.com/Microsoft/oxa_kitchen_sink.git,master,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-13 11:28:21 -0700,Merge pull request #2 from Microsoft/apenddate,0698a4e,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/tmp/ks_source,https://github.com/Microsoft/oxa_kitchen_sink.git,master,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-13 11:28:21 -0700,Merge pull request #2 from Microsoft/apenddate,0698a4e,
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/notifier/src,https://github.com/edx/notifier.git,master,ned/test-ficus.1-2-g937797a,2017-04-13 09:06:31 +0200,Merge pull request #42 from open-craft/mtyaka/configurable-database,937797a,2017-04-13 12:26:03.501743989 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/notifier/src,https://github.com/edx/notifier.git,master,ned/test-ficus.1-2-g937797a,2017-04-13 09:06:31 +0200,Merge pull request #42 from open-craft/mtyaka/configurable-database,937797a,2017-04-13 12:17:33.944555387 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/notifier/src,https://github.com/edx/notifier.git,master,ned/test-ficus.1-2-g937797a,2017-04-13 09:06:31 +0200,Merge pull request #42 from open-craft/mtyaka/configurable-database,937797a,2017-04-13 12:02:08.557327769 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/notifier/src,https://github.com/edx/notifier.git,master,ned/test-ficus.1-2-g937797a,2017-04-13 09:06:31 +0200,Merge pull request #42 from open-craft/mtyaka/configurable-database,937797a,2017-04-13 12:01:53.184062249 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/notifier/src,https://github.com/edx/notifier.git,master,ned/test-ficus.1-2-g937797a,2017-04-13 09:06:31 +0200,Merge pull request #42 from open-craft/mtyaka/configurable-database,937797a,2017-04-13 12:00:19.811827180 -0700
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pygeoip,https://github.com/appliedsec/pygeoip.git,master,"v0.3.1-5-g95e6934
+v0.3.2~10",2014-02-11 01:48:32 +0100,Add heading over the toctree,95e6934,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pygeoip,https://github.com/appliedsec/pygeoip.git,master,"v0.3.1-5-g95e6934
+v0.3.2~10",2014-02-11 01:48:32 +0100,Add heading over the toctree,95e6934,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pygeoip,https://github.com/appliedsec/pygeoip.git,master,"v0.3.1-5-g95e6934
+v0.3.2~10",2014-02-11 01:48:32 +0100,Add heading over the toctree,95e6934,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pygeoip,https://github.com/appliedsec/pygeoip.git,master,"v0.3.1-5-g95e6934
+v0.3.2~10",2014-02-11 01:48:32 +0100,Add heading over the toctree,95e6934,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pygeoip,https://github.com/appliedsec/pygeoip.git,master,"v0.3.1-5-g95e6934
+v0.3.2~10",2014-02-11 01:48:32 +0100,Add heading over the toctree,95e6934,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pygeoip,https://github.com/appliedsec/pygeoip.git,master,"v0.3.1-5-g95e6934
+v0.3.2~10",2014-02-11 01:48:32 +0100,Add heading over the toctree,95e6934,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/pygeoip,https://github.com/appliedsec/pygeoip.git,master,"v0.3.1-5-g95e6934
+v0.3.2~10",2014-02-11 01:48:32 +0100,Add heading over the toctree,95e6934,2016-11-23 00:45:52.159605941 +0000
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pygeoip,https://github.com/appliedsec/pygeoip.git,master,"v0.3.1-5-g95e6934
+v0.3.2~10",2014-02-11 01:48:32 +0100,Add heading over the toctree,95e6934,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pygeoip,https://github.com/appliedsec/pygeoip.git,master,"v0.3.1-5-g95e6934
+v0.3.2~10",2014-02-11 01:48:32 +0100,Add heading over the toctree,95e6934,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pygeoip,https://github.com/appliedsec/pygeoip.git,master,"v0.3.1-5-g95e6934
+v0.3.2~10",2014-02-11 01:48:32 +0100,Add heading over the toctree,95e6934,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/pygeoip,https://github.com/appliedsec/pygeoip.git,master,"v0.3.1-5-g95e6934
+v0.3.2~10",2014-02-11 01:48:32 +0100,Add heading over the toctree,95e6934,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/tmp/ks_source,https://github.com/Microsoft/oxa_kitchen_sink.git,master,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-13 11:28:21 -0700,Merge pull request #2 from Microsoft/apenddate,0698a4e,
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/mongoid-tree-b381dd56f1b3,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/mongoid-tree-782d1c594c580403d2c9520bbc2ed36dded0ca6a,master,v1.0.0-62-gb381dd5,2015-09-15 13:43:35 -0400,Merge pull request #1 from benedikt/master,b381dd5,2017-04-13 12:24:43.077522828 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/mongoid-tree-b381dd56f1b3,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/mongoid-tree-782d1c594c580403d2c9520bbc2ed36dded0ca6a,master,v1.0.0-62-gb381dd5,2015-09-15 13:43:35 -0400,Merge pull request #1 from benedikt/master,b381dd5,2017-04-13 12:16:08.958861404 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/mongoid-tree-b381dd56f1b3,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/mongoid-tree-782d1c594c580403d2c9520bbc2ed36dded0ca6a,master,v1.0.0-62-gb381dd5,2015-09-15 13:43:35 -0400,Merge pull request #1 from benedikt/master,b381dd5,2017-04-13 12:00:42.459809307 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/mongoid-tree-b381dd56f1b3,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/mongoid-tree-782d1c594c580403d2c9520bbc2ed36dded0ca6a,master,v1.0.0-62-gb381dd5,2015-09-15 13:43:35 -0400,Merge pull request #1 from benedikt/master,b381dd5,2017-03-23 17:13:02.705378376 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/mongoid-tree-b381dd56f1b3,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/mongoid-tree-782d1c594c580403d2c9520bbc2ed36dded0ca6a,master,v1.0.0-62-gb381dd5,2015-09-15 13:43:35 -0400,Merge pull request #1 from benedikt/master,b381dd5,2017-04-13 12:00:26.164178522 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/mongoid-tree-b381dd56f1b3,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/mongoid-tree-782d1c594c580403d2c9520bbc2ed36dded0ca6a,master,v1.0.0-62-gb381dd5,2015-09-15 13:43:35 -0400,Merge pull request #1 from benedikt/master,b381dd5,2017-03-23 17:13:49.127347084 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/mongoid-tree-b381dd56f1b3,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/mongoid-tree-782d1c594c580403d2c9520bbc2ed36dded0ca6a,master,v1.0.0-62-gb381dd5,2015-09-15 13:43:35 -0400,Merge pull request #1 from benedikt/master,b381dd5,2017-03-23 17:16:28.493155251 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/mongoid-tree-b381dd56f1b3,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/mongoid-tree-782d1c594c580403d2c9520bbc2ed36dded0ca6a,master,v1.0.0-62-gb381dd5,2015-09-15 13:43:35 -0400,Merge pull request #1 from benedikt/master,b381dd5,2017-03-23 17:06:27.513928316 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/mongoid-tree-b381dd56f1b3,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/mongoid-tree-782d1c594c580403d2c9520bbc2ed36dded0ca6a,master,v1.0.0-62-gb381dd5,2015-09-15 13:43:35 -0400,Merge pull request #1 from benedikt/master,b381dd5,2017-03-23 17:19:12.310670295 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/forum/.gem/ruby/1.9.1/bundler/gems/mongoid-tree-b381dd56f1b3,/edx/app/forum/.gem/ruby/1.9.1/cache/bundler/git/mongoid-tree-782d1c594c580403d2c9520bbc2ed36dded0ca6a,master,v1.0.0-62-gb381dd5,2015-09-15 13:43:35 -0400,Merge pull request #1 from benedikt/master,b381dd5,2017-04-13 11:58:55.027736563 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/notifier/src,https://github.com/edx/notifier.git,master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-11-18 18:00:55 -0500,Merge pull request #41 from edx/ned/update-kombu-for-xenial,c334599,2017-03-23 17:14:40.372961019 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/notifier/src,https://github.com/edx/notifier.git,master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-11-18 18:00:55 -0500,Merge pull request #41 from edx/ned/update-kombu-for-xenial,c334599,2017-03-23 17:15:14.938746006 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/notifier/src,https://github.com/edx/notifier.git,master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-11-18 18:00:55 -0500,Merge pull request #41 from edx/ned/update-kombu-for-xenial,c334599,2017-03-23 17:18:06.116990214 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/notifier/src,https://github.com/edx/notifier.git,master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-11-18 18:00:55 -0500,Merge pull request #41 from edx/ned/update-kombu-for-xenial,c334599,2017-03-23 17:07:50.888574327 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/notifier/src,https://github.com/edx/notifier.git,master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-11-18 18:00:55 -0500,Merge pull request #41 from edx/ned/update-kombu-for-xenial,c334599,2017-03-23 17:20:41.013377255 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/edx-jsme,https://github.com/jazkarta/edx-jsme.git,master,1.0.1,2014-09-17 15:13:41 -0400,Start change log.,c5bfa5d,2016-11-23 00:45:52.771604957 +0000
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/tmp/ks_source,https://github.com/Microsoft/oxa_kitchen_sink.git,master,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-13 11:28:21 -0700,Merge pull request #2 from Microsoft/apenddate,0698a4e,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/tmp/ks_source,https://github.com/Microsoft/oxa_kitchen_sink.git,master,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-13 11:28:21 -0700,Merge pull request #2 from Microsoft/apenddate,0698a4e,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/tmp/ks_source,https://github.com/Microsoft/oxa_kitchen_sink.git,master,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-13 11:28:21 -0700,Merge pull request #2 from Microsoft/apenddate,0698a4e,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/tmp/ks_source,https://github.com/Microsoft/oxa_kitchen_sink.git,master,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-13 11:28:21 -0700,Merge pull request #2 from Microsoft/apenddate,0698a4e,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/zendesk,https://github.com/eventbrite/zendesk.git,master,,2012-10-04 14:26:30 -0700,Merge pull request #3 from meowcoder/patch-1,d53fe0e,2016-11-23 00:45:51.543606931 +0000
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/acid-xblock,https://github.com/edx/acid-block.git,master,,2014-11-26 16:13:02 -0500,Merge pull request #9 from edx/dhm/aside,e46f9cd,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/acid-xblock,https://github.com/edx/acid-block.git,master,,2014-11-26 16:13:02 -0500,Merge pull request #9 from edx/dhm/aside,e46f9cd,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/acid-xblock,https://github.com/edx/acid-block.git,master,,2014-11-26 16:13:02 -0500,Merge pull request #9 from edx/dhm/aside,e46f9cd,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/acid-xblock,https://github.com/edx/acid-block.git,master,,2014-11-26 16:13:02 -0500,Merge pull request #9 from edx/dhm/aside,e46f9cd,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/acid-xblock,https://github.com/edx/acid-block.git,master,,2014-11-26 16:13:02 -0500,Merge pull request #9 from edx/dhm/aside,e46f9cd,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/acid-xblock,https://github.com/edx/acid-block.git,master,,2014-11-26 16:13:02 -0500,Merge pull request #9 from edx/dhm/aside,e46f9cd,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/acid-xblock,https://github.com/edx/acid-block.git,master,,2014-11-26 16:13:02 -0500,Merge pull request #9 from edx/dhm/aside,e46f9cd,2016-11-23 00:45:57.155597931 +0000
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/acid-xblock,https://github.com/edx/acid-block.git,master,,2014-11-26 16:13:02 -0500,Merge pull request #9 from edx/dhm/aside,e46f9cd,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/acid-xblock,https://github.com/edx/acid-block.git,master,,2014-11-26 16:13:02 -0500,Merge pull request #9 from edx/dhm/aside,e46f9cd,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/acid-xblock,https://github.com/edx/acid-block.git,master,,2014-11-26 16:13:02 -0500,Merge pull request #9 from edx/dhm/aside,e46f9cd,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/acid-xblock,https://github.com/edx/acid-block.git,master,,2014-11-26 16:13:02 -0500,Merge pull request #9 from edx/dhm/aside,e46f9cd,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/azure-media-services,https://github.com/Microsoft/xblock-azure-media-services.git,master,oxa_v2.0.0,2017-03-10 14:10:39 -0800,Merge pull request #24 from Microsoft/apgooglechrm,013c958,2017-03-23 16:53:41.677095804 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/azure-media-services,https://github.com/Microsoft/xblock-azure-media-services.git,master,oxa_v2.0.0,2017-03-10 14:10:39 -0800,Merge pull request #24 from Microsoft/apgooglechrm,013c958,2017-03-23 16:56:36.015838040 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/azure-media-services,https://github.com/Microsoft/xblock-azure-media-services.git,master,oxa_v2.0.0,2017-03-10 14:10:39 -0800,Merge pull request #24 from Microsoft/apgooglechrm,013c958,2017-03-23 16:57:12.101788335 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/azure-media-services,https://github.com/Microsoft/xblock-azure-media-services.git,master,oxa_v2.0.0,2017-03-10 14:10:39 -0800,Merge pull request #24 from Microsoft/apgooglechrm,013c958,2017-03-23 16:49:10.494360505 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/azure-media-services,https://github.com/Microsoft/xblock-azure-media-services.git,master,oxa_v2.0.0,2017-03-10 14:10:39 -0800,Merge pull request #24 from Microsoft/apgooglechrm,013c958,2017-03-23 16:59:48.713719017 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/ccx-keys,https://github.com/jazkarta/ccx-keys.git,master,,2015-06-01 00:50:28 -0700,add a method to the `CCXBlockUsageLocator` class that will return a normal BlockUsageLocator.  In keeping with the idea of a 'neutral' or 'course-local' version of ccx keys,e6b0370,2016-11-23 00:45:54.031602934 +0000
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/azure-media-services,https://github.com/Microsoft/xblock-azure-media-services.git,master,oxa_v2.1.0,2017-04-07 09:00:44 -0700,support for more than one video per page/unit (#26),7df83f1,2017-04-13 12:07:38.165229841 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/azure-media-services,https://github.com/Microsoft/xblock-azure-media-services.git,master,oxa_v2.1.0,2017-04-07 09:00:44 -0700,support for more than one video per page/unit (#26),7df83f1,2017-04-13 12:01:08.462693854 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/azure-media-services,https://github.com/Microsoft/xblock-azure-media-services.git,master,oxa_v2.1.0,2017-04-07 09:00:44 -0700,support for more than one video per page/unit (#26),7df83f1,2017-04-13 11:43:06.742125387 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/azure-media-services,https://github.com/Microsoft/xblock-azure-media-services.git,master,oxa_v2.1.0,2017-04-07 09:00:44 -0700,support for more than one video per page/unit (#26),7df83f1,2017-04-13 11:42:34.132766611 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/azure-media-services,https://github.com/Microsoft/xblock-azure-media-services.git,master,oxa_v2.1.0,2017-04-07 09:00:44 -0700,support for more than one video per page/unit (#26),7df83f1,2017-04-13 11:42:22.423868971 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/venvs/edxapp/src/djangorestframework-oauth,https://github.com/edx/django-rest-framework-oauth.git,master,1.0.1-4-gf0b503f,2015-09-09 11:36:56 -0700,Merge pull request #1 from wedaly/master,f0b503f,2016-11-23 00:45:50.279608966 +0000
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-poll,https://github.com/open-craft/xblock-poll,master,v1.2.3,2016-12-06 09:48:08 +0100,Merge pull request #18 from open-craft/poll-options-a11y,f3a675c,2017-04-13 12:06:41.132897052 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-poll,https://github.com/open-craft/xblock-poll,master,v1.2.3,2016-12-06 09:48:08 +0100,Merge pull request #18 from open-craft/poll-options-a11y,f3a675c,2017-04-13 12:00:11.269866229 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-poll,https://github.com/open-craft/xblock-poll,master,v1.2.3,2016-12-06 09:48:08 +0100,Merge pull request #18 from open-craft/poll-options-a11y,f3a675c,2017-04-13 11:42:09.697607836 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-poll,https://github.com/open-craft/xblock-poll,master,v1.2.3,2016-12-06 09:48:08 +0100,Merge pull request #18 from open-craft/poll-options-a11y,f3a675c,2017-03-23 16:52:38.664666999 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-poll,https://github.com/open-craft/xblock-poll,master,v1.2.3,2016-12-06 09:48:08 +0100,Merge pull request #18 from open-craft/poll-options-a11y,f3a675c,2017-04-13 11:41:36.732662358 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-poll,https://github.com/open-craft/xblock-poll,master,v1.2.3,2016-12-06 09:48:08 +0100,Merge pull request #18 from open-craft/poll-options-a11y,f3a675c,2017-03-23 16:55:44.533517372 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-poll,https://github.com/open-craft/xblock-poll,master,v1.2.3,2016-12-06 09:48:08 +0100,Merge pull request #18 from open-craft/poll-options-a11y,f3a675c,2017-03-23 16:56:08.162734049 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-poll,https://github.com/open-craft/xblock-poll,master,v1.2.3,2016-12-06 09:48:08 +0100,Merge pull request #18 from open-craft/poll-options-a11y,f3a675c,2017-03-23 16:48:15.412291550 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-poll,https://github.com/open-craft/xblock-poll,master,v1.2.3,2016-12-06 09:48:08 +0100,Merge pull request #18 from open-craft/poll-options-a11y,f3a675c,2017-03-23 16:58:46.448292497 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/venvs/edxapp/src/xblock-poll,https://github.com/open-craft/xblock-poll,master,v1.2.3,2016-12-06 09:48:08 +0100,Merge pull request #18 from open-craft/poll-options-a11y,f3a675c,2017-04-13 11:41:29.419640633 -0700
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/programs/programs,https://github.com/edx/programs.git,master,,2017-03-09 10:49:47 -0500,Archive the programs repository,fb0e680,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/programs/programs,https://github.com/edx/programs.git,master,,2017-03-09 10:49:47 -0500,Archive the programs repository,fb0e680,2017-04-13 12:12:20.617876688 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/programs/programs,https://github.com/edx/programs.git,master,,2017-03-09 10:49:47 -0500,Archive the programs repository,fb0e680,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/programs/programs,https://github.com/edx/programs.git,master,,2017-03-09 10:49:47 -0500,Archive the programs repository,fb0e680,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/programs/programs,https://github.com/edx/programs.git,master,,2017-03-09 10:49:47 -0500,Archive the programs repository,fb0e680,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/programs/programs,https://github.com/edx/programs.git,master,,2017-03-09 10:49:47 -0500,Archive the programs repository,fb0e680,
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/programs/programs,https://github.com/edx/programs.git,master,,2017-03-09 10:49:47 -0500,Archive the programs repository,fb0e680,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/programs/programs,https://github.com/edx/programs.git,master,,2017-03-09 10:49:47 -0500,Archive the programs repository,fb0e680,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/programs/programs,https://github.com/edx/programs.git,master,,2017-03-09 10:49:47 -0500,Archive the programs repository,fb0e680,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/programs/programs,https://github.com/edx/programs.git,master,,2017-03-09 10:49:47 -0500,Archive the programs repository,fb0e680,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/forum/cs_comments_service,https://github.com/edx/cs_comments_service.git,named-release/dogwood.rc,"named-release/dogwood.rc3
+named-release/dogwood.rc2
+named-release/dogwood.rc1
+named-release/dogwood.3
+named-release/dogwood.2
+named-release/dogwood.1
+named-release/dogwood",2015-12-03 11:24:29 +0500,Merge pull request #152 from edx/jia/MA-1748,302eaf6,2016-11-23 00:47:14.495479438 +0000
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/xqueue/xqueue,https://github.com/edx/xqueue.git,named-release/dogwood.rc,"named-release/dogwood.rc3
+named-release/dogwood.rc2
+named-release/dogwood.rc1
+named-release/dogwood.3
+named-release/dogwood.2
+named-release/dogwood.1
+named-release/dogwood
+dogwood-first-18",2015-12-03 14:44:47 -0500,Merge pull request #102 from edx/jeskew/PLAT-933_atomic_xaction,3c11fce,2016-11-23 00:47:19.083472731 +0000
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/xqueue/xqueue,https://github.com/edx/xqueue.git,open-release/ficus.master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-12-05 11:18:56 -0500,Merge pull request #119 from edx/edx-django-release-util/0.2.0,2f780fc,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/xqueue/xqueue,https://github.com/edx/xqueue.git,open-release/ficus.master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-12-05 11:18:56 -0500,Merge pull request #119 from edx/edx-django-release-util/0.2.0,2f780fc,
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/xqueue/xqueue,https://github.com/edx/xqueue.git,open-release/ficus.master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-12-05 11:18:56 -0500,Merge pull request #119 from edx/edx-django-release-util/0.2.0,2f780fc,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/xqueue/xqueue,https://github.com/edx/xqueue.git,open-release/ficus.master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-12-05 11:18:56 -0500,Merge pull request #119 from edx/edx-django-release-util/0.2.0,2f780fc,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/xqueue/xqueue,https://github.com/edx/xqueue.git,open-release/ficus.master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-12-05 11:18:56 -0500,Merge pull request #119 from edx/edx-django-release-util/0.2.0,2f780fc,
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/xqueue/xqueue,https://github.com/edx/xqueue.git,open-release/ficus.master,"open-release/ficus.2
+open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-12-05 11:18:56 -0500,Merge pull request #119 from edx/edx-django-release-util/0.2.0,2f780fc,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/xqueue/xqueue,https://github.com/edx/xqueue.git,open-release/ficus.master,"open-release/ficus.2
+open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-12-05 11:18:56 -0500,Merge pull request #119 from edx/edx-django-release-util/0.2.0,2f780fc,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/xqueue/xqueue,https://github.com/edx/xqueue.git,open-release/ficus.master,"open-release/ficus.2
+open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-12-05 11:18:56 -0500,Merge pull request #119 from edx/edx-django-release-util/0.2.0,2f780fc,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/xqueue/xqueue,https://github.com/edx/xqueue.git,open-release/ficus.master,"open-release/ficus.2
+open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-12-05 11:18:56 -0500,Merge pull request #119 from edx/edx-django-release-util/0.2.0,2f780fc,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/xqueue/xqueue,https://github.com/edx/xqueue.git,open-release/ficus.master,"open-release/ficus.2
+open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-12-05 11:18:56 -0500,Merge pull request #119 from edx/edx-django-release-util/0.2.0,2f780fc,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/forum/cs_comments_service,https://github.com/edx/cs_comments_service.git,open-release/ficus.master,nedbat/test-ficus.1rc4-2-g67d9763,2017-03-02 10:31:20 -0500,Merge pull request #238 from edx/robrap/newrelic,67d9763,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/forum/cs_comments_service,https://github.com/edx/cs_comments_service.git,open-release/ficus.master,nedbat/test-ficus.1rc4-2-g67d9763,2017-03-02 10:31:20 -0500,Merge pull request #238 from edx/robrap/newrelic,67d9763,
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/forum/cs_comments_service,https://github.com/edx/cs_comments_service.git,open-release/ficus.master,nedbat/test-ficus.1rc4-2-g67d9763,2017-03-02 10:31:20 -0500,Merge pull request #238 from edx/robrap/newrelic,67d9763,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/forum/cs_comments_service,https://github.com/edx/cs_comments_service.git,open-release/ficus.master,nedbat/test-ficus.1rc4-2-g67d9763,2017-03-02 10:31:20 -0500,Merge pull request #238 from edx/robrap/newrelic,67d9763,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/forum/cs_comments_service,https://github.com/edx/cs_comments_service.git,open-release/ficus.master,nedbat/test-ficus.1rc4-2-g67d9763,2017-03-02 10:31:20 -0500,Merge pull request #238 from edx/robrap/newrelic,67d9763,
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/forum/cs_comments_service,https://github.com/edx/cs_comments_service.git,open-release/ficus.master,"open-release/ficus.2
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1",2017-03-02 10:31:20 -0500,Merge pull request #238 from edx/robrap/newrelic,67d9763,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/forum/cs_comments_service,https://github.com/edx/cs_comments_service.git,open-release/ficus.master,"open-release/ficus.2
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1",2017-03-02 10:31:20 -0500,Merge pull request #238 from edx/robrap/newrelic,67d9763,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/forum/cs_comments_service,https://github.com/edx/cs_comments_service.git,open-release/ficus.master,"open-release/ficus.2
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1",2017-03-02 10:31:20 -0500,Merge pull request #238 from edx/robrap/newrelic,67d9763,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/forum/cs_comments_service,https://github.com/edx/cs_comments_service.git,open-release/ficus.master,"open-release/ficus.2
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1",2017-03-02 10:31:20 -0500,Merge pull request #238 from edx/robrap/newrelic,67d9763,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/forum/cs_comments_service,https://github.com/edx/cs_comments_service.git,open-release/ficus.master,"open-release/ficus.2
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1",2017-03-02 10:31:20 -0500,Merge pull request #238 from edx/robrap/newrelic,67d9763,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/certs/certificates,https://github.com/edx/edx-certificates,open-release/ficus.master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-09-07 11:21:52 -0400,Merge pull request #51 from edx/add-openedx-yaml,c23ca9a,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/certs/certificates,https://github.com/edx/edx-certificates,open-release/ficus.master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-09-07 11:21:52 -0400,Merge pull request #51 from edx/add-openedx-yaml,c23ca9a,
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/certs/certificates,https://github.com/edx/edx-certificates,open-release/ficus.master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-09-07 11:21:52 -0400,Merge pull request #51 from edx/add-openedx-yaml,c23ca9a,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/certs/certificates,https://github.com/edx/edx-certificates,open-release/ficus.master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-09-07 11:21:52 -0400,Merge pull request #51 from edx/add-openedx-yaml,c23ca9a,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/certs/certificates,https://github.com/edx/edx-certificates,open-release/ficus.master,"open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-09-07 11:21:52 -0400,Merge pull request #51 from edx/add-openedx-yaml,c23ca9a,
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/certs/certificates,https://github.com/edx/edx-certificates,open-release/ficus.master,"open-release/ficus.2
+open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-09-07 11:21:52 -0400,Merge pull request #51 from edx/add-openedx-yaml,c23ca9a,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/certs/certificates,https://github.com/edx/edx-certificates,open-release/ficus.master,"open-release/ficus.2
+open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-09-07 11:21:52 -0400,Merge pull request #51 from edx/add-openedx-yaml,c23ca9a,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/certs/certificates,https://github.com/edx/edx-certificates,open-release/ficus.master,"open-release/ficus.2
+open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-09-07 11:21:52 -0400,Merge pull request #51 from edx/add-openedx-yaml,c23ca9a,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/certs/certificates,https://github.com/edx/edx-certificates,open-release/ficus.master,"open-release/ficus.2
+open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-09-07 11:21:52 -0400,Merge pull request #51 from edx/add-openedx-yaml,c23ca9a,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/certs/certificates,https://github.com/edx/edx-certificates,open-release/ficus.master,"open-release/ficus.2
+open-release/ficus.1rc4
+open-release/ficus.1rc3
+open-release/ficus.1rc2
+open-release/ficus.1rc1
+open-release/ficus.1
+nedbat/test/ficus.2rc1.2
+nedbat/test/ficus.2rc1.1
+nedbat/test/ficus.2.3
+nedbat/test/ficus.2.1
+nedbat/test/ficus.1rc4.3
+nedbat/test/ficus.1rc4.2
+nedbat/test/ficus.1rc4.1
+nedbat/test-ficus.1rc4
+ned/test-ficus.2
+ned/test-ficus.1",2016-09-07 11:21:52 -0400,Merge pull request #51 from edx/add-openedx-yaml,c23ca9a,
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/oxa/configuration,https://github.com/Microsoft/edx-configuration.git,oxa/master,oxa_v1.0.0,2016-11-22 13:27:51 -0800,Merge branch 'oxa/master' of https://github.com/Microsoft/edx-configuration.git,8491f9e,2016-11-23 07:33:37.787962185 +0000
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edx_ansible/edx_ansible,https://github.com/Microsoft/edx-configuration.git,oxa/master,oxa_v1.0.0,2016-11-22 13:27:51 -0800,Merge branch 'oxa/master' of https://github.com/Microsoft/edx-configuration.git,8491f9e,2016-11-23 00:47:24.315465127 +0000
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/edx-platform,https://github.com/Microsoft/edx-platform.git,oxa/master,oxa_v1.0.0,2016-11-22 10:25:34 -0800,Fix blob does not exist error on uploading logs (#10),c70a5c8,2016-11-23 00:45:34.759634176 +0000
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edx_ansible/edx_ansible,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,2017-04-13 12:27:15.473420674 -0700
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/oxa/configuration,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edx_ansible/edx_ansible,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,2017-04-13 12:18:41.149780897 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/oxa/configuration,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,2017-04-13 11:55:03.158606847 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edx_ansible/edx_ansible,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,2017-04-13 12:03:19.574100359 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/oxa/configuration,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edx_ansible/edx_ansible,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,2017-03-23 17:15:57.279624294 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/oxa/configuration,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edx_ansible/edx_ansible,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,2017-04-13 12:03:06.103994181 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/oxa/configuration,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edx_ansible/edx_ansible,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,2017-03-23 17:16:24.069786701 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/oxa/configuration,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edx_ansible/edx_ansible,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,2017-03-23 17:19:23.371962309 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/oxa/configuration,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edx_ansible/edx_ansible,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,2017-03-23 17:09:06.798944438 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/oxa/configuration,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edx_ansible/edx_ansible,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,2017-03-23 17:21:51.907522154 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/oxa/configuration,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edx_ansible/edx_ansible,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,2017-04-13 12:01:28.907869090 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/oxa/configuration,https://github.com/Microsoft/edx-configuration.git,oxa/master.fic,"2 tags point to current commit:
+  oxa_v2.0.0
+  oxa_v2.1.0",2017-03-21 14:47:51 -0700,Merge pull request #14 from Microsoft/oxa/master.fic.eltonc,e5a47bd,
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/edx-platform,https://github.com/microsoft/edx-platform.git,oxa/master.fic,oxa_v2.0.0,2017-03-21 09:38:34 -0700,Merge pull request #20 from Microsoft/btelnes-oxa/master.fic,622a362,2017-03-23 16:52:09.342982233 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/edx-platform,https://github.com/microsoft/edx-platform.git,oxa/master.fic,oxa_v2.0.0,2017-03-21 09:38:34 -0700,Merge pull request #20 from Microsoft/btelnes-oxa/master.fic,622a362,2017-03-23 16:55:23.396491908 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/edx-platform,https://github.com/microsoft/edx-platform.git,oxa/master.fic,oxa_v2.0.0,2017-03-21 09:38:34 -0700,Merge pull request #20 from Microsoft/btelnes-oxa/master.fic,622a362,2017-03-23 16:55:43.817195760 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/edx-platform,https://github.com/microsoft/edx-platform.git,oxa/master.fic,oxa_v2.0.0,2017-03-21 09:38:34 -0700,Merge pull request #20 from Microsoft/btelnes-oxa/master.fic,622a362,2017-03-23 16:47:51.167590252 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/edx-platform,https://github.com/microsoft/edx-platform.git,oxa/master.fic,oxa_v2.0.0,2017-03-21 09:38:34 -0700,Merge pull request #20 from Microsoft/btelnes-oxa/master.fic,622a362,2017-03-23 16:58:18.259551094 -0700
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/edx-platform,https://github.com/microsoft/edx-platform.git,oxa/master.fic,oxa_v2.1.0,2017-04-10 12:46:24 -0700,Merge pull request #21 from Microsoft/site_enrollment_mani,6dbfd19,2017-04-13 12:06:19.328808170 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/edx-platform,https://github.com/microsoft/edx-platform.git,oxa/master.fic,oxa_v2.1.0,2017-04-10 12:46:24 -0700,Merge pull request #21 from Microsoft/site_enrollment_mani,6dbfd19,2017-04-13 11:59:48.541520686 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/edx-platform,https://github.com/microsoft/edx-platform.git,oxa/master.fic,oxa_v2.1.0,2017-04-10 12:46:24 -0700,Merge pull request #21 from Microsoft/site_enrollment_mani,6dbfd19,2017-04-13 11:41:46.885333252 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/edx-platform,https://github.com/microsoft/edx-platform.git,oxa/master.fic,oxa_v2.1.0,2017-04-10 12:46:24 -0700,Merge pull request #21 from Microsoft/site_enrollment_mani,6dbfd19,2017-04-13 11:41:12.900620785 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/edx-platform,https://github.com/microsoft/edx-platform.git,oxa/master.fic,oxa_v2.1.0,2017-04-10 12:46:24 -0700,Merge pull request #21 from Microsoft/site_enrollment_mani,6dbfd19,2017-04-13 11:41:08.599645101 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/app/edxapp/themes,https://github.com/microsoft/edx-theme.git,oxa/master.fic,oxa_v2.0.0,2017-03-20 14:13:22 -0700,Merge pull request #63 from Microsoft/btelnes-oxa/master.fic,2029a1d,
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/app/edxapp/themes,https://github.com/microsoft/edx-theme.git,oxa/master.fic,oxa_v2.0.0,2017-03-20 14:13:22 -0700,Merge pull request #63 from Microsoft/btelnes-oxa/master.fic,2029a1d,
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/app/edxapp/themes,https://github.com/microsoft/edx-theme.git,oxa/master.fic,oxa_v2.0.0,2017-03-20 14:13:22 -0700,Merge pull request #63 from Microsoft/btelnes-oxa/master.fic,2029a1d,
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/app/edxapp/themes,https://github.com/microsoft/edx-theme.git,oxa/master.fic,oxa_v2.0.0,2017-03-20 14:13:22 -0700,Merge pull request #63 from Microsoft/btelnes-oxa/master.fic,2029a1d,
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/app/edxapp/themes,https://github.com/microsoft/edx-theme.git,oxa/master.fic,oxa_v2.0.0,2017-03-20 14:13:22 -0700,Merge pull request #63 from Microsoft/btelnes-oxa/master.fic,2029a1d,
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/app/edxapp/themes,https://github.com/microsoft/edx-theme.git,oxa/master.fic,oxa_v2.1.0,2017-04-13 09:47:29 -0700,Merge pull request #71 from Microsoft/faq_mani,452c02f,
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/app/edxapp/themes,https://github.com/microsoft/edx-theme.git,oxa/master.fic,oxa_v2.1.0,2017-04-13 09:47:29 -0700,Merge pull request #71 from Microsoft/faq_mani,452c02f,
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/app/edxapp/themes,https://github.com/microsoft/edx-theme.git,oxa/master.fic,oxa_v2.1.0,2017-04-13 09:47:29 -0700,Merge pull request #71 from Microsoft/faq_mani,452c02f,
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/app/edxapp/themes,https://github.com/microsoft/edx-theme.git,oxa/master.fic,oxa_v2.1.0,2017-04-13 09:47:29 -0700,Merge pull request #71 from Microsoft/faq_mani,452c02f,
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/app/edxapp/themes,https://github.com/microsoft/edx-theme.git,oxa/master.fic,oxa_v2.1.0,2017-04-13 09:47:29 -0700,Merge pull request #71 from Microsoft/faq_mani,452c02f,
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/oxa/oxa-tools,https://github.com/Microsoft/oxa-tools.git,oxa/master.fic,oxa_v2.1.0,2017-04-06 14:52:42 -0700,Merge pull request #119 from Microsoft/oxa/master.fic.eltonc.clidefault,1b5b6b4,2017-04-13 11:40:02.331938264 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/oxa/oxa-tools,https://github.com/Microsoft/oxa-tools.git,oxa/master.fic,oxa_v2.1.0,2017-04-06 14:52:42 -0700,Merge pull request #119 from Microsoft/oxa/master.fic.eltonc.clidefault,1b5b6b4,2017-04-13 11:55:02.490601814 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/oxa/oxa-tools,https://github.com/Microsoft/oxa-tools.git,oxa/master.fic,oxa_v2.1.0,2017-04-06 14:52:42 -0700,Merge pull request #119 from Microsoft/oxa/master.fic.eltonc.clidefault,1b5b6b4,2017-04-13 11:15:01.574748983 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/oxa/oxa-tools,https://github.com/Microsoft/oxa-tools.git,oxa/master.fic,oxa_v2.1.0,2017-04-06 14:52:42 -0700,Merge pull request #119 from Microsoft/oxa/master.fic.eltonc.clidefault,1b5b6b4,2017-04-13 11:15:01.601148794 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/oxa/oxa-tools,https://github.com/Microsoft/oxa-tools.git,oxa/master.fic,oxa_v2.1.0,2017-04-06 14:52:42 -0700,Merge pull request #119 from Microsoft/oxa/master.fic.eltonc.clidefault,1b5b6b4,2017-04-13 11:15:02.410218065 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/oxa/oxa-tools,https://github.com/Microsoft/oxa-tools.git,oxa/master.fic,oxa_v2.0.0,2017-03-21 16:13:09 -0700,Removed the GRANT PERMISSION statements for migrate and edxapp001 users since these are not production users and in manual migration document we have the GRANT permission step.,ed1405e,2017-03-23 16:20:02.718721040 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/oxa/oxa-tools,https://github.com/Microsoft/oxa-tools.git,oxa/master.fic,oxa_v2.0.0,2017-03-21 16:13:09 -0700,Removed the GRANT PERMISSION statements for migrate and edxapp001 users since these are not production users and in manual migration document we have the GRANT permission step.,ed1405e,2017-03-23 16:25:02.719622617 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/oxa/oxa-tools,https://github.com/Microsoft/oxa-tools.git,oxa/master.fic,oxa_v2.0.0,2017-03-21 16:13:09 -0700,Removed the GRANT PERMISSION statements for migrate and edxapp001 users since these are not production users and in manual migration document we have the GRANT permission step.,ed1405e,2017-03-23 16:25:02.085681889 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/oxa/oxa-tools,https://github.com/Microsoft/oxa-tools.git,oxa/master.fic,oxa_v2.0.0,2017-03-21 16:13:09 -0700,Removed the GRANT PERMISSION statements for migrate and edxapp001 users since these are not production users and in manual migration document we have the GRANT permission step.,ed1405e,2017-03-23 16:20:03.009054485 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/oxa/oxa-tools,https://github.com/Microsoft/oxa-tools.git,oxa/master.fic,oxa_v2.0.0,2017-03-21 16:13:09 -0700,Removed the GRANT PERMISSION statements for migrate and edxapp001 users since these are not production users and in manual migration document we have the GRANT permission step.,ed1405e,2017-03-23 16:30:01.658296628 -0700
+lexoxaprodc1jb,10.0.0.4,12.04,2.10.2,/edx/app/edxapp/themes/default,https://github.com/Microsoft/edx-theme.git,pilot,oxa_v1.0.0,2016-11-21 20:24:28 -0800,Made the max-length for company as 50 characters,9b01c8d,2016-11-23 00:45:37.475629734 +0000
+lexoxaprodc1vmss000005,10.0.0.14,16.04,2.7.4,/edx/var/edx-themes/edx-themes,https://github.com/edx/sample-themes.git,release,,2016-09-28 10:17:37 +0500,Merge pull request #2 from edx/master,75bba56,2017-04-13 12:06:09.428775663 -0700
+lexoxaprodc1vmss000000,10.0.0.5,16.04,2.7.4,/edx/var/edx-themes/edx-themes,https://github.com/edx/sample-themes.git,release,,2016-09-28 10:17:37 +0500,Merge pull request #2 from edx/master,75bba56,2017-04-13 11:59:38.505364912 -0700
+lexoxaprodc1vmss000008,10.0.0.21,16.04,2.7.4,/edx/var/edx-themes/edx-themes,https://github.com/edx/sample-themes.git,release,,2016-09-28 10:17:37 +0500,Merge pull request #2 from edx/master,75bba56,2017-04-13 11:41:38.565222920 -0700
+lexoxaprodc1vmss000003,10.0.0.19,16.04,2.7.4,/edx/var/edx-themes/edx-themes,https://github.com/edx/sample-themes.git,release,,2016-09-28 10:17:37 +0500,Merge pull request #2 from edx/master,75bba56,2017-03-23 16:51:57.530285454 -0700
+lexoxaprodc1vmss000004,10.0.0.9,16.04,2.7.4,/edx/var/edx-themes/edx-themes,https://github.com/edx/sample-themes.git,release,,2016-09-28 10:17:37 +0500,Merge pull request #2 from edx/master,75bba56,2017-04-13 11:41:04.596605051 -0700
+lexoxaprodc1vmss000006,10.0.0.22,16.04,2.7.4,/edx/var/edx-themes/edx-themes,https://github.com/edx/sample-themes.git,release,,2016-09-28 10:17:37 +0500,Merge pull request #2 from edx/master,75bba56,2017-03-23 16:55:13.359990520 -0700
+lexoxaprodc1vmss000000,10.0.0.10,16.04,2.7.4,/edx/var/edx-themes/edx-themes,https://github.com/edx/sample-themes.git,release,,2016-09-28 10:17:37 +0500,Merge pull request #2 from edx/master,75bba56,2017-03-23 16:55:33.044544384 -0700
+lexoxaprodc1vmss000008,10.0.0.24,16.04,2.7.4,/edx/var/edx-themes/edx-themes,https://github.com/edx/sample-themes.git,release,,2016-09-28 10:17:37 +0500,Merge pull request #2 from edx/master,75bba56,2017-03-23 16:47:41.931343319 -0700
+lexoxaprodc1vmss000007,10.0.0.23,16.04,2.7.4,/edx/var/edx-themes/edx-themes,https://github.com/edx/sample-themes.git,release,,2016-09-28 10:17:37 +0500,Merge pull request #2 from edx/master,75bba56,2017-03-23 16:58:09.595278155 -0700
+lexoxaprodc1vmss000002,10.0.0.7,16.04,2.7.4,/edx/var/edx-themes/edx-themes,https://github.com/edx/sample-themes.git,release,,2016-09-28 10:17:37 +0500,Merge pull request #2 from edx/master,75bba56,2017-04-13 11:41:00.663646061 -0700

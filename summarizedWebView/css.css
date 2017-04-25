@@ -23,6 +23,13 @@ span.countTag {
     display: inline;
 }
 
+div.dir, div.change {
+    padding: 0;
+}
+table {
+    padding: .5em;
+}
+
 table td:nth-child(2) {
     border-left: 1px #d3d3d3 solid;
 }

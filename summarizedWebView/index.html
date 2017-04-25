@@ -12,16 +12,6 @@
     <div id="app"></div>
 
     <!-- Templates -->
-    <!-- todos:
-        models
-            tag/branch count -> toggle prefix
-            base model, header: list of organizations (count), all, edx, etc.
-            base model, header: multiple versions (count): all, one, multiple
-            hyperlink full github urls,tags (new tab)
-            drop protocals from dispalyed url, add organization to class
-        header: type tag (rows will/hide show based on filter)
-        expand all
-    -->
     <script type="text/template" id="git-tmpl">
         <div class="ver<%= gitInfo.length %>">
             <span class="countVer"><%= gitInfo.length %> versions of</span> <%= remoteUrl %>
