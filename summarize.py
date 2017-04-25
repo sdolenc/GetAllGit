@@ -6,6 +6,7 @@ import os
 import sys
 import csv
 import json
+from urlparse import urlparse
 from helpers.sourceSettings import source_settings
 
 # Expects directory as an argument.
@@ -34,6 +35,11 @@ class Summarized:
     def add(self, collection):
         # Key based on remote Git Url
         remoteUrl = collection.pop(urlKey).lower()
+
+        if (not urlparse(remoteUrl).scheme):
+            # Ignore local repositories
+            return
+
         if (self.infoForRemoteGitUrl.get(remoteUrl) == None):
             self.infoForRemoteGitUrl[remoteUrl] = dict()
 
@@ -47,7 +53,7 @@ class Summarized:
 
     # Expand dictionarists so that keys have consistent name.
     def getJsonObject(self):
-        return [{ urlKey: key, gitDetailsKey: self.getJsonObjHelper(value) } for key,value in self.infoForRemoteGitUrl.items() ]
+        return [{ urlKey: UrlDetails(key), gitDetailsKey: self.getJsonObjHelper(value) } for key,value in self.infoForRemoteGitUrl.items() ]
     def getJsonObjHelper(self, dictObj):
         return [{ hashKey: key, "repo": value } for key,value in dictObj.items() ]
 
@@ -69,6 +75,17 @@ class RepoDetails:
             # but we're using this opportunity to incorporate newlines in the markup.
             self.repoCurrentCode = { key: value.replace('\n', '<br/>') for key,value in collection.items() }
 
+class UrlDetails:
+    def __init__(self, url):
+        self.full = url
+        parsed = urlparse(url)
+        parts = parsed.path.split('.')
+        self.short = parsed.netloc + parts[0]
+        if (parsed.netloc):
+            parts = parts[0].split('/')
+            self.org = parts[1]
+            self.project = parts[2]
+
 #todo: start clock to read csv
 condensed = Summarized()
 csvFile = open(csvFilePath)
@@ -84,7 +101,7 @@ csvFile.close()
 #todo: stop clock
 
 # todo: location
-summaryFilePath = "/home/localstepdo/e/getAllGit/summarizedWebView/example2.json"
+summaryFilePath = "/home/localstepdo/e/getAllGit/summarizedWebView/example2b.json"
 #summaryFilePath = os.path.join(os.environ["scriptDir"], "summarized.json")
 
 #todo: start clock to write json
