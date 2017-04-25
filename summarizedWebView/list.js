@@ -86,7 +86,7 @@ var remoteListView = new RemoteListView({
 //--------------
 $('#app').html(remoteListView.el);
 
-/*
+/*todo:
     top filter
         separate model,view for filters
         organization (count): all (x), edx (y), etc (z). -> sorted by totals
