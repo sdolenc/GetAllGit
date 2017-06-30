@@ -19,7 +19,7 @@ initialize()
     # Generate list of all local git enlistments.
     # This searches an machine's entire directory tree.
     # todo: (perf optimization) param that persists this file for next run.
-    if [ ! -f $gitDirFile ]; then
+    if [[ ! -f $gitDirFile ]] ; then
         # Don't exit on error. A few directories can't be searched.
         set +e
             echo "This operation takes a few seconds..."
@@ -28,7 +28,7 @@ initialize()
         set -e
 
         # We temporarily disabled "exit on error" so let's test for success before continuing.
-        if [ ! -f $gitDirFile ]; then
+        if [[ ! -f $gitDirFile ]] ; then
             echo "failed to create file listing local git repository paths"
             exit 1
         fi
@@ -64,7 +64,7 @@ format_list()
     if [[ ! -z "$list" ]]; then
         # Add explanation if there are more than one branches.
         count=`echo -e "$list" | wc -l`
-        if (( $count > "1" )); then
+        if (( $count > "1" )) ; then
             # Prefix message with list size.
             message="$count $message"
             list="${message}:\n${list}"
@@ -85,7 +85,7 @@ get_branch()
     branchInfo=`git branch | grep "$prefix" | sed "s/$prefix//g"`
 
     # Ensure branch information is useful.
-    if [ -z "$branchInfo" ] || [[ $branchInfo == *"no branch"* ]] || [[ $branchInfo == *"detached"* ]]; then
+    if [[ -z "$branchInfo" ]] || [[ $branchInfo == *"no branch"* ]] || [[ $branchInfo == *"detached"* ]] ; then
         # Get list of branches that share the current commit, remove redundant (like  "origin/HEAD -> origin/master")
         branchInfo="`git branch --remote --contains | grep -v '>' | sed 's/origin\///g'`"
 
@@ -106,13 +106,13 @@ get_tag()
     set -e
 
     # For old versions of git (like 1.7.9.5)
-    if [ -z "$tagInfo" ]; then
+    if [[ -z "$tagInfo" ]] ; then
         # Get information, split into multiple lines, only keep values prefixed with 'tag:', remove prefix
         tagInfo=`git log -g --decorate -1 | tr ',' '\n' | tr ')' '\n' | grep -o -i "${prefix}.*" | sed "s/${prefix}/  /g"`
     fi
 
     # If no explicitly created tags, then look for implicit tagging information.
-    if [ -z "$tagInfo" ]; then
+    if [[ -z "$tagInfo" ]] ; then
         # Don't exit on error. There won't always be implicit tag information.
         set +e
             # Implicit tag created by a commit after a tag
@@ -131,14 +131,16 @@ get_tag()
         set -e
 
         # We temporarily disabled "exit on error" so let's test the results before using them.
-        if [ ! -z "$autoTag" ]; then
+        if [[ ! -z "$autoTag" ]] ; then
             tagInfo="  $autoTag"
         fi
-        if [ ! -z "$autoTag" ] && [ ! -z "$nextTag" ]; then
+
+        if [[ ! -z "$autoTag" ]] && [[ ! -z "$nextTag" ]] ; then
             # Separate with newline if both automatic tags are available.
             tagInfo="${tagInfo}\n"
         fi
-        if [ ! -z "$nextTag" ]; then
+
+        if [[ ! -z "$nextTag" ]] ; then
             tagInfo="${tagInfo}  $nextTag"
         fi
     fi
@@ -182,7 +184,7 @@ while read entry; do
     # FETCH_HEAD file's modified timestamp is changed everytime git pulls from remote server.
     # We do this first in case one of the operation below happen to modify the timestamp.
     syncTime=""
-    if [ -f .git/FETCH_HEAD ]; then
+    if [[ -f .git/FETCH_HEAD ]] ; then
         syncTime=`stat -c %y .git/FETCH_HEAD`
     fi
     echo "$syncTime" >> "$gitTimeFile"
